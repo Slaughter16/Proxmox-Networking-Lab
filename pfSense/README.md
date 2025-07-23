@@ -93,6 +93,26 @@ After all are added, the VLAN list should appear like this:
 4. Enter:
    - **IP Address:** `192.168.10.1`
    - **Subnet Mask:** `/24`
+
 💾 Save and **Apply Changes**.
+
 ![Config VLAN10 Int](10_VLAN10_Int.png)
 ![Config VLAN10 Int](11_VLAN10_Int.png)
+
+---
+
+## 🔁 Repeat for VLAN20 and VLAN30
+
+Follow the same steps above for:
+
+- **LAN20 (VLAN 20)**
+  - IP: `192.168.20.1/24`
+- **LAN30 (VLAN 30)**
+  - IP: `192.168.30.1/24`
+
+Add corresponding screenshots:
+- `12_VLAN20_Int.png`
+- `13_VLAN30_Int.png`
+
+---
+
