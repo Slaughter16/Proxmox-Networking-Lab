@@ -21,12 +21,13 @@ Segment the virtual lab network into three VLANs and route traffic securely usin
   
 ![Login to pfSense](1_login_pfsense.png)
 
-## Step 2: pfSense Dashboard
+## pfSense Dashboard
 ![pfSense Dashboard](2_dashboard.png)
 
-## Step 3: Create VLAN Interfaces
+## 🔧 Create VLAN Interfaces
 Go to `Interfaces > Assignments > VLANs`  
-Click `+ Add`
+Then click **+Add** for each VLAN.
+![Before_VLAN_Interfaces Added](3_Before_VLAN.png)
 
 - **Parent Interface**: vmbr1 NIC (e.g., vtnet1)
 - **VLAN Tag**: 10
