@@ -60,5 +60,5 @@ Then click **+Add** for each VLAN.
 
 After creating all VLANs, your list should look like this:
 
-![All VLANs](7_all_vlans_listed.png)
+![All VLANs](7_all_VLANS_listed.png)
 
