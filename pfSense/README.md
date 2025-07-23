@@ -34,6 +34,6 @@ Then click **+Add** for each VLAN.
 - **Parent Interface:** vmbr1 NIC (e.g., `vtnet1`)
 - **VLAN Tag:** `10`
 - **Description:** `VLAN10_Client`
-- Always **rember click "save" and "apply changes"**
+- **Always remember click "Save" and "Apply" changes"**
 
 ![VLAN 10](4_vlan10_add.png)
