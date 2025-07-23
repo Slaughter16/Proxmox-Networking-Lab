@@ -2,7 +2,12 @@
 
 This folder documents the configuration of VLANs within pfSense as part of the lab network.
 
-## Step 1: Log into pfSense Web GUI
+## Step 1: Log into pfSense Web GUI from Debian Admin Machine
+
+- URL: https://[pfSense LAN IP]
+- Default login (if not changed):
+                                  - user:admin
+                                  - pass:pfsense 
 ![Login to pfSense](1_login_pfsense.png)
 
 ## Step 2: pfSense Dashboard
