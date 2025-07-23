@@ -18,3 +18,10 @@ Selected **vmbr1**, then enabled the **VLAN Aware** checkbox to allow VLAN-tagge
 ---
 ✅ Click **Apply Configuration** after making the change.
 
+---
+### Confirming VLAN Awareness is Enabled
+
+Checked that **vmbr1** now shows **VLAN Aware: Yes**.
+
+![VLAN Aware Enabled](3_vlan_aware_enabled_vmbr1.png)
+
