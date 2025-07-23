@@ -32,7 +32,7 @@ Checked that **vmbr1** now shows **VLAN Aware: Yes**.
 
 With `vmbr1` now VLAN-aware, each VM must be assigned a VLAN tag that matches its intended network segment.
 
-This setup uses the following VLAN structure: VLAN 10 (Client), VLAN 20 (Server), VLAN 30 (Security).
+This setup uses the following VLAN structure: **VLAN 10 (Client)**, **VLAN 20 (Server)**, **VLAN 30 (Security)**.
 | VM Name         | VLAN Tag | Purpose              |
 |------------------|----------|-----------------------|
 | Debian-Admin     | 10       | Management / Admin VM |
