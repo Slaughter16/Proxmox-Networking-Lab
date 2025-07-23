@@ -6,8 +6,8 @@ This folder documents the configuration of VLANs within pfSense as part of the l
 
 - URL: https://[pfSense LAN IP]
 - Default login (if not changed):
-  - user:admin
-  - pass:pfsense
+  - User: admin
+  - Pass: pfsense
   
 ![Login to pfSense](1_login_pfsense.png)
 
