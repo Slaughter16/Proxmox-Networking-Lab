@@ -85,6 +85,8 @@ This setup uses the following VLAN structure: **VLAN 10 (Client)**, **VLAN 20 (S
 ![Kali VLAN 30](9_kali_vlan30.png)
 ![Security Onion VLAN 30](10_so_vlan30.png)
 
+- **ens18**(connected to 'vmbr1') is **tagged VLAN 30** → used for Management + Monitoring
+- **ens19**(connected to vmbr2) is **not tagged** and has **no IP address** → used only for passive sniffing 
 ---
 
 > 🔁 Repeat these steps for any additional VMs that require network segmentation.
