@@ -165,3 +165,10 @@ Follow the same steps above for:
 ![DHCP LAN30](19_dhcp_lan30.png)
 
 ---
+
+#🔒 Step 5: Add Allow-All Firewall Rules (Testing Phase)
+During the initial setup, we will allow all traffic between VLANs by adding permissive rules to each VLAN interface. This is just for testing. Later, we’ll apply segmentation rules to restrict access.
+
+# 🔧 Navigate to Firewall Rules
+- Go to **Firewall > Rules** from the pfSense menu bar.
+
