@@ -15,5 +15,6 @@ Selected **vmbr1**, then enabled the **VLAN Aware** checkbox to allow VLAN-tagge
 ![Config VLAN Aware vmbr1](2_vlan_vmbr1.png)
 
 > 💡 This setting is crucial for allowing Proxmox to bridge VLAN-tagged traffic across virtual machines and physical interfaces.
-
+---
+✅ Click **Apply Configuration** after making the change.
 
