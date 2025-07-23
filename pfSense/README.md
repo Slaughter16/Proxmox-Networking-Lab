@@ -97,7 +97,7 @@ After all are added, the VLAN list should appear like this:
 💾 Save and **Apply Changes**.
 
 ![Config VLAN10 Int](10_VLAN10_Int.png)
-![Config VLAN10 Int](11_VLAN10_Int.png)
+![Config VLAN10 Int](11_VLAN10_Inte.png)
 
 ---
 
