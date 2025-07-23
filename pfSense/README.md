@@ -1,13 +1,23 @@
-# pfSense VLAN Configuration
+# 🧩 Step 3: Configure VLANs in pfSense
 
 This folder documents the configuration of VLANs within pfSense as part of the lab network.
 
-## Step 1: Log into pfSense Web GUI from Debian Admin Machine
+## 🎯 Objective
+Segment the virtual lab network into three VLANs and route traffic securely using pfSense.
 
-- URL: https://[pfSense LAN IP]
-- Default login (if not changed):
-  - User: admin
-  - Pass: pfsense
+### VLAN Structure:
+| VLAN ID | Name     | Subnet             |
+|---------|----------|--------------------|
+| 10      | Clients  | 192.168.10.0/24    |
+| 20      | Servers  | 192.168.20.0/24    |
+| 30      | Security | 192.168.30.0/24    |
+
+## 🔐 Log into pfSense Web GUI from Debian Admin Machine
+
+- URL: 'https://[pfSense LAN IP]'
+- Default login (if unchanged):
+  - **User:** 'admin'
+  - **Pass:** 'pfsense'
   
 ![Login to pfSense](1_login_pfsense.png)
 
