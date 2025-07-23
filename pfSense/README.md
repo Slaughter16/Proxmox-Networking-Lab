@@ -97,7 +97,6 @@ After all are added, the VLAN list should appear like this:
 💾 Save and **Apply Changes**.
 
 ![Config VLAN10 Int](10_VLAN10_Int.png)
-
 ![Config VLAN10 Int](11_VLAN10_Inte.png)
 
 ---
@@ -110,17 +109,59 @@ Follow the same steps above for:
   - IP: `192.168.20.1/24`
     
 ![Config VLAN20 Int](12_VLAN20_Int.png)
-
 ![Config VLAN20 Int](13_VLAN20_Int.png)
 
 - **LAN30 (VLAN 30)**
   - IP: `192.168.30.1/24`
 
 ![Config VLAN30 Int](14_VLAN30_Int.png)
-
 ![Config VLAN30 Int](15_VLAN30_Int.png)
-
-Add corresponding screenshots:
 
 ---
 
+# 🛠️ Step 4: Enable DHCP on Each VLAN
+
+## 🔹 Navigate to `Services > DHCP Server`
+
+![Services_DHCP Server](16_DHCP_Page.png)
+
+---
+
+### 📦 Enable DHCP for LAN10
+
+- Select `LAN10` tab
+- Check **Enable DHCP server on LAN10 interface**
+- Set Range:  
+  - **From:** `192.168.10.100`  
+  - **To:** `192.168.10.200`
+- Click **Save**
+
+![DHCP LAN10](17_dhcp_lan10.png)
+
+---
+
+### 📦 Enable DHCP for LAN20
+
+- Select `LAN20` tab
+- Check **Enable DHCP server on LAN20 interface**
+- Set Range:  
+  - **From:** `192.168.20.100`  
+  - **To:** `192.168.20.200`
+- Click **Save**
+
+![DHCP LAN20](18_dhcp_lan20.png)
+
+---
+
+### 📦 Enable DHCP for LAN30
+
+- Select `LAN30` tab
+- Check **Enable DHCP server on LAN30 interface**
+- Set Range:  
+  - **From:** `192.168.30.100`  
+  - **To:** `192.168.30.150`
+- Click **Save**
+
+![DHCP LAN30](19_dhcp_lan30.png)
+
+---
