@@ -67,8 +67,8 @@ After creating all VLANs, your list should look like this:
 Now go to: `Interfaces > Assignments`  
 Assign each VLAN to a new interface (e.g., LAN10, LAN20, LAN30).
 
-![Interface>Assignments](8_Int_Assign)
+![Interface>Assignments](8_Int_Assign.png)
 
 Click **+ Add** to assing each new VLAN interface 
 
-![Add Interface](9_Add_Int)
+![Add Interface](9_Add_Int.png)
