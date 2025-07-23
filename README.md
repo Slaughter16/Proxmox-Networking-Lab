@@ -1,6 +1,6 @@
 # Proxmox Networking Lab
 
-This project documents the setup of a virtualized home lab using **Proxmox**, **pfSense**, **Windows 2019 Server**, **Windows 10 Client**, **Security Onion**, **Debian Admin Machine**, **Kali Linux**, **Pi-hole**, and **Metasploitable2**. It covers VLAN segmentation, DNS troubleshooting, and firewall configurations.
+This project documents the setup of a virtualized home lab using **Proxmox**, **pfSense**, **Windows 2019 Server**, **Windows 10 Client**, **Security Onion**, **Debian Admin Machine**, **Kali Linux**, **Pi-hole**, and **Metasploitable2**. It covers VLAN segmentation, DNS troubleshooting, DHCP configuration, and Firewall configurations.
 
 ---
 
