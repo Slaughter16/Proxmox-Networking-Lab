@@ -17,6 +17,22 @@ This project documents the setup of a virtualized home lab using **Proxmox**, **
 
 ## ✅ Setup Phases
 
+# Proxmox VLAN Bridge Configuration
+
+## Enabling VLAN Aware Bridge
+
+### Screenshot
+
+![VLAN Aware Bridge Screenshot](https://yourimageurl.com/image1.png)
+
+### Description
+
+1. Navigated to `Datacenter > [YourNodeName] > System > Network`
+2. Selected `vmbr1` (the virtual bridge used for VM communication)
+3. Checked ✅ the **"VLAN aware"** box
+4. Clicked Save
+5. Applied changes to enable VLAN tagging support on this bridge
+
 ### 1. pfSense Initial Setup
 - Created VLAN interfaces
 - Assigned VLANs: 10, 20, 30
