@@ -107,12 +107,17 @@ Follow the same steps above for:
 
 - **LAN20 (VLAN 20)**
   - IP: `192.168.20.1/24`
+    
+![Config VLAN20 Int](12_VLAN20_Int.png)
+![Config VLAN20 Int](13_VLAN20_Int.png)
+
 - **LAN30 (VLAN 30)**
   - IP: `192.168.30.1/24`
 
+![Config VLAN30 Int](14_VLAN30_Int.png)
+![Config VLAN30 Int](15_VLAN30_Int.png)
+
 Add corresponding screenshots:
-- `12_VLAN20_Int.png`
-- `13_VLAN30_Int.png`
 
 ---
 
