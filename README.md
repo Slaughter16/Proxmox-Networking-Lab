@@ -7,8 +7,8 @@ This project documents the setup of a virtualized home lab using **Proxmox**, **
 ## 🧱 Lab Topology
 
 - Proxmox VE Host with `vmbr0` and `vmbr1` linux bridges 
-- pfSense as firewall/router
-- Pi-hole as DNS server
+- pfSense as firewall/router (VM)
+- Pi-hole as DNS server (LXC Ubunutu Container)
 - VLAN10 - Clients (Win 10, Debian Admin Machine)
 - VLAN20 - Server (Windows 2019 Server, Pi-hole, Metasploit)
 - VLAN30 - Security (Kali, Security Onion)
