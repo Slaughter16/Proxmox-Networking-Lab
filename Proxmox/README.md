@@ -88,7 +88,7 @@ This setup uses the following VLAN structure: **VLAN 10 (Client)**, **VLAN 20 (S
 ### Security Onion Configuration
 - **ens18**(connected to 'vmbr1') is **tagged VLAN 30** → used for Management + Monitoring.
 - **ens19**(connected to vmbr2) is **not tagged** and has **no IP address** → used only for passive sniffing.
-- Do *NOT* asign vlan or IP to **ens19**. It is used only for *raw packet capture and must remain untagged*.
+- Do *NOT* assign vlan or IP to **ens19**. It is used only for *raw packet capture and must remain untagged*.
 
 > 🔁 Repeat these steps for any additional VMs that require network segmentation.
 
