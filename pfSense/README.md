@@ -82,13 +82,17 @@ After all are added, the VLAN list should appear like this:
 2. Click **+ Add** to assign each new VLAN interface.
    
 ![Interface>Assignments](8_Int_Assign.png)
-
-Click **+ Add** to assign each new VLAN interface (Do this for each interface: VLAN10, VLAN20, VLAN30)
-
 ![Add Interface](9_Add_Int.png)
 
 ---
-Then we go into VLAN10 and name the interface LAN10, select "Static IPv4" for IPv4 configuration type, then put in the IPv4 static default gateway address for that vlan (VLAN10 = 192.168.10.1/24), and click Save
 
+### ⚙️ Configure LAN10 Interface (VLAN 10)
+1. Click the new interface name (e.g., OPT1 → rename to **LAN10**).
+2. Enable the interface.
+3. Set **IPv4 Configuration Type** to `Static IPv4`.
+4. Enter:
+   - **IP Address:** `192.168.10.1`
+   - **Subnet Mask:** `/24`
+💾 Save and **Apply Changes**.
 ![Config VLAN10 Int](10_VLAN10_Int.png)
 ![Config VLAN10 Int](11_VLAN10_Int.png)
