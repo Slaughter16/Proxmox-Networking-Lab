@@ -3,7 +3,7 @@ Navigated to **Datacenter > Node > System > Network**
 
 ![Before Editing vmbr1](1_before_vmbr1.png)
 
-Selected 'vmbr1' and Enabled the **VLAN Aware** checkbox
+Selected *'vmbr1'* and Enabled the **VLAN Aware** checkbox
 ![Config VLAN Aware vmbr1](2_vlan_vmbr1.png)
 1. Selected `vmbr1`
 2. Enabled the **VLAN Aware** option
