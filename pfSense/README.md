@@ -37,3 +37,28 @@ Then click **+Add** for each VLAN.
 - **Always remember click "Save" and "Apply" changes"**
 
 ![VLAN 10](4_vlan10_add.png)
+
+---
+
+### VLAN 20 – Servers
+- **VLAN Tag:** `20`
+- **Description:** `VLAN20_Servers`
+
+![VLAN 20](5_vlan20_add.png)
+
+---
+
+### VLAN 30 – Security
+- **VLAN Tag:** `30`
+- **Description:** `VLAN30_Security`
+
+![VLAN 30](6_vlan30_add.png)
+
+---
+
+### 🔗 Review All VLANs
+
+After creating all VLANs, your list should look like this:
+
+![All VLANs](7_all_vlans_listed.png)
+
