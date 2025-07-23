@@ -29,3 +29,10 @@ Go to `Interfaces > Assignments > VLANs`
 Then click **+Add** for each VLAN.
 
 ![Before_VLAN_Interfaces Added](3_Before_VLAN.png)
+
+### VLAN 10 – Clients
+- **Parent Interface:** vmbr1 NIC (e.g., `vtnet1`)
+- **VLAN Tag:** `10`
+- **Description:** `VLAN10_Client`
+- Always **rember click save and 'apply changes'**
+![VLAN 10](4_vlan10_add.png)
