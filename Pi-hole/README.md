@@ -40,7 +40,7 @@ To make the Pi-hole IP assignment persistent after reboot, manually edit the net
 
 ![Edit_Int](3_Edit_Int.png)
 
-## ✏️ Add the following configuration:
+# ✏️ Add the following configuration:
 
 ```ini
 auto eth0
