@@ -31,6 +31,7 @@ Manually changed IP address (not via /etc/network or Netplan, but directly):
 ---
 
 # 💾 Make IP Assignment Permanent
+
 To make the Pi-hole IP assignment persistent after reboot, manually edit the network interface configuration file:
 
 ### 📝 Edit the interfaces file:
