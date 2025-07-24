@@ -215,6 +215,7 @@ Once everything is confirmed working, these rules should be tightened for proper
 
 1. Go to the **LAN20** tab  
 2. Click **➕ Add** at the top
+   
 ![Allow All VLAN20](25_LAN20.png)
 
 3. Set the following values:
