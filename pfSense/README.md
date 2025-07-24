@@ -234,3 +234,39 @@ Once everything is confirmed working, these rules should be tightened for proper
 ![Allow All VLAN20](26_Allow_Pro.png)
 ![Allow All VLAN20](27_Allow_VLAN20.png)
 ![Allow All VLAN20](28_Allow_VLAN20.png)
+
+✅ Save and **Apply Changes**
+
+---
+
+## ➕ Add Rule for VLAN30
+
+1. Navigate to the **LAN30** tab  
+2. Click **➕ Add** at the top
+   
+![Allow All VLAN20](29_LAN30.png)
+
+3. Use the following values:
+
+| 🔧 Field           | 📝 Value            |
+|-------------------|---------------------|
+| **Action**         | Pass                |
+| **Interface**      | LAN30               |
+| **Address Family** | IPv4                |
+| **Protocol**       | Any                 |
+| **Source**         | LAN30 net           |
+| **Destination**    | any                 |
+| **Description**    | Allow All VLAN30    |
+
+📸 Screenshot:  
+![Allow All VLAN30](30_Allow_Pro.png)
+![Allow All VLAN30](31_Allow_VLAN30.png)
+![Allow All VLAN30](32_Allow_VLAN30_Final.png)
+
+✅ Save and **Apply Changes**
+
+---
+
+> ⚠️ **Note:** These rules are for **testing purposes only**. After confirming VLAN connectivity, apply more **restrictive policies** to isolate traffic between Clients, Servers, and Security VLANs.
+
+---
