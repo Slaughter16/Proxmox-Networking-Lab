@@ -270,3 +270,28 @@ Once everything is confirmed working, these rules should be tightened for proper
 > ⚠️ **Note:** These rules are for **testing purposes only**. After confirming VLAN connectivity, apply more **restrictive policies** to isolate traffic between Clients, Servers, and Security VLANs.
 
 ---
+
+# 🛠️ Step 7: Configure pfSense to Use Pi-hole for DNS Across VLANs
+
+---
+
+### 🔧 Update DHCP Settings in pfSense for Each VLAN
+
+Log into the **pfSense Web UI** from your Debian Admin Machine.
+
+1. Navigate to:  
+   `Services ➝ DHCP Server`
+
+2. For each VLAN (e.g., **LAN**, **VLAN 10**, **VLAN 20**, **VLAN 30** tabs):
+   - Set **DNS servers** to `192.168.20.2` (your Pi-hole IP).
+   - Scroll down and click **Save**.
+   - Click **Apply Changes** (if prompted).
+
+📸 **Screenshots**  
+- VLAN 10 DHCP config  
+- VLAN 20 DHCP config  
+- VLAN 30 DHCP config  
+
+> 🧠 This ensures all new DHCP clients in these VLANs will use Pi-hole as their DNS server.
+
+---
