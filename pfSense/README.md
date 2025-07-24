@@ -181,14 +181,15 @@ Once everything is confirmed working, these rules should be tightened for proper
    - `LAN20`
    - `LAN30`
 ![Firewall_Rules](20_Firewall_Rules.png)
-![Firewall_Tabs](21_Firewall_Tabs.png)
 
 ---
 
 ## ➕ Add Rule for VLAN10
 
 1. Click the **LAN10** tab  
-2. Click **➕ Add** at the top of the rules list  
+2. Click **➕ Add** at the top of the rules list
+![Firewall_Tabs](21_Firewall_Tabs.png)
+
 3. Configure the rule as follows:
 
 | 🔧 Field           | 📝 Value            |
