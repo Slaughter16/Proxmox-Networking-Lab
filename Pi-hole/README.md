@@ -64,13 +64,17 @@ Access the Pi-hole Dashboard from the Debian Admin Machine (VLAN10) using the Pi
 
 ---
 
-### 🔄 Ensure Pi-hole Can Answer Redirected Traffic
+### 🔄 Ensure Pi-hole Can Answer Redirected Traffic and Set Upstream DNS Servers 
 
 To allow Pi-hole to properly resolve redirected DNS queries (those not originally intended for Pi-hole), follow these steps:
 
 1. Open the Pi-hole Admin Dashboard.
 2. Navigate to **Settings** → **DNS**.
-3. Under **Interface listening behavior**, select:
+3. Under **Interface listening behavior**, select:  
    > **Listen on all interfaces, permit all origins**
+4. Under **Upstream DNS Servers**, ensure the following is selected:  
+   - **Google (IPv4) (ECS, DNSSEC)**
 
-This setting allows Pi-hole to accept DNS queries even if they are redirected from other DNS servers (e.g., `8.8.8.8`, `1.1.1.1`, etc.).
+![Redirect_Traffic](7_Pihole_Config.png)
+
+This setup allows Pi-hole to accept DNS queries redirected from other servers (e.g., `8.8.8.8`, `1.1.1.1`) and forward queries securely to Google DNS with ECS and DNSSEC enabled.
