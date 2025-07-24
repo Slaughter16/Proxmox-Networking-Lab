@@ -1,4 +1,4 @@
-# 🧩 Pi-hole DNS Server Configuration (VLAN 20)
+# Step 6: 🧩 Pi-hole DNS Server Configuration (VLAN 20)
 
 This guide documents how to fix and configure the Pi-hole container/VM to serve as the DNS server for **VLAN 20** and other VLANs in the Proxmox lab.
 
