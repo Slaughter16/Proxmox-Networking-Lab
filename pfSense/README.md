@@ -202,7 +202,33 @@ Once everything is confirmed working, these rules should be tightened for proper
 | **Description**    | Allow All VLAN10    |
 
 📸 Screenshot:  
-![Allow All VLAN10](images/pfSenseSetup/20_allow_all_vlan10.png)
+![Allow All VLAN10](22_Allow_Pro.png)
+![Allow All VLAN10](23_Allow_VLAN10.png)
+![Allow All VLAN10](24_Allow_Final10.png)
 
 ✅ Click **Save** then **Apply Changes**
 
+---
+
+## ➕ Add Rule for VLAN20
+
+1. Go to the **LAN20** tab  
+2. Click **➕ Add** at the top
+![Allow All VLAN20](25_LAN20.png)
+
+3. Set the following values:
+
+| 🔧 Field           | 📝 Value            |
+|-------------------|---------------------|
+| **Action**         | Pass                |
+| **Interface**      | LAN20               |
+| **Address Family** | IPv4                |
+| **Protocol**       | Any                 |
+| **Source**         | LAN20 net           |
+| **Destination**    | any                 |
+| **Description**    | Allow All VLAN20    |
+
+📸 Screenshot:  
+![Allow All VLAN20](26_Allow_Pro.png)
+![Allow All VLAN20](27_Allow_VLAN20.png)
+![Allow All VLAN20](28_Allow_VLAN20.png)
