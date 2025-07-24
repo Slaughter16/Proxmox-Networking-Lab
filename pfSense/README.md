@@ -62,7 +62,7 @@ Once logged in, you will see the dashboard.
 
 ### ➕ VLAN 30 – Security
 - **VLAN Tag:** `30`
-- **Description:** `VLAN30_Security`
+- **Description:** `VLAN30_Security` (mistyped but added 30 after)
 
 ![VLAN 30](6_vlan30_add.png)
 
