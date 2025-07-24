@@ -49,6 +49,8 @@ iface eth0 inet static
   netmask 255.255.255.0
   gateway 192.168.20.1
 
+
+
 ![Config_Perm_IP](4_Perm_IP.png) 
 
 
