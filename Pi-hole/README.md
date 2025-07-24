@@ -52,7 +52,7 @@ iface eth0 inet static
 
 ![Config_Perm_IP](4_Perm_IP.png) 
 
-Confirm change with 'ip a'
+- **Confirm change with 'ip a'**
 
 ![Confirm Change](5_Confirm.png)
 
