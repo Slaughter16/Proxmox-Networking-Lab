@@ -27,5 +27,6 @@ We wanted Pi-hole to use `192.168.20.2` to serve as the DNS server for All the V
 
 2. Confirm change with 'ip a'
 ![Config_Temp_IP](2_Config_IP.png)
+
 ![Confirm Change](3_Confirm.png)
 
