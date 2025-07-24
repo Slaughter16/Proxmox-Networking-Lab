@@ -30,17 +30,17 @@ Manually changed IP address (not via /etc/network or Netplan, but directly):
 
 ---
 
-# 💾 Make IP Assignment Permanent
+### 💾 Make IP Assignment Permanent
 
 To make the Pi-hole IP assignment persistent after reboot, manually edit the network interface configuration file:
 
-### 📝 Edit the interfaces file:
+## 📝 Edit the interfaces file:
 
 - **sudo nano /etc/network/interfaces**
 
 ![Edit_Int](3_Edit_Int.png)
 
-### ✏️ Add the following configuration:
+## ✏️ Add the following configuration:
 
 ```ini
 auto eth0
