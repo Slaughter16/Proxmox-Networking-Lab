@@ -298,3 +298,64 @@ Log into the **pfSense Web UI** from your Debian Admin Machine.
 > 🧠 This ensures all new DHCP clients in these VLANs will use Pi-hole as their DNS server.
 
 ---
+
+# ✅ Step 8: Things to Check Before Enabling DNS Redirection
+
+1. Go to:  
+   `System ➝ General Setup`
+   
+![System_General](36_System_Gen.png)
+
+2. Under **DNS Server Settings**:
+   - Set **DNS Server 1**: `192.168.20.2`
+   - ✅ **Uncheck**:  
+     `Allow DNS server list to be overridden by DHCP/PPP on WAN
+     
+![DNS_Setting](37_DNS.png)
+
+> ⚠️ This ensures pfSense itself uses Pi-hole as its DNS resolver (optional but cleaner).
+
+---
+
+🚫 3. Disable DNS Resolver or Forwarder (Optional)
+
+Only do this **if you want ALL DNS to go through Pi-hole**, and not be handled by pfSense.
+
+- Go to:
+  - `Services ➝ DNS Resolver` → **Disable**
+  - *OR*
+  - `Services ➝ DNS Forwarder` → **Disable** (if using this instead)
+
+![DNS_Forward](38_DNS_Forward.png)
+![DNS_Resolver](39_DNS_Resolver.png)
+
+> ⚠️ **Important:**  
+> If pfSense still needs to resolve DNS for itself, leave **one** enabled.  
+> (In this setup, **DNS Resolver** was left enabled.)
+
+---
+
+🔁 4: Set Up DNS Redirection to Pi-hole (`192.168.20.2`)
+
+We'll do this per VLAN using **Firewall ➝ NAT ➝ Port Forward**.
+
+![Port_Forward](40_Port_Forward.png)
+
+🔨 DNS Redirection Steps (Repeat per VLAN)
+
+Click **+ Add**
+
+Fill in the following:
+
+| Field | Value |
+|-------|-------|
+| **Interface** | Select the VLAN (e.g., LAN 10) |
+| **Protocol** | TCP/UDP |
+| **Source Type** | Network |
+| **Source Address** | e.g., `192.168.10.0/24` |
+| **Source Port Range** | any |
+| **Destination** | any |
+| **Destination Port Range** | DNS (53) |
+| **Redirect Target IP** | `192.168.20.2` (your Pi-hole) |
+| **Redirect Target Port** | DNS (53) |
+| **Description** | `Redirect DNS to Pi-hole VLAN10` |
