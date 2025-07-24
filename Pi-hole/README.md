@@ -12,3 +12,4 @@ We wanted Pi-hole to use `192.168.20.2` to serve as the DNS server for All the V
 - Ran `ip a` on the Pi-hole console.
 - Verified the interface in use was `eth0`.
 - Saw the current IP was incorrect (`192.168.1.2`).
+![Pihole IP address]()
