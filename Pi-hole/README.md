@@ -51,5 +51,5 @@ To make the Pi-hole IP assignment persistent after reboot, manually edit the net
 
 
 3. Confirm change with 'ip a'
-![Confirm Change](3_Confirm.png)
+![Confirm Change](5_Confirm.png)
 
