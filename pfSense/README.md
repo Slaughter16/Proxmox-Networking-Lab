@@ -288,6 +288,7 @@ Log into the **pfSense Web UI** from your Debian Admin Machine.
    - Click **Apply Changes** (if prompted).
 
 📸 **Screenshots**  
+(VLAN10)
 ![DNS VLAN10](33_VLAN10.png) 
 ![DNS VLAN20](34_VLAN20.png)
 ![DNS VLAN30](35_VLAN30.png)
