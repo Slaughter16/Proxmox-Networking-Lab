@@ -26,6 +26,20 @@ We wanted Pi-hole to use `192.168.20.2` to serve as the DNS server for All the V
   -sudo ip route add default via 192.168.20.1
 ![Config_Temp_IP](2_Config_IP.png)
 
-2. Confirm change with 'ip a'
+---
+
+# 💾 Make IP Assignment Permanent
+
+2. Make pihole ip assignment permanent: Edit Pi-hole’s static IP the manual way  Edit 'sudo nano /etc/network/interfaces' (for Debian or older Ubuntu) then enter:
+   -auto eth0
+   -iface eth0 inet static
+   -address 192.168.20.2
+   -netmask 255.255.255.0
+   -gateway 192.168.20.1
+
+![Config_Perm_IP](3_Perm_IP.png)
+
+
+3. Confirm change with 'ip a'
 ![Confirm Change](3_Confirm.png)
 
