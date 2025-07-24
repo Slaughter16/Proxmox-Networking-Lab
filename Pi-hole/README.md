@@ -22,9 +22,10 @@ We wanted Pi-hole to use `192.168.20.2` to serve as the DNS server for All the V
 
 Manually changed IP address (not via /etc/network or Netplan, but directly):
    
-  -sudo dhcpcd eth0
-  -sudo ip addr add 192.168.20.2/24 dev eth0
-  -sudo ip route add default via 192.168.20.1
+sudo dhcpcd eth0
+sudo ip addr add 192.168.20.2/24 dev eth0
+sudo ip route add default via 192.168.20.1
+
   
 ![Config_Temp_IP](2_Config_IP.png)
 
