@@ -166,9 +166,43 @@ Follow the same steps above for:
 
 ---
 
-#🔒 Step 5: Add Allow-All Firewall Rules (Testing Phase)
-During the initial setup, we will allow all traffic between VLANs by adding permissive rules to each VLAN interface. This is just for testing. Later, we’ll apply segmentation rules to restrict access.
+# 🔒 Step 5: Add Allow-All Firewall Rules (Testing Phase)
 
-# 🔧 Navigate to Firewall Rules
-- Go to **Firewall > Rules** from the pfSense menu bar.
+During the initial testing phase, we’ll allow all traffic between VLANs by adding permissive rules to each VLAN interface. 
+Once everything is confirmed working, these rules should be tightened for proper segmentation and security.
+
+---
+
+## 🔧 Navigate to Firewall Rules
+
+1. Go to `Firewall > Rules` from the pfSense menu bar  
+2. You will see separate tabs for:
+   - `LAN10`
+   - `LAN20`
+   - `LAN30`
+![Firewall_Rules](20_Firewall_Rules.png)
+![Firewall_Tabs](21_Firewall_Tabs.png)
+
+---
+
+## ➕ Add Rule for VLAN10
+
+1. Click the **LAN10** tab  
+2. Click **➕ Add** at the top of the rules list  
+3. Configure the rule as follows:
+
+| 🔧 Field           | 📝 Value            |
+|-------------------|---------------------|
+| **Action**         | Pass                |
+| **Interface**      | LAN10               |
+| **Address Family** | IPv4                |
+| **Protocol**       | Any                 |
+| **Source**         | LAN10 net           |
+| **Destination**    | any                 |
+| **Description**    | Allow All VLAN10    |
+
+📸 Screenshot:  
+![Allow All VLAN10](images/pfSenseSetup/20_allow_all_vlan10.png)
+
+✅ Click **Save** then **Apply Changes**
 
