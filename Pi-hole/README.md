@@ -56,6 +56,8 @@ iface eth0 inet static
 
 ![Confirm Change](5_Confirm.png)
 
-- **Confirm can reach Pihole Dashboard from Debian Admin Machine (VLAN10) via Pihole IP (192.168.20.2)**
+### ✅ Confirm Connectivity to Pi-hole Dashboard  
+
+Access the Pi-hole Dashboard from the Debian Admin Machine (VLAN10) using the Pi-hole IP: `192.168.20.2`
 
 ![Confirm_IP_Connectivity from Debian](6_Pihole_Dashboard.png)
