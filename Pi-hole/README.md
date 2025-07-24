@@ -12,4 +12,20 @@ We wanted Pi-hole to use `192.168.20.2` to serve as the DNS server for All the V
 - Ran `ip a` on the Pi-hole console.
 - Verified the interface in use was `eth0`.
 - Saw the current IP was incorrect (`192.168.1.2`).
-![Pihole IP address](1_IP.png)
+  
+![Pihole IP address before change](1_IP.png)
+
+---
+
+
+## 🧪 Temporary IP Fix (Manual Command-Line Change)
+
+1. Manually changed IP address (not via /etc/network or Netplan, but directly):
+  -sudo dhcpcd eth0
+  -sudo ip addr add 192.168.20.2/24 dev eth0
+  -sudo ip route add default via 192.168.20.1
+
+2. Confirm change with 'ip a'
+![Config_Temp_IP](2_Config_IP.png)
+![Confirm Change](3_Confirm.png)
+
