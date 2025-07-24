@@ -288,9 +288,9 @@ Log into the **pfSense Web UI** from your Debian Admin Machine.
    - Click **Apply Changes** (if prompted).
 
 📸 **Screenshots**  
-- VLAN 10 DHCP config  
-- VLAN 20 DHCP config  
-- VLAN 30 DHCP config  
+![DNS VLAN10](33_VLAN10.png) 
+![DNS VLAN20](34_VLAN20.png)
+![DNS VLAN30](35_VLAN30.png)
 
 > 🧠 This ensures all new DHCP clients in these VLANs will use Pi-hole as their DNS server.
 
