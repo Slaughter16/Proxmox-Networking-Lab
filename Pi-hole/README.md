@@ -61,3 +61,16 @@ iface eth0 inet static
 Access the Pi-hole Dashboard from the Debian Admin Machine (VLAN10) using the Pi-hole IP: `192.168.20.2`
 
 ![Confirm_IP_Connectivity from Debian](6_Pihole_Dashboard.png)
+
+---
+
+### 🔄 Ensure Pi-hole Can Answer Redirected Traffic
+
+To allow Pi-hole to properly resolve redirected DNS queries (those not originally intended for Pi-hole), follow these steps:
+
+1. Open the Pi-hole Admin Dashboard.
+2. Navigate to **Settings** → **DNS**.
+3. Under **Interface listening behavior**, select:
+   > **Listen on all interfaces, permit all origins**
+
+This setting allows Pi-hole to accept DNS queries even if they are redirected from other DNS servers (e.g., `8.8.8.8`, `1.1.1.1`, etc.).
