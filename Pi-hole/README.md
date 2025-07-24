@@ -20,7 +20,7 @@ We wanted Pi-hole to use `192.168.20.2` to serve as the DNS server for All the V
 
 ## 🧪 Temporary IP Fix (Manual Command-Line Change)
 
-1. Manually changed IP address (not via /etc/network or Netplan, but directly):
+Manually changed IP address (not via /etc/network or Netplan, but directly):
    
   -sudo dhcpcd eth0
   -sudo ip addr add 192.168.20.2/24 dev eth0
@@ -31,15 +31,22 @@ We wanted Pi-hole to use `192.168.20.2` to serve as the DNS server for All the V
 ---
 
 # 💾 Make IP Assignment Permanent
+To make the Pi-hole IP assignment persistent after reboot, manually edit the network interface configuration file:
 
-2. Make pihole ip assignment permanent: Edit Pi-hole’s static IP the manual way  Edit 'sudo nano /etc/network/interfaces' (for Debian or older Ubuntu) then enter:
-   -auto eth0
-   -iface eth0 inet static
-   -address 192.168.20.2
-   -netmask 255.255.255.0
-   -gateway 192.168.20.1
+### 📝 Edit the interfaces file:
 
-![Config_Perm_IP](3_Perm_IP.png)
+sudo nano /etc/network/interfaces
+
+![Edit_Int](3_Edit_Int.png)
+
+**✏️ Add the following configuration:**
+     -auto eth0
+     -iface eth0 inet static✏
+     -address 192.168.20.2
+     -netmask 255.255.255.0
+     -gateway 192.168.20.1
+
+![Config_Perm_IP](4_Perm_IP.png)
 
 
 3. Confirm change with 'ip a'
