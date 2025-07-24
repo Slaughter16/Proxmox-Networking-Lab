@@ -41,9 +41,9 @@ To make the Pi-hole IP assignment persistent after reboot, manually edit the net
 ![Edit_Int](3_Edit_Int.png)
 
 ### ✏️ Add the following configuration:**
-**auto eth0**
-**iface eth0 inet static**
 
+-auto eth0
+-iface eth0 inet static
      - address 192.168.20.2
      - netmask 255.255.255.0
      - gateway 192.168.20.1
