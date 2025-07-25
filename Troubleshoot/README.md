@@ -108,4 +108,8 @@ curl https://www.google.com
 
 
 
-###
+## 📌 Notes
+
+- This issue highlights the importance of properly scoping NAT rules when using local DNS services
+
+- Invert Match ensures the DNS server itself is not affected by the redirect loop
