@@ -41,7 +41,7 @@ When **"Invert match"** was **unchecked** in the NAT Port Forward rule:
 
 ## 🧪 Testing Tools
 
-The following commands were used to confirm DNS status from clients:
+The following commands were used in each VMs console to confirm DNS status from clients:
 
 ```bash
 nslookup google.com
@@ -67,5 +67,4 @@ Kali Linux
 ![Kali](6_Troubleshoot_Kali.png)
 
 Security Onion
-
 ![SecO](7_Troubleshoot_Seconion.png)
