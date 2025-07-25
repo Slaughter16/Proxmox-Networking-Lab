@@ -96,6 +96,6 @@ Security Onion
 
 ### 🟢 After Fix (Invert Match applied):
 
-DNS resolution restored on all VLAN clients
+- DNS resolution restored on all VLAN clients
 
-Pi-hole successfully reached upstream servers
+- Pi-hole successfully reached upstream servers
