@@ -22,11 +22,20 @@ Additionally:
 - DNSSEC caused further resolution failures
 
 
-### ✅ Fix:
-1. **Port Forward NAT Rule with Invert Match**
-2. Update Pi-hole upstream DNS settings
-3. Disable DNSSEC
-4. Manually edit `/etc/resolv.conf`
+## ✅ Resolution Steps
+1. **Edit NAT Port Forward Rule in pfSense:**
+   - Add `Invert Match` to source IP field
+   - This prevents Pi-hole’s own DNS queries from being redirected back to itself
+
+2. **Update Pi-hole Settings:**
+   - Set upstream DNS (e.g., Cloudflare `1.1.1.1`, Google `8.8.8.8`)
+   - Disable DNSSEC
+
+3. **Update `/etc/resolv.conf`**
+   ```bash
+   sudo nano /etc/resolv.conf
+   # Change to:
+   nameserver 1.1.1.1
 
 ---
 
@@ -46,7 +55,7 @@ When **"Invert match"** was **unchecked** in the NAT Port Forward rule:
 
 ---
 
-## 🧪 Testing Tools
+## 🧪 DNS Testing Tools (Before vs After Fix)
 
 The following commands were used in each VMs console to confirm DNS status from clients:
 
@@ -55,6 +64,12 @@ nslookup google.com
 dig google.com
 curl https://www.google.com
 ```
+
+### 🔴 Before Fix:
+
+- All tools failed across all client VMs
+- Pi-hole unable to reach upstream DNS
+
 Windows 10 Client
 ![Win10](1_Troubleshoot_Win.png)
 
@@ -77,3 +92,9 @@ Kali Linux
 
 Security Onion
 ![SecO](7_Troubleshoot_Seconion.png)
+
+### 🟢 After Fix (Invert Match applied):
+
+DNS resolution restored on all VLAN clients
+
+Pi-hole successfully reached upstream servers
