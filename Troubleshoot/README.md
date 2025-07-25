@@ -67,6 +67,7 @@ Windows Server 2019
 Metasploitable 2
 ![Meta](4_Troubleshoot_Meta.png)
 
+
 Pihole
 ![Pihole](5_Troubleshoot_Pihole.png)
 
