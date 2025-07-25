@@ -378,7 +378,7 @@ Just change the **Interface** and **Source Address** accordingly:
 - VLAN 30: `192.168.30.0/24`
 ![VLAN30_NAT_PortFwd](45_VLAN30.png)
 ![VLAN30_NAT_PortFwd](46_VLAN30.png)
-![VLAN_NAT_PortFwd](46_VLAN.png)
+![VLAN_NAT_PortFwd](47_VLAN.png)
 ---
 
 ✅ **Result:** All DNS traffic in each VLAN 'should' be intercepted and redirected to Pi-hole (`192.168.20.2`), even if clients try to use external DNS servers (e.g., `8.8.8.8` or `1.1.1.1`).
