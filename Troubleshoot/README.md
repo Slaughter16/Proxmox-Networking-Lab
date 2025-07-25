@@ -98,4 +98,14 @@ curl https://www.google.com
 
 - DNS resolution restored on all VLAN clients
 
-- Pi-hole successfully reached upstream servers
+- Pi-hole successfully reached upstream servers 
+
+8 screenshots of success 
+
+
+
+
+
+
+
+###
