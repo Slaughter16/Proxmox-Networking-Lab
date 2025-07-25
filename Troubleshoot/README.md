@@ -70,28 +70,28 @@ curl https://www.google.com
 - All tools failed across all client VMs
 - Pi-hole unable to reach upstream DNS
 
-Windows 10 Client
+-Windows 10 Client
 ![Win10](1_Troubleshoot_Win.png)
 
-Debian Admin Workstation
+-Debian Admin Workstation
 ![Debian](2_Troubleshoot_Debian.png)
 
-Windows Server 2019
+-Windows Server 2019
 ![WinServer](3_Troubleshoot_WinServer.png)
 
-Metasploitable 2
+-Metasploitable 2
 ![Meta](4_Troubleshoot_Meta.png)
 
 
-Pihole
+-Pihole
 
 ![Pihole](5_Troubleshoot_Pihole.png)
 
 
-Kali Linux
+-Kali Linux
 ![Kali](6_Troubleshoot_Kali.png)
 
-Security Onion
+-Security Onion
 ![SecO](7_Troubleshoot_Seconion.png)
 
 ### 🟢 After Fix (Invert Match applied):
