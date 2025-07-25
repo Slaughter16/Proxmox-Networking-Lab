@@ -47,6 +47,7 @@ The following commands were used to confirm DNS status from clients:
 nslookup google.com
 dig google.com
 curl https://www.google.com
+```
 
 ![Win10](1_Troubleshoot_Win.png)
 
