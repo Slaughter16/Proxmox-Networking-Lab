@@ -47,3 +47,17 @@ The following commands were used to confirm DNS status from clients:
 nslookup google.com
 dig google.com
 curl https://www.google.com
+
+![Win10](1_Troubleshoot_Win.png)
+
+![Debian](2_Troubleshoot_Debian.png)
+
+![WinServer](3_Troubleshoot_WinServer.png)
+
+![Meta](4_Troubleshoot_Meta.png)
+
+![Pihole](5_Troubleshoot_Pihole.png)
+
+![Kali](6_Troubleshoot_Kali.png)
+
+![SecO](7_Troubleshoot_Seconion.png)
