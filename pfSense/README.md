@@ -366,17 +366,18 @@ Options:
    - ✅ Check the box: **Redirect target port**
 
 ![VLAN10_NAT_PortFwd](41_VLAN10.png)
+![VLAN10_NAT_PortFwd](42_VLAN10.png)
 Click **Save** → **Apply Changes**
 
 🔁 **Repeat** for **VLAN 20** and **VLAN 30**  
 Just change the **Interface** and **Source Address** accordingly:
 
 - VLAN 20: `192.168.20.0/24`
-![VLAN20_NAT_PortFwd](42_VLAN20.png)
-
+![VLAN20_NAT_PortFwd](43_VLAN20.png)
+![VLAN20_NAT_PortFwd](44_VLAN20.png)
 - VLAN 30: `192.168.30.0/24`
-![VLAN30_NAT_PortFwd](43_VLAN30.png)
-
+![VLAN30_NAT_PortFwd](45_VLAN30.png)
+![VLAN30_NAT_PortFwd](46_VLAN30.png)
 ---
 
 ✅ **Result:** All DNS traffic in each VLAN 'should' be intercepted and redirected to Pi-hole (`192.168.20.2`), even if clients try to use external DNS servers (e.g., `8.8.8.8` or `1.1.1.1`).
