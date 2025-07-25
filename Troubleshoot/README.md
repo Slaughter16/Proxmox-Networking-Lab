@@ -1,19 +1,26 @@
 # 🛠️ Troubleshooting DNS and Pi-hole Issues
 
-## ❌ Problem: DNS Resolution Fails on Clients and Pi-hole
+## ❌ Problem: Client devices and Pi-hole itself were unable to resolve domain names.
 
 ### Symptoms:
-- `nslookup` fails with timeout
-- `dig` to 8.8.8.8 fails
-- `curl` returns "Could not resolve host"
+- `nslookup` and `dig` commands failed with timeouts
+- `curl` returned “Could not resolve host”
+- Pi-hole showed upstream DNS and NTP errors
+- DHCP was functional, but no name resolution
 
 - Pi-hole dashboard shows errors about NTP and upstream DNS
 - Clients appear to get IP via DHCP, but no hostname resolution
 
-### Root Cause:
-- Pi-hole was being redirected by its **own NAT rule** in pfSense
-- No valid upstream DNS or DNSSEC issues
-- /etc/resolv.conf incorrectly pointed to itself (127.0.0.1)
+## 🧠 Root Cause:
+
+The **pfSense NAT Port Forward rule** redirected all DNS traffic (port 53) to Pi-hole — including traffic **originating from Pi-hole itself**.
+
+Since the rule did **not exclude Pi-hole's own IP (`192.168.20.2`)**, the DNS resolver looped back and failed to reach any upstream servers (e.g., `8.8.8.8`).
+
+Additionally:
+- `/etc/resolv.conf` on Pi-hole pointed to `127.0.0.1`
+- DNSSEC caused further resolution failures
+
 
 ### ✅ Fix:
 1. **Port Forward NAT Rule with Invert Match**
