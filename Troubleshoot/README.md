@@ -84,9 +84,8 @@ Metasploitable 2
 
 
 Pihole
+
 ![Pihole](5_Troubleshoot_Pihole.png)
-
-
 
 
 Kali Linux
