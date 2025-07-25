@@ -375,7 +375,7 @@ Just change the **Interface** and **Source Address** accordingly:
 ![VLAN20_NAT_PortFwd](42_VLAN20.png)
 
 - VLAN 30: `192.168.30.0/24`
-![VLAN30_NAT_PortFwd](43_VLAN10.png)
+![VLAN30_NAT_PortFwd](43_VLAN30.png)
 
 ---
 
