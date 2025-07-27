@@ -26,7 +26,9 @@ Additionally:
 1. **Edit NAT Port Forward Rule in pfSense:**
    - Add `Invert Match` to source IP field for each VLAN (10,20,30)
    - This prevents Pi-hole’s own DNS queries from being redirected back to itself
- VLAN10
+---
+
+VLAN10
 ![VLAN10](8_Troubleshoot_VLAN10_PortForward.png)
 VLAN20
 ![VLAN20](9_Troubleshoot_VLAN20_PortForward.png)
