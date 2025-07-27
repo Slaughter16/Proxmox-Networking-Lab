@@ -45,11 +45,12 @@ Additionally:
 
 ![DisableDNSSEC](12_Disable_DNSSEC.png)
 
-2. **Update `/etc/resolv.conf`**
+3. **Update `/etc/resolv.conf`**
    ```bash
    sudo nano /etc/resolv.conf
    # Change to:
    nameserver 1.1.1.1
+   nameserver 8.8.8.8
 
 ![Sudo](13_Update.png)
 ![Pihole_DNS](14_nameserver.png)
