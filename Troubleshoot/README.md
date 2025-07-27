@@ -24,8 +24,12 @@ Additionally:
 
 ## ✅ Resolution Steps
 1. **Edit NAT Port Forward Rule in pfSense:**
-   - Add `Invert Match` to source IP field
+   - Add `Invert Match` to source IP field for each VLAN (10,20,30)
    - This prevents Pi-hole’s own DNS queries from being redirected back to itself
+
+![VLAN10](8_Troubleshoot_VLAN10_PortForward.png)
+![VLAN20](9_Troubleshoot_VLAN20_PortForward.png)
+![VLAN30](10_Troubleshoot_VLAN30_PortForward.png)
 
 2. **Update Pi-hole Settings:**
    - Set upstream DNS (e.g., Cloudflare `1.1.1.1`, Google `8.8.8.8`)
