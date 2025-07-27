@@ -41,7 +41,7 @@ Additionally:
 ![Pihole_Settings](15_Pihole_Settings.png)
 ![Pihole_DNS](11_DNS_Upstream.png)
 
-   - Disable DNSSEC
+   - 'Uncheck' to Disable DNSSEC
 
 ![DisableDNSSEC](12_Disable_DNSSEC.png)
 
