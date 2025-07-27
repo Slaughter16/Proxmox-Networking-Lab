@@ -51,6 +51,9 @@ Additionally:
    # Change to:
    nameserver 1.1.1.1
    nameserver 8.8.8.8
+   Press CTRL + O to save the file ("Write Out")
+   Press Enter to confirm the filename
+   Press CTRL + X to exit nano
 
 ![Sudo](13_Update.png)
 ![Pihole_DNS](14_nameserver.png)
