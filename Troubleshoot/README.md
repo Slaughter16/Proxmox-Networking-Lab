@@ -37,13 +37,21 @@ VLAN30
 
 2. **Update Pi-hole Settings:**
    - Set upstream DNS (e.g., Cloudflare `1.1.1.1`, Google `8.8.8.8`)
+
+![Pihole_DNS](11_DNS_Upstream.png)
+
    - Disable DNSSEC
 
-3. **Update `/etc/resolv.conf`**
+![DisableDNSSEC](12_Disable_DNSSEC.png)
+
+2. **Update `/etc/resolv.conf`**
    ```bash
    sudo nano /etc/resolv.conf
    # Change to:
    nameserver 1.1.1.1
+
+![Sudo](13_Update.png)
+![Pihole_DNS](14_nameserver.png)
 
 ---
 
