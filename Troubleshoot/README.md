@@ -38,6 +38,7 @@ VLAN30
 2. **Update Pi-hole Settings:**
    - Set upstream DNS (e.g., Cloudflare `1.1.1.1`, Google `8.8.8.8`)
 
+![Pihole_Settings](15_Pihole_Settings.png)
 ![Pihole_DNS](11_DNS_Upstream.png)
 
    - Disable DNSSEC
