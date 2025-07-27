@@ -28,11 +28,11 @@ Additionally:
    - This prevents Pi-hole’s own DNS queries from being redirected back to itself
 ---
 
--VLAN10
+- VLAN10
 ![VLAN10](8_Troubleshoot_VLAN10_PortForward.png)
--VLAN20
+- VLAN20
 ![VLAN20](9_Troubleshoot_VLAN20_PortForward.png)
--VLAN30
+- VLAN30
 ![VLAN30](10_Troubleshoot_VLAN30_PortForward.png)
 
 2. **Update Pi-hole Settings:**
