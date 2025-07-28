@@ -1,46 +1,64 @@
-# Windows 10 Client Verification
+# 💻 Windows 10 Client (VLAN 30)
 
-This folder contains verification steps and screenshots confirming the Windows 10 Client's proper network configuration and connectivity within the lab environment.
+## 🔧 Network Configuration
 
-## 1. Enable DHCP
-
-To enable dynamic IP assignment via DHCP:
-
-1. Open **Control Panel** → **Network and Internet** → **Network and Sharing Center**.
-2. Click **Change adapter settings**.
-3. Right-click the Ethernet adapter → **Properties**.
-4. Select **Internet Protocol Version 4 (TCP/IPv4)** → click **Properties**.
-5. Choose:
-   - **Obtain an IP address automatically**
-   - **Obtain DNS server address automatically**
-6. Click **OK** and close all dialog boxes.
+- **VLAN**: 30  
+- **IP Address**: 192.168.30.100 (via DHCP)  
+- **DHCP Enabled**: Yes  
+- **Default Gateway**: 192.168.30.1  
+- **DNS Server**: 192.168.20.2 (Pi-hole)
 
 ---
 
-## 2. Enable ICMP Ping Response
+## ✅ Steps to Enable DHCP
 
-By default, Windows 10 blocks incoming ICMP (ping) requests. To allow the system to be pinged:
-
-1. Open **Windows Defender Firewall with Advanced Security**.
-2. Go to **Inbound Rules**.
-3. Enable **File and Printer Sharing (Echo Request - ICMPv4-In)**.
-4. Right-click → **Properties**.
-5. Under the **Advanced** tab, make sure the rule applies to **Domain**, **Private**, and **Public** profiles.
-6. Click **Apply** and **OK**.
-
----
-
-## 3. Network Details
-
-| Detail              | Value               |
-|---------------------|---------------------|
-| VLAN                | VLAN 10             |
-| Assigned IP Address | 192.168.10.100      |
-| Gateway             | 192.168.10.1        |
-| DNS Server          | 192.168.20.2        |
+1. Open **Control Panel**  
+2. Navigate to **Network and Internet** → **Network and Sharing Center**  
+3. Click on **Change adapter settings**  
+4. Right-click the **Ethernet adapter** and select **Properties**  
+5. Select **Internet Protocol Version 4 (TCP/IPv4)** → Click **Properties**  
+6. Choose:
+   - `Obtain an IP address automatically`
+   - `Obtain DNS server address automatically`
+7. Click **OK** and close all dialog boxes.
 
 ---
 
-## 4. Command Verifications
+## 🔓 Enable ICMP Echo Requests (For Pinging)
+
+To allow this client to **be pinged by others**:
+
+1. Open **Windows Defender Firewall with Advanced Security**  
+2. Go to **Inbound Rules**  
+3. Enable the following rule:
+   - `File and Printer Sharing (Echo Request - ICMPv4-In)`
+4. Apply the rule to:
+   - `Domain`, `Private`, and `Public` profiles  
+   - Under the **Advanced** tab
+
+---
+
+## 🔍 Network Verification
+
+| Test                        | Command                          | Expected Output                        |
+|-----------------------------|----------------------------------|----------------------------------------|
+| IP Configuration            | `ipconfig`                       | Shows IP: `192.168.30.100`             |
+| Ping Gateway                | `ping 192.168.30.1`              | Successful replies                     |
+| Ping DNS (Pi-hole)         | `ping 192.168.20.2`              | Successful replies                     |
+| Ping Windows Server         | `ping 192.168.20.102`            | Successful replies if firewall allows  |
+| DNS Resolution Test        | `nslookup google.com`            | Should resolve via Pi-hole             |
+| Routing Table              | `route print`                    | Shows routes for VLAN 30 subnet        |
+
+---
+
+## 📸 Suggested Screenshot Checklist
+
+- `ipconfig` output  
+- Ping tests to gateway and DNS  
+- Ping test to Windows Server (`192.168.20.102`)  
+- Successful `nslookup`  
+- Firewall rule enabled in "Inbound Rules"  
+- Adapter settings showing DHCP enabled  
+
 
 ### `ipconfig`
