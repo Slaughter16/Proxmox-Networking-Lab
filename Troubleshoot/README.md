@@ -155,6 +155,7 @@ curl https://www.google.com
 
 - Security Onion (Fixed)
 ![SecOnion](22_Troubleshoot_Success_Seconion.png)
+![SecOnion](23_Troubleshoot_Success_Seconion.png)
 
 
 ## 📌 Notes
