@@ -91,6 +91,8 @@ curl https://www.google.com
 - All tools failed across all client VMs
 - Pi-hole unable to reach upstream DNS
 
+---
+
 - Windows 10 Client
 ![Win10](1_Troubleshoot_Win.png)
 
