@@ -12,15 +12,31 @@
 
 ## ✅ Steps to Enable DHCP
 
-1. Open **Control Panel**  
-2. Navigate to **Network and Internet** → **Network and Sharing Center**  
-3. Click on **Change adapter settings**  
-4. Right-click the **Ethernet adapter** and select **Properties**  
-5. Select **Internet Protocol Version 4 (TCP/IPv4)** → Click **Properties**  
+1. Open **Control Panel**
+
+![DHCP](1_ControlPanel.png)
+
+2. Navigate to **Network and Internet** → **Network and Sharing Center**
+
+![DHCP](2_Network/Internet.png)
+
+3. Click on **Change adapter settings**
+
+![DHCP](3_Adapter.png)
+
+4. Right-click the **Ethernet adapter** and select **Properties**
+
+![DHCP](4_Properties.png)
+
+5. Select **Internet Protocol Version 4 (TCP/IPv4)** → Click **Properties**
+
+![DHCP](5_IPv4.png)
 6. Choose:
    - `Obtain an IP address automatically`
    - `Obtain DNS server address automatically`
-7. Click **OK** and close all dialog boxes.
+   - Click **OK** and close all dialog boxes.
+
+![DHCP](6_DHCP.png)
 
 ---
 
