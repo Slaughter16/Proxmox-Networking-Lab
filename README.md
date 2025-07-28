@@ -15,54 +15,18 @@ This project documents the setup of a virtualized home lab using **Proxmox**, **
 
 ---
 
-## ✅ Setup Phases
+## VM Documentation
 
-# Proxmox VLAN Bridge Configuration
+- [pfSense](./pfsense/README.md)
+- [Pi-hole](./pihole/README.md)
+- [Troubleshooting](./troubleshoot/README.md)
+- [Windows 10 Client](./win10-client/README.md)
+- [Windows Server 2019](./winserver-2019/README.md)
+- [Kali Linux](./kali-linux/README.md)
+- [Meta (CentOS)](./meta/README.md)
+- [Debian Admin Station](./debian-admin/README.md)
+- [Security Onion](./security-onion/README.md)
 
-## Enabling VLAN Aware Bridge
+## Network Overview
 
-### Screenshot
-
-![VLAN Aware Bridge Screenshot](https://yourimageurl.com/image1.png)
-
-### Description
-
-1. Navigated to `Datacenter > [YourNodeName] > System > Network`
-2. Selected `vmbr1` (the virtual bridge used for VM communication)
-3. Checked ✅ the **"VLAN aware"** box
-4. Clicked Save
-5. Applied changes to enable VLAN tagging support on this bridge
-
-### 1. pfSense Initial Setup
-- Created VLAN interfaces
-- Assigned VLANs: 10, 20, 30
-- Configured interfaces with static IPs
-- [View Screenshots](images/pfSenseSetup/README.md)
-
-### 2. DHCP & Firewall Rules
-- Enabled DHCP for each VLAN
-- Applied "allow all" firewall rules for testing
-- Verified IP assignments
-
-### 3. Windows Connectivity Fixes
-- Enabled ICMP Echo Request (ping) on Win Client and Server
-- Fixed Windows Firewall advanced settings
-- [See VLAN10 Screenshots](images/VLAN10/README.md)
-
-### 4. DNS Configuration
-- Configured DNS Forwarder in pfSense
-- Fixed DNS resolution via Pi-hole
-- Verified via ping and nslookup
-- [See DNS Fixes](images/DNSFixes/README.md)
-
-### 5. Ping Tests and Troubleshooting
-- Used pfSense Diagnostics → Ping
-- Kali and Meta tested connectivity to all VLANs
-- Resolved ICMP issues with firewall profiles
-
----
-
-## 🧠 Notes
-
-- All tests were done with **ICMP**, **DHCP**, and **DNS**
-- Screenshots have detailed file and rule views
+Include a visual map or VLAN table here if you want.
