@@ -93,31 +93,31 @@ curl https://www.google.com
 
 ---
 
-- Windows 10 Client
+- Windows 10 Client (timeout)
 ![Win10](1_Troubleshoot_Win.png)
 
-- Debian Admin Workstation
+- Debian Admin Workstation (timeout)
 ![Debian](2_Troubleshoot_Debian.png)
 
 
-- Windows Server 2019
+- Windows Server 2019 (timeout)
 ![WinServer](3_Troubleshoot_WinServer.png)
 
 
-- Metasploitable 2
+- Metasploitable 2 (timeout)
 ![Meta](4_Troubleshoot_Meta.png)
 
 
-- Pihole
+- Pihole (timeout)
 
 ![Pihole](5_Troubleshoot_Pihole.png)
 
 
-- Kali Linux
+- Kali Linux (timeout)
 ![Kali](6_Troubleshoot_Kali.png)
 
 
-- Security Onion
+- Security Onion (timeout)
 ![SecO](7_Troubleshoot_Seconion.png)
 
 
