@@ -20,7 +20,7 @@ This project documents the setup of a virtualized home lab using Proxmox, pfSens
 - [pfSense](./pfSense/README.md) - VLAN routing, DHCP, and firewall rules
 - [Pi-hole](./Pi-hole/README.md) - Network-wide ad blocker and DNS sinkhole
 - [Troubleshooting](./Troubleshoot/README.md) - Troubleshooting DNS issues
-- [Windows 10 Client](./Win10_Client/README.md) - End-user workstation for testing
+- [Win10 Client](./Win10_Client/README.md) - End-user workstation for testing
 - [Windows Server 2019](./WinServer2019/README.md) - Domain controller and file server
 - [Kali Linux](./Kali_Linux/README.md) - Offensive security tools
 - [Meta (CentOS)](./Meta/README.md) - Vulernable target server 
