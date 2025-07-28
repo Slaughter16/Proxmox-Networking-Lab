@@ -141,6 +141,7 @@ curl https://www.google.com
 - Error `(77)` is due to missing CA certificates on the VM, not a network issue.
 - Therefore, network fix is confirmed to be working.
 
+![Meta](23_Troubleshoot_Success_Meta.png)
 ![Meta](19_Troubleshoot_Success_Meta.png)
 
 - Pihole (Fixed)
