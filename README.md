@@ -19,14 +19,14 @@ This project documents the setup of a virtualized home lab using **Proxmox**, **
 
 - [Proxmox](./Proxmox/README.md)
 - [pfSense](./pfSense/README.md)
-- [Pi-hole](./pihole/README.md)
-- [Troubleshooting](./troubleshoot/README.md)
-- [Windows 10 Client](./win10-client/README.md)
-- [Windows Server 2019](./winserver-2019/README.md)
-- [Kali Linux](./kali-linux/README.md)
-- [Meta (CentOS)](./meta/README.md)
-- [Debian Admin Station](./debian-admin/README.md)
-- [Security Onion](./security-onion/README.md)
+- [Pi-hole](./Pi-hole/README.md)
+- [Troubleshooting](./Troubleshoot/README.md)
+- [Windows 10 Client](./Win10_Client/README.md)
+- [Windows Server 2019](./WinServer2019/README.md)
+- [Kali Linux](./Kali_Linux/README.md)
+- [Meta (CentOS)](./Meta/README.md)
+- [Debian Admin Station](./Debian_Admin/README.md)
+- [Security Onion](./SecurityOnion/README.md)
 
 ## Network Overview
 
