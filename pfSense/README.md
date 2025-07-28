@@ -382,3 +382,21 @@ Just change the **Interface** and **Source Address** accordingly:
 ---
 
 ✅ **Result:** All DNS traffic in each VLAN 'should' be intercepted and redirected to Pi-hole (`192.168.20.2`), even if clients try to use external DNS servers (e.g., `8.8.8.8` or `1.1.1.1`).
+
+---
+
+## Verify DHCP Leases
+
+The table below shows the DHCP lease assignments for each virtual machine, along with their associated VLANs and IP addresses as configured in pfSense:
+
+| VM Name             | VLAN   | IP Address       |
+|---------------------|--------|------------------|
+| Win10 Client        | VLAN 10| 192.168.10.100   |
+| Debian Admin Station| VLAN 10| 192.168.10.101   |
+| Pihole              | VLAN 20| 192.168.20.2     |
+| WinServer           | VLAN 20| 192.168.20.102   |
+| Meta                | VLAN 20| 192.168.20.101   |
+| Kali Linux          | VLAN 30| 192.168.30.100   |
+| Security Onion      | VLAN 30| 192.168.30.101   |
+
+![DHCP_Leases](48_DHCP_Leases.png)
