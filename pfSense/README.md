@@ -393,7 +393,6 @@ The table below shows the DHCP lease assignments for each virtual machine, along
 |---------------------|--------|------------------|
 | Win10 Client        | VLAN 10| 192.168.10.100   |
 | Debian Admin Station| VLAN 10| 192.168.10.101   |
-| Pihole              | VLAN 20| 192.168.20.2     |
 | WinServer           | VLAN 20| 192.168.20.102   |
 | Meta                | VLAN 20| 192.168.20.101   |
 | Kali Linux          | VLAN 30| 192.168.30.100   |
