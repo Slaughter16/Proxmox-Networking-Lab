@@ -17,7 +17,7 @@ This project documents the setup of a virtualized home lab using **Proxmox**, **
 
 ## VM Documentation
 
-- [pfSense](./pfsense/README.md)
+- [pfSense](/pfsense/README.md)
 - [Pi-hole](./pihole/README.md)
 - [Troubleshooting](./troubleshoot/README.md)
 - [Windows 10 Client](./win10-client/README.md)
