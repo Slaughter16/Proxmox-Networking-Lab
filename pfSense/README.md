@@ -335,7 +335,7 @@ Only do this **if you want ALL DNS to go through Pi-hole**, and not be handled b
 
 ---
 
-🔁 4: Set Up DNS Redirection to Pi-hole (`192.168.20.2`)
+# ✅ Step 9: Set Up DNS Redirection to Pi-hole (`192.168.20.2`)
 
 We'll do this per VLAN using **Firewall ➝ NAT ➝ Port Forward**.
 
