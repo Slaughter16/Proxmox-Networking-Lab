@@ -122,6 +122,30 @@ curl https://www.google.com
 
 - Pi-hole successfully reached upstream servers 
 
+---
+
+![Win10](16_Troubleshoot_Success_Win.png)
+
+
+![Debian](17_Troubleshoot_Success_Debian.png)
+
+![WinServer](18_Troubleshoot_Success_WinServer.png)
+
+### curl https://google.com – Output Meta 
+
+- `curl` resolves the domain successfully, confirming DNS and outbound HTTPS connectivity.
+- Error `(77)` is due to missing CA certificates on the VM, not a network issue.
+- Therefore, network fix is confirmed to be working.
+
+![Meta](19_Troubleshoot_Success_Meta.png)
+
+![Pihole](20_Troubleshoot_Success_Pihole.png)
+
+![Kali](21_Troubleshoot_Success_Kali.png)
+
+![SecOnion](22_Troubleshoot_Success_Seconion.png)
+
+
 8 screenshots of success 
 
 
