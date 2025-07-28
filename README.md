@@ -22,7 +22,7 @@ This project documents the setup of a virtualized home lab using Proxmox, pfSens
 - [Troubleshooting](./Troubleshoot/README.md) - Troubleshooting DNS issues
 - [Win10 Client](./Win10_Client/README.md) - End-user workstation for testing
 - [Windows Server 2019](./WinServer2019/README.md) - Domain controller and file server
-- [Kali Linux](./Kali Linux/README.md) - Offensive security tools
+- [Kali Linux](./Kali_Linux/README.md) - Offensive security tools
 - [Meta (CentOS)](./Meta/README.md) - Vulernable target server 
 - [Debian Admin Station](./Debian_Admin/README.md) - Admin management workstation
 - [Security Onion](./SecurityOnion/README.md) -  Network monitoring and intrusion detection
