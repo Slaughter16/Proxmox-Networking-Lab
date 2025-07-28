@@ -125,35 +125,32 @@ curl https://www.google.com
 - Pi-hole successfully reached upstream servers 
 
 ---
-
+- Windows 10 Client (Fixed)
 ![Win10](16_Troubleshoot_Success_Win.png)
 
-
+- Debian Admin Workstation (Fixed)
 ![Debian](17_Troubleshoot_Success_Debian.png)
 
+- Windows Server 2019 (Fixed)
 ![WinServer](18_Troubleshoot_Success_WinServer.png)
 
-### curl https://google.com – Output Meta 
+### curl https://google.com – Output 
 
+- Metasploitable 2 (Fixed)
 - `curl` resolves the domain successfully, confirming DNS and outbound HTTPS connectivity.
 - Error `(77)` is due to missing CA certificates on the VM, not a network issue.
 - Therefore, network fix is confirmed to be working.
 
 ![Meta](19_Troubleshoot_Success_Meta.png)
 
+- Pihole (Fixed)
 ![Pihole](20_Troubleshoot_Success_Pihole.png)
 
+- Kali Linux (Fixed)
 ![Kali](21_Troubleshoot_Success_Kali.png)
 
+- Security Onion (Fixed)
 ![SecOnion](22_Troubleshoot_Success_Seconion.png)
-
-
-8 screenshots of success 
-
-
-
-
-
 
 
 ## 📌 Notes
