@@ -99,24 +99,26 @@ curl https://www.google.com
 - Debian Admin Workstation
 ![Debian](2_Troubleshoot_Debian.png)
 
+
 - Windows Server 2019
 ![WinServer](3_Troubleshoot_WinServer.png)
 
-- Metasploitable 2
 
+- Metasploitable 2
 ![Meta](4_Troubleshoot_Meta.png)
 
 
 - Pihole
-
 ![Pihole](5_Troubleshoot_Pihole.png)
 
 
 - Kali Linux
 ![Kali](6_Troubleshoot_Kali.png)
 
+
 - Security Onion
 ![SecO](7_Troubleshoot_Seconion.png)
+
 
 ### 🟢 After Fix (Invert Match applied):
 
