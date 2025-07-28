@@ -385,7 +385,7 @@ Just change the **Interface** and **Source Address** accordingly:
 
 ---
 
-## Verify DHCP Leases
+# Step 10: Verify DHCP Leases
 
 The table below shows the DHCP lease assignments for each virtual machine, along with their associated VLANs and IP addresses as configured in pfSense:
 
