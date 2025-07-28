@@ -5,19 +5,19 @@ This project documents the setup of a virtualized home lab using Proxmox, pfSens
 ---
 
 🧱 Lab Topology
-Proxmox VE Host
-Running multiple VMs and LXC containers with vmbr0 (LAN) and vmbr1 (WAN) Linux bridges.
+- Proxmox VE Host
+Running multiple VMs and LXC containers with vmbr0 (WAN) and vmbr1 (LAN) Linux bridges.
 
-pfSense (Firewall/Router)
+- pfSense (Firewall/Router)
 Core of the lab's network segmentation and routing.
 
-VLAN10 - Clients
+- VLAN10 - Clients
 Hosts user machines like Windows 10 and Debian Admin.
 
-VLAN20 - Server
+- VLAN20 - Server
 Dedicated to infrastructure services and vulnerable machines.
 
-VLAN30 - Security
+- VLAN30 - Security
 Isolated for security monitoring and penetration testing.
 
 
