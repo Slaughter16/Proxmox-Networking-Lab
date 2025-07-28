@@ -40,3 +40,11 @@ This project documents the setup of a virtualized home lab using **Proxmox**, **
 
 
 Include a visual map or VLAN table here if you want.
+
+
+## 🔧 Key Features
+
+- Simulated enterprise-grade VLAN segmentation
+- DNS interception and redirection via Pi-hole
+- Firewall rule testing using pfSense
+- Troubleshoot DNS problems / Windows & Linux Configurations
