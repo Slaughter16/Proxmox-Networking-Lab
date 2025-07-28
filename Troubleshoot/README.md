@@ -109,6 +109,7 @@ curl https://www.google.com
 
 
 - Pihole
+
 ![Pihole](5_Troubleshoot_Pihole.png)
 
 
