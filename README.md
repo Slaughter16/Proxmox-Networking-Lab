@@ -30,4 +30,11 @@ This project documents the setup of a virtualized home lab using **Proxmox**, **
 
 ## Network Overview
 
+## 📶 VLAN Configuration
+
+| **VLAN ID** | **Name / Purpose** | **Subnet**        | **Assigned VMs and IP Addresses**                                       |
+|------------:|--------------------|-------------------|-------------------------------------------------------------------------|
+| 10          | **Client**         | 192.168.10.0/24   | 🖥️ Windows 10 Client – `192.168.10.100`  <br> 🧑‍💼 Debian Admin Station – `192.168.10.X` *(fill in IP)* |
+| 20          | **Server**         | 192.168.20.0/24   | 🗂️ Windows Server 2019 – `192.168.20.102`  <br> 💻 Meta VM – `192.168.20.101` <br> 🍍 Pi-hole – `192.168.20.2` |
+| 30          | **Security**       | 192.168.30.0/24   | 🛡️ Kali Linux – `192.168.30.100`  <br> 📡 Security Onion – `192.168.30.X` *(fill in IP)* |
 Include a visual map or VLAN table here if you want.
