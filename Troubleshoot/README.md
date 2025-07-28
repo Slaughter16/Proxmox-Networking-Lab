@@ -154,6 +154,7 @@ curl https://www.google.com
 ![Kali](21_Troubleshoot_Success_Kali.png)
 
 - Security Onion (Fixed)
+
 ![SecOnion](22_Troubleshoot_Success_Seconion.png)
 ![SecOnion](23_Troubleshoot_Success_Seconion.png)
 
