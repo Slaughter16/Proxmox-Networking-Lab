@@ -101,6 +101,7 @@ curl https://www.google.com
 ![WinServer](3_Troubleshoot_WinServer.png)
 
 - Metasploitable 2
+
 ![Meta](4_Troubleshoot_Meta.png)
 
 
