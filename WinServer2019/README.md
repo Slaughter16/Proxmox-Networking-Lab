@@ -44,14 +44,19 @@
 
 To ensure the server can be pinged by other machines:
 
-1. Open **Windows Defender Firewall with Advanced Security**  
-2. Go to **Inbound Rules**  
-3. Enable the following rule:
+1. Open **Windows Defender Firewall with Advanced Security**
+
+![ICMP](7_Firewall.png)
+![ICMP](8_Firewall.png)
+3. Go to **Inbound Rules**  
+![ICMP](9_Rules.png)
+4. Enable the following rule:
    - `File and Printer Sharing (Echo Request - ICMPv4-In)`
-4. Apply the rule to:
+![ICMP](10_Rules.png)
+5. Apply the rule to:
    - `Domain`, `Private`, and `Public` profiles
    - Under the **Advanced** tab
-
+![ICMP](11_Profile.png)
 ---
 
 ## 🔍 Network Verification
