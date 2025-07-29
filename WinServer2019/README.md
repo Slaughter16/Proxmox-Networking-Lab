@@ -16,7 +16,7 @@
 
 ![DHCP](1_ControlPanel.png)
 
-2. Navigate to **Network and Internet** → **Network Status and Stats**
+2. Navigate to **Network and Internet** → **Network Status and Tasks**
 
 ![DHCP](2_Network_Internet.png)
 
