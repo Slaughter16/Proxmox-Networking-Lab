@@ -18,23 +18,23 @@
 
 2. Navigate to **Network and Internet** → **Network Status and Tasks**
 
-![DHCP](2_Network/Internet.png)
+![DHCP](2_Network.png)
 
 3. Click on **Change adapter settings**
 
-![DHCP](3_Adapter.png)
+![DHCP](3_Adapt.png)
 
 4. Right-click the **Ethernet adapter** and select **Properties**
-![DHCP](4_Properties.png)
+![DHCP](4_Prop.png)
 
 5. Select **Internet Protocol Version 4 (TCP/IPv4)** → Click **Properties**
-![DHCP](5_IPv4.png)
+![DHCP](5_IP.png)
    
 6. Choose:
    - `Obtain an IP address automatically`
    - `Obtain DNS server address automatically`
    - Click **OK** and close all dialog boxes.
-![DHCP](6_DHCP.png)
+![DHCP](6_DHCPc.png)
 
 ---
 
