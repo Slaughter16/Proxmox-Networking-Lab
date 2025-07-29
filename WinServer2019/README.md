@@ -18,7 +18,7 @@
 
 2. Navigate to **Network and Internet** → **Network and Sharing Center**
 
-![DHCP](2_Network/Internet.png)
+![DHCP](2_Network_Internet.png)
 
 3. Click on **Change adapter settings**
 
