@@ -84,4 +84,4 @@ To allow this client to **be pinged by others**:
  ![WinServer](16_Success.png)
 
 - 'route print' output verify sends traffic to other networks 0.0.0.0 (eg: Internet) and specific router for local VLAN 192.168.30.0 On-link: means it knows to use ARP on that subnet.
- ![WinServer](c)
+ ![WinServer](17_Route.png)
