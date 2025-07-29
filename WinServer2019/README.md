@@ -77,7 +77,7 @@ To ensure the server can be pinged by other machines:
 
 ## 📸 Suggested Screenshot Checklist
 
-- `ipconfig` output  
+- `ipconfig , ping 192.168.20.1 , ping 192.168.20.2' output
 - Ping tests to gateway and DNS  
 - Ping to another VM  
 - Successful `nslookup`  
