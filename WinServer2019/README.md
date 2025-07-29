@@ -53,6 +53,7 @@ To ensure the server can be pinged by other machines:
 4. Enable the following rule:
    - `File and Printer Sharing (Echo Request - ICMPv4-In)`
 ![ICMP](10_Rules.png)
+![ICMP](11_Rules.png)
 5. Apply the rule to:
    - `Domain`, `Private`, and `Public` profiles
    - Under the **Advanced** tab
