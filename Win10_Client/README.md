@@ -66,7 +66,7 @@ To allow this client to **be pinged by others**:
 
 | Test                        | Command                          | Expected Output                        |
 |-----------------------------|----------------------------------|----------------------------------------|
-| IP Configuration            | `ipconfig`                       | Shows IP: `192.168.30.100`             |
+| IP Configuration            | `ipconfig /all`                       | Shows IP: `192.168.30.100`             |
 | Ping Gateway                | `ping 192.168.30.1`              | Successful replies                     |
 | Ping DNS (Pi-hole)         | `ping 192.168.20.2`              | Successful replies                     |
 | Ping Windows Server         | `ping 192.168.20.102`            | Successful replies if firewall allows  |
@@ -77,12 +77,11 @@ To allow this client to **be pinged by others**:
 
 ## 📸 Suggested Screenshot Checklist
 
-- `ipconfig` output  
-- Ping tests to gateway and DNS  
-- Ping test to Windows Server (`192.168.20.102`)  
-- Successful `nslookup`  
-- Firewall rule enabled in "Inbound Rules"  
-- Adapter settings showing DHCP enabled  
+- `ipconfig /all , ping tests to gateway (192.168.30.1) , ping to DNS (192.168.20.2)' output
+![WinServer](15_DNS.png)
 
+- 'Ping to DNS (192.168.20.2) , ping to another VM (Kali: 192.168.20.102) and Successful `nslookup`'   
+ ![WinServer](16_Success.png)
 
-### `ipconfig`
+- 'route print' output verify sends traffic to other networks 0.0.0.0 (eg: Internet) and specific router for local VLAN 192.168.30.0 On-link: means it knows to use ARP on that subnet.
+ ![WinServer](c)
