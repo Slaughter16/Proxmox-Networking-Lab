@@ -77,10 +77,14 @@ To ensure the server can be pinged by other machines:
 
 ## 📸 Suggested Screenshot Checklist
 
-- `ipconfig , ping 192.168.20.1 , ping 192.168.20.2' output
-- Ping tests to gateway and DNS  
-- Ping to another VM  
-- Successful `nslookup`  
-- Firewall rule enabled in "Inbound Rules"  
-- Adapter settings showing DHCP enabled  
+- `ipconfig /all , ping tests to gateway (192.168.20.1) , ping to DNS (192.168.20.2)' output
+![WinServer](15_Ping.png)
+
+- 'Ping to DNS (192.168.20.2) , ping to another VM (Kali: 192.168.30.100) and Successful `nslookup`'   
+ ![WinServer](16_Ping.png)
+
+- 'route print' output verify sends traffic to other networks 0.0.0.0 (eg: Internet) and specific router for local VLAN 192.168.20.0 On-link: means it knows to use ARP on that subnet.
+ ![WinServer](17_Ping.png)
+
+ 
 
