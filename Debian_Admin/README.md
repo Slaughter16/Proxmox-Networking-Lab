@@ -25,6 +25,11 @@
 
 ## 📸 Suggested Screenshot Checklist
 
-- `ip a` and `ip r` output  
-- `ping` to gateway, DNS, and Kali  
+- `ip a` and `ip r` output
+![IP](1_IP.png)
+
+- `ping` to gateway, DNS, and Kali
+![Ping](2_Ping.png)
+  
 - `dig` or `nslookup` results  
+![Dig](3_dig_nslookup.png)
