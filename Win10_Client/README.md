@@ -14,7 +14,7 @@
 
 1. Open **Control Panel**
 
-![DHCP](1_ControlPanel.png)
+![DHCP](1_Control.png)
 
 2. Navigate to **Network and Internet** → **Network Status and Tasks**
 
