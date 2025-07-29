@@ -25,6 +25,8 @@
 
 ## 📸 Suggested Screenshot Checklist
 
-- `ip a` and `ip route` output  
-- `ping` to gateway, DNS, and Meta  
+- `ip a` and `ip route` output
+
+- `ping` to gateway, DNS, and Meta
+
 - `nslookup` showing DNS resolution  
