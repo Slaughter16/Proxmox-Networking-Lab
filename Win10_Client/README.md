@@ -16,7 +16,7 @@
 
 ![DHCP](1_ControlPanel.png)
 
-2. Navigate to **Network and Internet** → **Network and Sharing Center**
+2. Navigate to **Network and Internet** → **Network Status and Tasks**
 
 ![DHCP](2_Network/Internet.png)
 
@@ -42,14 +42,24 @@
 
 To allow this client to **be pinged by others**:
 
-1. Open **Windows Defender Firewall with Advanced Security**  
-2. Go to **Inbound Rules**  
-3. Enable the following rule:
+1. Open **Windows Defender Firewall with Advanced Security**
+![ICMP](7_Firewall.png)
+![ICMP](8_Firewall.png)
+
+3. Go to **Inbound Rules**
+![ICMP](9_Rules.png)
+
+5. Enable the following rule:
    - `File and Printer Sharing (Echo Request - ICMPv4-In)`
-4. Apply the rule to:
+![ICMP](10_Rules.png)
+![ICMP](11_Rules.png)
+![ICMP](12_Rules.png)
+
+6. Apply the rule to:
    - `Domain`, `Private`, and `Public` profiles  
    - Under the **Advanced** tab
-
+![ICMP](13_Profile.png)
+![ICMP](14_Profile.png)
 ---
 
 ## 🔍 Network Verification
