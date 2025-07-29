@@ -77,7 +77,7 @@ To allow this client to **be pinged by others**:
 
 ## 📸 Suggested Screenshot Checklist
 
-- `ipconfig /all , ping tests to gateway (192.168.30.1) , ping to DNS (192.168.20.2)' output
+- `ipconfig /all , ping tests to gateway (192.168.30.1) , ping to Gateway (192.168.30.1)' output
 ![WinServer](15_DNS.png)
 
 - 'Ping to DNS (192.168.20.2) , ping to another VM (Kali: 192.168.20.102) and Successful `nslookup`'   
