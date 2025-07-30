@@ -13,7 +13,7 @@ We wanted Pi-hole to use `192.168.20.2` to serve as the DNS server for All the V
 - Verified the interface in use was `eth0`.
 - Saw the current IP was incorrect (`192.168.1.2`).
   
-![Pihole IP address before change](1_IP.png)
+![Pihole IP address before change](./screenshots/1_IP.png)
 
 ---
 
@@ -26,7 +26,7 @@ Manually changed IP address (not via /etc/network or Netplan, but directly):
 - **sudo ip addr add 192.168.20.2/24 dev eth0**
 - **sudo ip route add default via 192.168.20.1**
   
-![Config_Temp_IP](2_Config_IP.png)
+![Config_Temp_IP](./screenshots/2_Config_IP.png)
 
 ---
 
@@ -38,7 +38,7 @@ To make the Pi-hole IP assignment persistent after reboot, manually edit the net
 
 - **sudo nano /etc/network/interfaces**
 
-![Edit_Int](3_Edit_Int.png)
+![Edit_Int](./screenshots/3_Edit_Int.png)
 
 ### ✏️ Add the following configuration:
 
@@ -50,17 +50,17 @@ iface eth0 inet static
   gateway 192.168.20.1
 ```
 
-![Config_Perm_IP](4_Perm_IP.png) 
+![Config_Perm_IP](./screenshots/4_Perm_IP.png) 
 
 - **Confirm change with 'ip a'**
 
-![Confirm Change](5_Confirm.png)
+![Confirm Change](./screenshots/5_Confirm.png)
 
 ### ✅ Confirm Connectivity to Pi-hole Dashboard  
 
 Access the Pi-hole Dashboard from the Debian Admin Machine (VLAN10) using the Pi-hole IP: `192.168.20.2`
 
-![Confirm_IP_Connectivity from Debian](6_Pihole_Dashboard.png)
+![Confirm_IP_Connectivity from Debian](./screenshots/6_Pihole_Dashboard.png)
 
 ---
 
@@ -75,6 +75,6 @@ To allow Pi-hole to properly resolve redirected DNS queries (those not originall
 4. Under **Upstream DNS Servers**, ensure the following is selected:  
    - **Google (IPv4) (ECS, DNSSEC)**
 
-![Redirect_Traffic](7_Pihole_Config.png)
+![Redirect_Traffic](./screenshots/7_Pihole_Config.png)
 
 This setup allows Pi-hole to accept DNS queries redirected from other servers (e.g., `8.8.8.8`, `1.1.1.1`) and forward queries securely to Google DNS with ECS and DNSSEC enabled.
