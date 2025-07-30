@@ -82,8 +82,8 @@ This setup uses the following VLAN structure: **VLAN 10 (Client)**, **VLAN 20 (S
    - **Bridge**: `vmbr1`
    - **VLAN Tag**: `30`
 
-![Kali VLAN 30](9_kali_vlan30.png)
-![Security Onion VLAN 30](10_so_vlan30.png)
+![Kali VLAN 30](./screenshots/9_kali_vlan30.png)
+![Security Onion VLAN 30](./screenshots/10_so_vlan30.png)
 
 ### Security Onion Configuration
 - **ens18**(connected to 'vmbr1') is **tagged VLAN 30** → used for Management + Monitoring.
