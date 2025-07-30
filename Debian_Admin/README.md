@@ -26,10 +26,11 @@
 ## 📸 Suggested Screenshot Checklist
 
 - `ip a` and `ip r` output
-
+![IP](1_Debian.png)
 
 - `ping` to gateway, DNS, and Kali
-
+![Ping](2_Debian.png)
   
 - `dig` or `nslookup` results  
+![Dig](3_Debian.png)
 
