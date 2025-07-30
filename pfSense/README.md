@@ -97,7 +97,7 @@ After all are added, the VLAN list should appear like this:
 💾 Save and **Apply Changes**.
 
 ![Config VLAN10 Int](./screenshots/10_VLAN10_Int.png)
-![Config VLAN10 Int](11_VLAN10_Inte.png)
+![Config VLAN10 Int](./screenshots/11_VLAN10_Inte.png)
 
 ---
 
@@ -108,14 +108,14 @@ Follow the same steps above for:
 - **LAN20 (VLAN 20)**
   - IP: `192.168.20.1/24`
     
-![Config VLAN20 Int](12_VLAN20_Int.png)
-![Config VLAN20 Int](13_VLAN20_Int.png)
+![Config VLAN20 Int](./screenshots/12_VLAN20_Int.png)
+![Config VLAN20 Int](./screenshots/13_VLAN20_Int.png)
 
 - **LAN30 (VLAN 30)**
   - IP: `192.168.30.1/24`
 
-![Config VLAN30 Int](14_VLAN30_Int.png)
-![Config VLAN30 Int](15_VLAN30_Int.png)
+![Config VLAN30 Int](./screenshots/14_VLAN30_Int.png)
+![Config VLAN30 Int](./screenshots/15_VLAN30_Int.png)
 
 ---
 
@@ -123,7 +123,7 @@ Follow the same steps above for:
 
 ## 🔹 Navigate to `Services > DHCP Server`
 
-![Services_DHCP Server](16_DHCP_Page.png)
+![Services_DHCP Server](./screenshots/16_DHCP_Page.png)
 
 ---
 
@@ -136,7 +136,7 @@ Follow the same steps above for:
   - **To:** `192.168.10.200`
 - Click **Save**
 
-![DHCP LAN10](17_dhcp_lan10.png)
+![DHCP LAN10](./screenshots/17_dhcp_lan10.png)
 
 ---
 
@@ -149,7 +149,7 @@ Follow the same steps above for:
   - **To:** `192.168.20.200`
 - Click **Save**
 
-![DHCP LAN20](18_dhcp_lan20.png)
+![DHCP LAN20](./screenshots/18_dhcp_lan20.png)
 
 ---
 
@@ -162,7 +162,7 @@ Follow the same steps above for:
   - **To:** `192.168.30.150`
 - Click **Save**
 
-![DHCP LAN30](19_dhcp_lan30.png)
+![DHCP LAN30](./screenshots/19_dhcp_lan30.png)
 
 ---
 
@@ -180,7 +180,7 @@ Once everything is confirmed working, these rules should be tightened for proper
    - `LAN10`
    - `LAN20`
    - `LAN30`
-![Firewall_Rules](20_Firewall_Rules.png)
+![Firewall_Rules](./screenshots/20_Firewall_Rules.png)
 
 ---
 
@@ -188,7 +188,7 @@ Once everything is confirmed working, these rules should be tightened for proper
 
 1. Click the **LAN10** tab  
 2. Click **➕ Add** at the top of the rules list
-![Firewall_Tabs](21_Firewall_Tabs.png)
+![Firewall_Tabs](./screenshots/21_Firewall_Tabs.png)
 
 3. Configure the rule as follows:
 
@@ -203,9 +203,9 @@ Once everything is confirmed working, these rules should be tightened for proper
 | **Description**    | Allow All VLAN10    |
 
 📸 Screenshot:  
-![Allow All VLAN10](22_Allow_Pro.png)
-![Allow All VLAN10](23_Allow_VLAN10.png)
-![Allow All VLAN10](24_Allow_Final10.png)
+![Allow All VLAN10](./screenshots/22_Allow_Pro.png)
+![Allow All VLAN10](./screenshots/23_Allow_VLAN10.png)
+![Allow All VLAN10](./screenshots/24_Allow_Final10.png)
 
 ✅ Click **Save** then **Apply Changes**
 
@@ -216,7 +216,7 @@ Once everything is confirmed working, these rules should be tightened for proper
 1. Go to the **LAN20** tab  
 2. Click **➕ Add** at the top
    
-![Allow All VLAN20](25_LAN20.png)
+![Allow All VLAN20](./screenshots/25_LAN20.png)
 
 3. Set the following values:
 
@@ -231,9 +231,9 @@ Once everything is confirmed working, these rules should be tightened for proper
 | **Description**    | Allow All VLAN20    |
 
 📸 Screenshot:  
-![Allow All VLAN20](26_Allow_Pro.png)
-![Allow All VLAN20](27_Allow_VLAN20.png)
-![Allow All VLAN20](28_Allow_VLAN20.png)
+![Allow All VLAN20](./screenshots/26_Allow_Pro.png)
+![Allow All VLAN20](./screenshots/27_Allow_VLAN20.png)
+![Allow All VLAN20](./screenshots/28_Allow_VLAN20.png)
 
 ✅ Save and **Apply Changes**
 
@@ -244,7 +244,7 @@ Once everything is confirmed working, these rules should be tightened for proper
 1. Navigate to the **LAN30** tab  
 2. Click **➕ Add** at the top
    
-![Allow All VLAN20](29_LAN30.png)
+![Allow All VLAN20](./screenshots/29_LAN30.png)
 
 3. Use the following values:
 
@@ -259,9 +259,9 @@ Once everything is confirmed working, these rules should be tightened for proper
 | **Description**    | Allow All VLAN30    |
 
 📸 Screenshot:  
-![Allow All VLAN30](30_Allow_Pro.png)
-![Allow All VLAN30](31_Allow_VLAN30.png)
-![Allow All VLAN30](32_Allow_VLAN30_Final.png)
+![Allow All VLAN30](./screenshots/30_Allow_Pro.png)
+![Allow All VLAN30](./screenshots/31_Allow_VLAN30.png)
+![Allow All VLAN30](./screenshots/32_Allow_VLAN30_Final.png)
 
 ✅ Save and **Apply Changes**
 
@@ -289,11 +289,11 @@ Log into the **pfSense Web UI** from your Debian Admin Machine.
 
 📸 **Screenshots**  
 *(VLAN10)*
-![DNS VLAN10](33_VLAN10.png) 
+![DNS VLAN10](./screenshots/33_VLAN10.png) 
 *(VLAN20)*
-![DNS VLAN20](34_VLAN20.png)
+![DNS VLAN20](./screenshots/34_VLAN20.png)
 *(VLAN30)*
-![DNS VLAN30](35_VLAN30.png)
+![DNS VLAN30](./screenshots/35_VLAN30.png)
 
 > 🧠 This ensures all new DHCP clients in these VLANs will use Pi-hole as their DNS server.
 
@@ -304,14 +304,14 @@ Log into the **pfSense Web UI** from your Debian Admin Machine.
 1. Go to:  
    `System ➝ General Setup`
    
-![System_General](36_System_Gen.png)
+![System_General](./screenshots/36_System_Gen.png)
 
 2. Under **DNS Server Settings**:
    - Set **DNS Server 1**: `192.168.20.2`
    - ✅ **Uncheck**:  
      `Allow DNS server list to be overridden by DHCP/PPP on WAN
      
-![DNS_Setting](37_DNS.png)
+![DNS_Setting](./screenshots/37_DNS.png)
 
 > ⚠️ This ensures pfSense itself uses Pi-hole as its DNS resolver (optional but cleaner).
 
@@ -326,8 +326,8 @@ Only do this **if you want ALL DNS to go through Pi-hole**, and not be handled b
   - *OR*
   - `Services ➝ DNS Forwarder` → **Disable** (if using this instead)
 
-![DNS_Forward](38_DNS_Forward.png)
-![DNS_Resolver](39_DNS_Resolver.png)
+![DNS_Forward](./screenshots/38_DNS_Forward.png)
+![DNS_Resolver](./screenshots/39_DNS_Resolver.png)
 
 > ⚠️ **Important:**  
 > If pfSense still needs to resolve DNS for itself, leave **one** enabled.  
@@ -339,7 +339,7 @@ Only do this **if you want ALL DNS to go through Pi-hole**, and not be handled b
 
 We'll do this per VLAN using **Firewall ➝ NAT ➝ Port Forward**.
 
-![Port_Forward](40_Port_Forward.png)
+![Port_Forward](./screenshots/40_Port_Forward.png)
 
 🔨 DNS Redirection Steps (Repeat per VLAN)
 
@@ -365,20 +365,20 @@ Options:
    - ✅ Filter Rule Association: **Add associated filter rule**
    - ✅ Check the box: **Redirect target port**
 
-![VLAN10_NAT_PortFwd](41_VLAN10.png)
-![VLAN10_NAT_PortFwd](42_VLAN10.png)
+![VLAN10_NAT_PortFwd](./screenshots/41_VLAN10.png)
+![VLAN10_NAT_PortFwd](./screenshots/42_VLAN10.png)
 Click **Save** → **Apply Changes**
 
 🔁 **Repeat** for **VLAN 20** and **VLAN 30**  
 Just change the **Interface** and **Source Address** accordingly:
 
 - VLAN 20: `192.168.20.0/24`
-![VLAN20_NAT_PortFwd](43_VLAN20.png)
-![VLAN20_NAT_PortFwd](44_VLAN20.png)
+![VLAN20_NAT_PortFwd](./screenshots/43_VLAN20.png)
+![VLAN20_NAT_PortFwd](./screenshots/44_VLAN20.png)
 - VLAN 30: `192.168.30.0/24`
-![VLAN30_NAT_PortFwd](45_VLAN30.png)
-![VLAN30_NAT_PortFwd](46_VLAN30.png)
-![VLAN_NAT_PortFwd](47_VLAN.png)
+![VLAN30_NAT_PortFwd](./screenshots/45_VLAN30.png)
+![VLAN30_NAT_PortFwd](./screenshots/46_VLAN30.png)
+![VLAN_NAT_PortFwd](./screenshots/47_VLAN.png)
 ---
 
 ✅ **Result:** All DNS traffic in each VLAN 'should' be intercepted and redirected to Pi-hole (`192.168.20.2`), even if clients try to use external DNS servers (e.g., `8.8.8.8` or `1.1.1.1`).
@@ -398,4 +398,4 @@ The table below shows the DHCP lease assignments for each virtual machine, along
 | Kali Linux          | VLAN 30| 192.168.30.100   |
 | Security Onion      | VLAN 30| 192.168.30.101   |
 
-![DHCP_Leases](48_DHCP_Leases.png)
+![DHCP_Leases](./screenshots/48_DHCP_Leases.png)
