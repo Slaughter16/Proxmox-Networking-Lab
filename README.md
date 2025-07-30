@@ -1,5 +1,5 @@
-# <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/427d8022-209c-4187-8a59-0bc3416bda6b" />
-Proxmox Networking Lab
+![Lab Topology](./images/lab-topology.png)
+# Proxmox Networking Lab
 
 This project documents the setup of a virtualized home lab using Proxmox, pfSense, Windows Server 2019, Windows 10 Client, Security Onion, Debian Admin Station, Kali Linux, Pi-hole, and Metasploitable2. It demonstrates network segmentation, firewalling, DNS filtering, and basic security monitoring using VLANs.
 
