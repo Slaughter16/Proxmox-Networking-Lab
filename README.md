@@ -74,8 +74,7 @@ Include a visual map or VLAN table here if you want.
 
 - VLAN segmentation and inter-VLAN routing via pfSense
 - DNS filtering and ad blocking using Pi-hole
-- Active Directory setup with GPO and DNS roles
-- Simulated attacker and victim VMs for security testing
+- Configured to support simulated attacker and victim VMs for security testing
 - IDS monitoring with Security Onion
 - Network troubleshooting across Windows and Linux hosts
 
