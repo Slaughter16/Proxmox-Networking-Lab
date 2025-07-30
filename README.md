@@ -49,11 +49,11 @@ This lab demonstrates:
 | Proxmox             | Lab Hypervisor                   | Proxmox VE                           |
 | pfSense             | VLAN Routing & Firewall          | pfSense CE                           |
 | Windows 10 Client   | End-user Testing Environment     | Windows 10 Pro                       |
-| Windows Server 2019 | Active Directory / File Sharing  | Windows Server 2019 Std              |
+| Windows Server 2019 | Active Directory / File Sharing  | Windows Server 2019                  |
 | Debian Admin        | Network Admin Workstation        | Debian Linux                         |
 | Kali Linux          | Penetration Testing Tools        | Kali Rolling                         |
 | Meta (CentOS)       | Vulnerable VM for Exploitation   | Metasploitable 2                     |
-| Pi-hole             | DNS Sinkhole & Ad Blocker        | Pi-hole on Debian                    |
+| Pi-hole             | DNS Sinkhole & Ad Blocker        | Pi-hole in Ubuntu Linux Container    |
 | Security Onion      | Intrusion Detection / Monitoring | Security Onion (SO2)                 |
 
 ---
