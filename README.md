@@ -6,30 +6,31 @@ This project documents the setup of a virtualized home lab using Proxmox, pfSens
 
 ## 🧱 Lab Topology Overview
 
-- **Proxmox VE Host** using `vmbr0` (WAN) and `vmbr1` (LAN)
-- **pfSense** as firewall/router with VLAN trunking and DHCP
-- **Pi-hole** for DNS filtering and ad-blocking
-- VLANs for Clients, Servers, and Security Zones
-- Multiple VMs representing typical enterprise roles
+- **Proxmox VE** with `vmbr0` (WAN) and `vmbr1` (LAN)
+- **pfSense** as router/firewall using VLAN trunking
+- **Pi-hole** for DNS filtering and ad blocking
+- Simulated VLANs for Clients, Servers, and Security Zones
+- Multiple VMs representing real-world roles in a segmented network
 
 ---
 
-## 🖥️ Virtual Machine Documentation
+## 🖥️ Virtual Machines
 
-- [Proxmox](./Proxmox/README.md) - Hypervisor and lab host
-- [pfSense](./pfSense/README.md) - VLAN routing, DHCP, and firewall rules
-- [Pi-hole](./Pi-hole/README.md) - Network-wide ad blocker and DNS sinkhole
-- [Troubleshooting](./Troubleshoot/README.md) - Troubleshooting DNS issues
-- [Win10 Client](./Win10_Client/README.md) - End-user workstation for testing
-- [Windows Server 2019](./WinServer2019/README.md) - Domain controller and file server
-- [Kali Linux](./Kali_Linux/README.md) - Offensive security tools
-- [Meta (CentOS)](./Meta/README.md) - Vulnerable target for security testing 
-- [Debian Admin Station](./Debian_Admin/README.md) - Admin management workstation
-- [Security Onion](./SecurityOnion/README.md) -  Network monitoring and intrusion detection
+| VM Name             | Role                            | OS / Description                     |
+|---------------------|----------------------------------|--------------------------------------|
+| Proxmox             | Lab Hypervisor                   | Proxmox VE                           |
+| pfSense             | VLAN Routing & Firewall          | pfSense CE                           |
+| Windows 10 Client   | End-user Testing Environment     | Windows 10 Pro                       |
+| Windows Server 2019 | Active Directory / File Sharing  | Windows Server 2019 Std              |
+| Debian Admin        | Network Admin Workstation        | Debian Linux                         |
+| Kali Linux          | Penetration Testing Tools        | Kali Rolling                         |
+| Meta (CentOS)       | Vulnerable VM for Exploitation   | Metasploitable 2                     |
+| Pi-hole             | DNS Sinkhole & Ad Blocker        | Pi-hole on Debian                    |
+| Security Onion      | Intrusion Detection / Monitoring | Security Onion (SO2)                 |
 
-## Network Overview
+---
 
-## 📶 VLAN Configuration
+## 🌐 VLAN Configuration
 
 | **VLAN ID** | **Name / Purpose** | **Subnet**        | **Assigned VMs and IP Addresses**                                       |
 |------------:|--------------------|-------------------|-------------------------------------------------------------------------|
@@ -43,7 +44,25 @@ Include a visual map or VLAN table here if you want.
 
 ## 🔧 Key Features
 
-- Simulated enterprise-grade VLAN segmentation
-- DNS interception and redirection via Pi-hole
-- Firewall rule testing using pfSense
-- Troubleshoot DNS problems / Windows & Linux Configurations
+- VLAN segmentation and inter-VLAN routing via pfSense
+- DNS filtering and ad blocking using Pi-hole
+- Active Directory setup with GPO and DNS roles
+- Simulated attacker and victim VMs for security testing
+- IDS monitoring with Security Onion
+- Network troubleshooting across Windows and Linux hosts
+
+---
+
+## 📝 Documentation
+
+Each VM and service is documented in its own subdirectory:
+- [`Proxmox`](./Proxmox/README.md)
+- [`pfSense`](./pfSense/README.md)
+- [`Pi-hole`](./Pi-hole/README.md)
+- [`Windows 10 Client`](./Win10_Client/README.md)
+- [`Windows Server 2019`](./WinServer2019/README.md)
+- [`Debian Admin`](./Debian_Admin/README.md)
+- [`Kali Linux`](./Kali_Linux/README.md)
+- [`Meta`](./Meta/README.md)
+- [`Security Onion`](./SecurityOnion/README.md)
+- [`Troubleshooting`](./Troubleshoot/README.md)
