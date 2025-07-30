@@ -27,14 +27,14 @@
 
 - `ip a` and `ip r` output
 
-![SecO](1_SecOIPa.png)
-![SecO](2_SecIPr.png)
+![SecO](./screenshots/1_SecOIPa.png)
+![SecO](./screenshots/2_SecIPr.png)
 
 - `ping` to gateway, DNS, and Meta
 
-![SecO](3_PingSec.png)
+![SecO](./screenshots/3_PingSec.png)
 
 - DNS test using `dig` or `nslookup`  
 
-![SecO](4_SecO_DNS.png)
-![SecO](5_SecO_DNS.png)
+![SecO](./screenshots/4_SecO_DNS.png)
+![SecO](./screenshots/5_SecO_DNS.png)
