@@ -96,17 +96,6 @@ Each VM and service is documented in its own subdirectory:
 
 ---
 
-## 📷 Optional Enhancements
-
-- Add **screenshots** of:
-  - pfSense DHCP leases VLAN and rule config
-  - Pi-hole admin panel with blocked queries
-  - Security Onion alerts dashboard
-  - Kali attacks and packet captures
-- Create a **network diagram** with draw.io or Lucidchart and include it
-
----
-
 ## 🔐 VLAN Segmentation & Firewall Rules
 
 - pfSense is configured as a VLAN trunk to manage traffic across VLAN 10 (Client), VLAN 20 (Server), and VLAN 30 (Security)
