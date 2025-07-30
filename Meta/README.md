@@ -27,15 +27,15 @@
 
 - `ip a` and `ip r` output
 
-![Meta](1_Meta_IP.png)
+![Meta](./screenshots/1_Meta_IP.png)
 
 
 - `ping` to gateway, DNS, and Kali
 
-![Ping](2_Meta_Ping.png)
+![Ping](./screenshots/2_Meta_Ping.png)
 
-![Ping](3_Meta_Ping.png)
+![Ping](./screenshots/3_Meta_Ping.png)
 
 
 - `dig` or `nslookup` showing DNS resolution  
-![Dig](4_Meta_Dig.png)
+![Dig](./screenshots/4_Meta_Dig.png)
