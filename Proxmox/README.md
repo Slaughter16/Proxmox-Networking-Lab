@@ -53,7 +53,7 @@ This setup uses the following VLAN structure: **VLAN 10 (Client)**, **VLAN 20 (S
    - **Bridge**: `vmbr1`
    - **VLAN Tag**: `10`
 
-![Debian VLAN 10](4_debian_vlan10.png)
+![Debian VLAN 10](./screenshots/4_debian_vlan10.png)
 
 ✅ Repeat for **Windows 10** with the same settings.
 
