@@ -26,10 +26,10 @@
 ## 📸 Suggested Screenshot Checklist
 
 - `ip a` and `ip r` output
-![Meta](2_Meta_IP.png)
+![Meta](1_Meta_IP.png)
 
 - `ping` to gateway, DNS, and Kali
 ![Ping](2_Meta_Ping.png)
-
+![Ping](3_Meta_Ping.png)
 - `dig` or `nslookup` showing DNS resolution  
-![Dig](3_Meta_Dig.png)
+![Dig](4_Meta_Dig.png)
