@@ -31,7 +31,9 @@
 
 
 - `ping` to gateway, DNS, and Kali
+
 ![Ping](2_Meta_Ping.png)
+
 ![Ping](3_Meta_Ping.png)
 
 
