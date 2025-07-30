@@ -23,7 +23,7 @@
 
 ---
 
-## 📸 Suggested Screenshot Checklist
+## 📸 Screenshot Checklist
 
 - `ip a` and `ip route` output
 ![IP](1_IP.png)
