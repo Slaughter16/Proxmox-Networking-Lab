@@ -1,27 +1,36 @@
 # 🧪 Proxmox Networking & Security Lab
 **Enterprise Simulation: VLAN Segmentation | DNS Configuration | Firewall Rules**
 
-A virtual home lab simulating enterprise networks using Proxmox, pfSense, Windows & Linux systems.  
-Key concepts demonstrated include VLAN segmentation, DNS redirection via Pi-hole, and access control using pfSense firewall rules.
-
-
 ![Proxmox Logo](./images/proxmox-logo.png)  
-*A hands-on virtual lab for learning network segmentation, firewalling, DNS filtering, and basic cybersecurity monitoring.*
+
+A virtual home lab designed to simulate an enterprise network environment using:
+> **Proxmox VE**, **pfSense**, **Windows Server 2019**, **Windows 10**, **Security Onion**, **Kali Linux**, **Debian Admin**, **Pi-hole**, and **Metasploitable2**
 
 ---
 
-## 🖥️ Lab Dashboard Overview
+This lab demonstrates:
 
-### 🔧 Proxmox VE (Main Hypervisor)
+- 🔐 VLAN segmentation and inter-VLAN firewall rules
+- 🌐 DNS redirection and filtering with Pi-hole
+- 🧰 IDS-ready architecture using Security Onion
+- ⚙️ Multi-VM configuration for security monitoring and testing environments
+
+---
+
+## 🖥️ Proxmox Dashboard
+*Primary hypervisor interface hosting all virtual machines.*
+
 ![screenshot dashboard] 
 
 ---
 
-## 🌐 Network Topology
+## 🌐 Network Topology Diagram
 
-A visual overview of VLAN segmentation, routing, and security zones:
+*Visual overview of VLANs, pfSense trunking, and host placement.*
 
 ![screenshot]
+
+---
 
 ## 🧱 Lab Topology Overview
 
