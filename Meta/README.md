@@ -26,7 +26,7 @@
 ## 📸 Suggested Screenshot Checklist
 
 - `ip a` and `ip r` output
-- 
+
 ![Meta](1_Meta_IP.png)
 
 
