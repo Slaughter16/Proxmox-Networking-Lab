@@ -57,7 +57,7 @@ This setup uses the following VLAN structure: **VLAN 10 (Client)**, **VLAN 20 (S
 
 ✅ Repeat for **Windows 10** with the same settings.
 
-![Windows 10 VLAN 10](5_win10_vlan10.png)
+![Windows 10 VLAN 10](./screenshots/5_win10_vlan10.png)
 
 ---
 
@@ -69,9 +69,9 @@ This setup uses the following VLAN structure: **VLAN 10 (Client)**, **VLAN 20 (S
    - **Bridge**: `vmbr1`
    - **VLAN Tag**: `20`
 
-![WinServer VLAN 20](6_winserver_vlan20.png)
-![Pi-hole VLAN 20](7_pihole_vlan20.png)
-![Metasploitable VLAN 20](8_meta_vlan20.png)
+![WinServer VLAN 20](./screenshots/6_winserver_vlan20.png)
+![Pi-hole VLAN 20](./screenshots/7_pihole_vlan20.png)
+![Metasploitable VLAN 20](./screenshots/8_meta_vlan20.png)
 
 ---
 
