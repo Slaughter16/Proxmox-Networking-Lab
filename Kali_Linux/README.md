@@ -26,8 +26,8 @@
 ## 📸 Screenshot Checklist
 
 - `ip a` and `ip route` output
-![IP](1_IP.png)
+![IP](./screenshots/1_IP.png)
 - `ping` to gateway, DNS, and Meta
-![Ping](2_Ping.png)
+![Ping](./screenshots/2_Ping.png)
 - `nslookup` showing DNS resolution  
-![Dig](3_Dig_nslookup.png)
+![Dig](./screenshots/3_Dig_nslookup.png)
