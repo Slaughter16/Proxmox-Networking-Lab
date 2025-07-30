@@ -66,3 +66,40 @@ Each VM and service is documented in its own subdirectory:
 - [`Meta`](./Meta/README.md)
 - [`Security Onion`](./SecurityOnion/README.md)
 - [`Troubleshooting`](./Troubleshoot/README.md)
+
+---
+
+## 📷 Optional Enhancements
+
+- Add **screenshots** of:
+  - pfSense VLAN and rule config
+  - Pi-hole admin panel with blocked queries
+  - Security Onion alerts dashboard
+  - Kali attacks and packet captures
+- Create a **network diagram** with draw.io or Lucidchart and include it
+
+---
+
+## 🔐 VLAN Segmentation & Firewall Rules
+
+- pfSense is configured as a VLAN trunk to manage traffic across VLAN 10 (Client), VLAN 20 (Server), and VLAN 30 (Security)
+- Inter-VLAN communication is controlled via **stateful firewall rules**, ensuring least privilege
+- Example Rule: Only allow RDP from VLAN 10 to Windows Server on VLAN 20; deny all other traffic by default
+- VLANs are assigned based on VM role, with unique IP ranges and DHCP scopes
+
+## 🌐 DNS Filtering with Pi-hole
+- Pi-hole deployed in the Server VLAN (192.168.20.2) as the default DNS resolver
+- DNS traffic from all VLANs is redirected to Pi-hole using pfSense NAT port redirection
+- Logs and dashboards show DNS query sources and blocked domains
+- Custom blocklists and whitelists configured for fine-grained DNS control
+
+---
+
+## 🎯 Skills Demonstrated
+
+- Virtualization (Proxmox)
+- Networking (VLANs, pfSense, DHCP, DNS)
+- System Administration (Windows/Linux)
+- Network Security Monitoring (IDS)
+- Penetration Testing Basics (Kali, Metasploitable)
+- Documentation & Troubleshooting
