@@ -99,7 +99,9 @@ Each VM and service is documented in its own subdirectory:
 ## 📷 Optional Enhancements
 
 - Add **screenshots** of:
-  - pfSense VLAN and rule config
+  - pfSense DHCP leases VLAN and rule config
+ 
+  ![DHCP](pfSense/screenshots/48_DHCP_Leases.png)
   - Pi-hole admin panel with blocked queries
   - Security Onion alerts dashboard
   - Kali attacks and packet captures
