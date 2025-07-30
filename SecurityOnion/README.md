@@ -4,7 +4,7 @@
 
 - **VLAN**: 30  
 - **Interface**: `ens18`  
-- **IP Address**: 192.168.30.? (static or DHCP)  
+- **IP Address**: 192.168.30.101 (DHCP)  
 - **Gateway**: 192.168.30.1  
 - **DNS**: 192.168.20.2 (Pi-hole)
 
@@ -14,7 +14,7 @@
 
 | Test                        | Command                                 | Expected Output                         |
 |-----------------------------|------------------------------------------|-----------------------------------------|
-| Show IP address             | `ip a`                                   | IP: `192.168.20.103`                    |
+| Show IP address             | `ip a`                                   | IP: `192.168.20.101`                    |
 | Show route                  | `ip r`                                   | Default via `192.168.20.1`              |
 | Ping Gateway                | `ping -c 4 192.168.30.1`                 | Replies received                        |
 | Ping DNS Server             | `ping -c 4 192.168.20.2`                 | Replies received                        |
