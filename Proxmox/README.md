@@ -4,7 +4,7 @@ Navigated to **Datacenter > Node > System > Network**
 ### Before Editing
 In the original configuration, `vmbr1` was not set to support VLANs.
 
-![Before Editing vmbr1](1_before_vmbr1.png)
+![Before Editing vmbr1](./screenshots/1_before_vmbr1.png)
 
 ---
 
