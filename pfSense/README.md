@@ -20,13 +20,13 @@ Access the pfSense web interface from your **Debian Admin VM** (tagged to VLAN 1
   - **Username:** `admin`
   - **Password:** `pfsense`
   -(As you can see there are more characters in the password box as i made up my own)
-![Login to pfSense](1_login_pfsense.png)
+![Login to pfSense](./screenshots/1_login_pfsense.png)
 
 ## pfSense Dashboard
 
 Once logged in, you will see the dashboard.
 
-![pfSense Dashboard](2_dashboard.png)
+![pfSense Dashboard](./screenshots/2_dashboard.png)
 
 ---
 
@@ -37,7 +37,7 @@ Once logged in, you will see the dashboard.
 
 ---
 
-![Before_VLAN_Interfaces Added](3_Before_VLAN.png)
+![Before_VLAN_Interfaces Added](./screenshots/3_Before_VLAN.png)
 
 ### ➕ VLAN 10 – Clients
 
@@ -47,7 +47,7 @@ Once logged in, you will see the dashboard.
   
 ✅ Click **Save**, then **Apply Changes**.
 
-![VLAN 10](4_vlan10_add.png)
+![VLAN 10](./screenshots/4_vlan10_add.png)
 
 ---
 
@@ -56,7 +56,7 @@ Once logged in, you will see the dashboard.
 - **VLAN Tag:** `20`
 - **Description:** `VLAN20_Servers`
 
-![VLAN 20](5_vlan20_add.png)
+![VLAN 20](./screenshots/5_vlan20_add.png)
 
 ---
 
@@ -64,7 +64,7 @@ Once logged in, you will see the dashboard.
 - **VLAN Tag:** `30`
 - **Description:** `VLAN30_Security` (mistyped but added 30 after)
 
-![VLAN 30](6_vlan30_add.png)
+![VLAN 30](./screenshots/6_vlan30_add.png)
 
 ---
 
@@ -72,7 +72,7 @@ Once logged in, you will see the dashboard.
 
 After all are added, the VLAN list should appear like this:
 
-![All VLANs](7_all_VLANS_listed.png)
+![All VLANs](./screenshots/7_all_VLANS_listed.png)
 
 ---
 
@@ -81,8 +81,8 @@ After all are added, the VLAN list should appear like this:
 1. Go to `Interfaces > Assignments`
 2. Click **+ Add** to assign each new VLAN interface.
    
-![Interface>Assignments](8_Int_Assign.png)
-![Add Interface](9_Add_Int.png)
+![Interface>Assignments](./screenshots/8_Int_Assign.png)
+![Add Interface](./screenshots/9_Add_Int.png)
 
 ---
 
@@ -96,7 +96,7 @@ After all are added, the VLAN list should appear like this:
 
 💾 Save and **Apply Changes**.
 
-![Config VLAN10 Int](10_VLAN10_Int.png)
+![Config VLAN10 Int](./screenshots/10_VLAN10_Int.png)
 ![Config VLAN10 Int](11_VLAN10_Inte.png)
 
 ---
