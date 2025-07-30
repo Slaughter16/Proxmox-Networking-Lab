@@ -8,7 +8,7 @@ A virtual home lab designed to simulate an enterprise network environment using:
 
 ---
 
-This lab demonstrates:
+### 🔍 Lab Highlights
 
 - 🔐 VLAN segmentation and inter-VLAN firewall rules
 - 🌐 DNS redirection and filtering with Pi-hole
@@ -18,9 +18,10 @@ This lab demonstrates:
 ---
 
 ## 🖥️ Proxmox Dashboard
+
 *Primary hypervisor interface hosting all virtual machines.*
 
-![screenshot dashboard] 
+![Proxmox Dashboard](./images/proxmox_dashboard.png)
 
 ---
 
@@ -28,7 +29,9 @@ This lab demonstrates:
 
 *Visual overview of VLANs, pfSense trunking, and host placement.*
 
-![screenshot]
+![Network Topology Diagram](./images/network_topology.png)
+
+> 🔧 Created with [draw.io]
 
 ---
 
@@ -37,8 +40,8 @@ This lab demonstrates:
 - **Proxmox VE** with `vmbr0` (WAN) and `vmbr1` (LAN)
 - **pfSense** as router/firewall using VLAN trunking
 - **Pi-hole** for DNS filtering and ad blocking
-- Simulated VLANs for Clients, Servers, and Security Zones
-- Multiple VMs representing real-world roles in a segmented network
+- VLANs used to segment Clients, Servers, and Security Zones
+- Multiple VMs simulating real-world enterprise roles
 
 ---
 
@@ -53,7 +56,7 @@ This lab demonstrates:
 | Debian Admin        | Network Admin Workstation        | Debian Linux                         |
 | Kali Linux          | Penetration Testing Tools        | Kali Rolling                         |
 | Meta (CentOS)       | Vulnerable VM for Exploitation   | Metasploitable 2                     |
-| Pi-hole             | DNS Sinkhole & Ad Blocker        | Pi-hole in Ubuntu Linux Container    |
+| Pi-hole             | DNS Sinkhole & Ad Blocker        | Pi-hole in Ubuntu Container          |
 | Security Onion      | Intrusion Detection / Monitoring | Security Onion (SO2)                 |
 
 ---
@@ -66,14 +69,13 @@ This lab demonstrates:
 | 20          | **Server**         | 192.168.20.0/24   | 🗂️ Windows Server 2019 – `192.168.20.102`  <br> 💻 Meta VM – `192.168.20.101` <br> 🍍 Pi-hole – `192.168.20.2` |
 | 30          | **Security**       | 192.168.30.0/24   | 🛡️ Kali Linux – `192.168.30.100`  <br> 📡 Security Onion – `192.168.30.101`|
 
-
-Include a visual map or VLAN table here if you want.
-
+---
 
 ## 🔧 Key Features
 
 - VLAN segmentation and inter-VLAN routing via pfSense
-- DNS filtering and ad blocking using Pi-hole
+- Role-based firewall rules using pfSense
+- Central DNS filtering using Pi-hole with NAT redirection
 - Configured to support simulated attacker and victim VMs for security testing
 - IDS monitoring with Security Onion
 - Network troubleshooting across Windows and Linux hosts
@@ -82,7 +84,8 @@ Include a visual map or VLAN table here if you want.
 
 ## 📝 Documentation
 
-Each VM and service is documented in its own subdirectory:
+Each VM and configuration is documented in its own folder:
+
 - [`Proxmox`](./Proxmox/README.md)
 - [`pfSense`](./pfSense/README.md)
 - [`Pi-hole`](./Pi-hole/README.md)
@@ -94,13 +97,15 @@ Each VM and service is documented in its own subdirectory:
 - [`Security Onion`](./SecurityOnion/README.md)
 - [`Troubleshooting`](./Troubleshoot/README.md)
 
+Each subfolder includes:
+> 📸 **Screenshots** of VM settings, firewall rules, alerts, Pi-hole logs, and more.
+
 ---
 
 ## 🔐 VLAN Segmentation & Firewall Rules
 
 - pfSense is configured as a VLAN trunk to manage traffic across VLAN 10 (Client), VLAN 20 (Server), and VLAN 30 (Security)
 - Inter-VLAN communication is controlled via **stateful firewall rules**, ensuring least privilege
-- Example Rule: Only allow RDP from VLAN 10 to Windows Server on VLAN 20; deny all other traffic by default
 - VLANs are assigned based on VM role, with unique IP ranges and DHCP scopes
 
 ## 🌐 DNS Filtering with Pi-hole
@@ -113,9 +118,9 @@ Each VM and service is documented in its own subdirectory:
 
 ## 🎯 Skills Demonstrated
 
-- Virtualization (Proxmox)
-- Networking (VLANs, pfSense, DHCP, DNS)
-- System Administration (Windows/Linux)
-- Network Security Monitoring (IDS)
-- Penetration Testing Basics (Kali, Metasploitable)
-- Documentation & Troubleshooting
+- Virtualization using Proxmox  
+- VLAN design and inter-VLAN routing  
+- DNS/NAT configuration using pfSense & Pi-hole  
+- Security monitoring via Security Onion  
+- Network management across Windows & Linux  
+- Documentation and Troubleshooting systems
