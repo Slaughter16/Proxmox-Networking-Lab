@@ -14,27 +14,27 @@
 
 1. Open **Control Panel**
 
-![DHCP](1_Control.png)
+![DHCP](./screenshots/1_Control.png)
 
 2. Navigate to **Network and Internet** → **Network Status and Tasks**
 
-![DHCP](2_Network.png)
+![DHCP](./screenshots/2_Network.png)
 
 3. Click on **Change adapter settings**
 
-![DHCP](3_Adapt.png)
+![DHCP](./screenshots/3_Adapt.png)
 
 4. Right-click the **Ethernet adapter** and select **Properties**
-![DHCP](4_Prop.png)
+![DHCP](./screenshots/4_Prop.png)
 
 5. Select **Internet Protocol Version 4 (TCP/IPv4)** → Click **Properties**
-![DHCP](5_IP.png)
+![DHCP](./screenshots/5_IP.png)
    
 6. Choose:
    - `Obtain an IP address automatically`
    - `Obtain DNS server address automatically`
    - Click **OK** and close all dialog boxes.
-![DHCP](6_DHCPc.png)
+![DHCP](./screenshots/6_DHCPc.png)
 
 ---
 
@@ -43,23 +43,23 @@
 To allow this client to **be pinged by others**:
 
 1. Open **Windows Defender Firewall with Advanced Security**
-![ICMP](7_Firewalll.png)
-![ICMP](8_Firewalll.png)
+![ICMP](./screenshots/7_Firewalll.png)
+![ICMP](./screenshots/8_Firewalll.png)
 
 3. Go to **Inbound Rules**
-![ICMP](9_Ruless.png)
+![ICMP](./screenshots/9_Ruless.png)
 
 5. Enable the following rule:
    - `File and Printer Sharing (Echo Request - ICMPv4-In)`
-![ICMP](10_Rules1.png)
-![ICMP](11_Rules2.png)
-![ICMP](12_Rules3.png)
+![ICMP](./screenshots/10_Rules1.png)
+![ICMP](./screenshots/11_Rules2.png)
+![ICMP](./screenshots/12_Rules3.png)
 
 6. Apply the rule to:
    - `Domain`, `Private`, and `Public` profiles  
    - Under the **Advanced** tab
-![ICMP](13_Profilee.png)
-![ICMP](14_Profilee.png)
+![ICMP](./screenshots/13_Profilee.png)
+![ICMP](./screenshots/14_Profilee.png)
 ---
 
 ## 🔍 Network Verification
@@ -78,10 +78,10 @@ To allow this client to **be pinged by others**:
 ## 📸 Suggested Screenshot Checklist
 
 - `ipconfig /all , ping tests to gateway (192.168.30.1) , ping to Gateway (192.168.30.1)' output
-![WinServer](15_DNS.png)
+![WinServer](./screenshots/15_DNS.png)
 
 - 'Ping to DNS (192.168.20.2) , ping to another VM (Kali: 192.168.20.102) and Successful `nslookup`'   
- ![WinServer](16_Success.png)
+ ![WinServer](./screenshots/16_Success.png)
 
 - 'route print' output verify sends traffic to other networks 0.0.0.0 (eg: Internet) and specific router for local VLAN 192.168.30.0 On-link: means it knows to use ARP on that subnet.
- ![WinServer](17_Route.png)
+ ![WinServer](./screenshots/17_Route.png)
