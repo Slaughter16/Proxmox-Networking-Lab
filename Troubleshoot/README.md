@@ -29,21 +29,21 @@ Additionally:
 ---
 
 - VLAN10
-![VLAN10](8_Troubleshoot_VLAN10_PortForward.png)
+![VLAN10](./screenshots/8_Troubleshoot_VLAN10_PortForward.png)
 - VLAN20
-![VLAN20](9_Troubleshoot_VLAN20_PortForward.png)
+![VLAN20](./screenshots/9_Troubleshoot_VLAN20_PortForward.png)
 - VLAN30
-![VLAN30](10_Troubleshoot_VLAN30_PortForward.png)
+![VLAN30](./screenshots/10_Troubleshoot_VLAN30_PortForward.png)
 
 2. **Update Pi-hole Settings:**
    - Enter Pihole's DNS setting and Set upstream DNS (e.g., Google `8.8.8.8`, Cloudflare `1.1.1.1`)
 
-![Pihole_Settings](15_Pihole_Settings.png)
-![Pihole_DNS](11_DNS_Upstream.png)
+![Pihole_Settings](./screenshots/15_Pihole_Settings.png)
+![Pihole_DNS](./screenshots/11_DNS_Upstream.png)
 
    - 'Uncheck Use DNSSEC' to Disable DNSSEC
 
-![DisableDNSSEC](12_Disable_DNSSEC.png)
+![DisableDNSSEC](./screenshots/12_Disable_DNSSEC.png)
 
 3. **Update `/etc/resolv.conf`**
    ```bash
@@ -55,8 +55,8 @@ Additionally:
    Press Enter to confirm the filename
    Press CTRL + X to exit nano
 
-![Sudo](13_Update.png)
-![Pihole_DNS](14_nameserver.png)
+![Sudo](./screenshots/13_Update.png)
+![Pihole_DNS](./screenshots/14_nameserver.png)
 
 ---
 
@@ -94,31 +94,31 @@ curl https://www.google.com
 ---
 
 - Windows 10 Client (timeout)
-![Win10](1_Troubleshoot_Win.png)
+![Win10](./screenshots/1_Troubleshoot_Win.png)
 
 - Debian Admin Workstation (timeout)
-![Debian](2_Troubleshoot_Debian.png)
+![Debian](./screenshots/2_Troubleshoot_Debian.png)
 
 
 - Windows Server 2019 (timeout)
-![WinServer](3_Troubleshoot_WinServer.png)
+![WinServer](./screenshots/3_Troubleshoot_WinServer.png)
 
 
 - Metasploitable 2 (timeout)
-![Meta](4_Troubleshoot_Meta.png)
+![Meta](./screenshots/4_Troubleshoot_Meta.png)
 
 
 - Pihole (timeout)
 
-![Pihole](5_Troubleshoot_Pihole.png)
+![Pihole](./screenshots/5_Troubleshoot_Pihole.png)
 
 
 - Kali Linux (timeout)
-![Kali](6_Troubleshoot_Kali.png)
+![Kali](./screenshots/6_Troubleshoot_Kali.png)
 
 
 - Security Onion (timeout)
-![SecO](7_Troubleshoot_Seconion.png)
+![SecO](./screenshots/7_Troubleshoot_Seconion.png)
 
 
 ### 🟢 After Fix (Invert Match applied):
@@ -129,13 +129,13 @@ curl https://www.google.com
 
 ---
 - Windows 10 Client (Fixed)
-![Win10](16_Troubleshoot_Success_Win.png)
+![Win10](./screenshots/16_Troubleshoot_Success_Win.png)
 
 - Debian Admin Workstation (Fixed)
-![Debian](17_Troubleshoot_Success_Debian.png)
+![Debian](./screenshots/17_Troubleshoot_Success_Debian.png)
 
 - Windows Server 2019 (Fixed)
-![WinServer](18_Troubleshoot_Success_WinServer.png)
+![WinServer](./screenshots/18_Troubleshoot_Success_WinServer.png)
 
 ### curl https://google.com – Output 
 
@@ -144,19 +144,19 @@ curl https://www.google.com
 - Error `(77)` is due to missing CA certificates on the VM, not a network issue.
 - Therefore, network fix is confirmed to be working.
 
-![Meta](23_Troubleshoot_Success_Meta.png)
-![Meta](19_Troubleshoot_Success_Meta.png)
+![Meta](./screenshots/23_Troubleshoot_Success_Meta.png)
+![Meta](./screenshots/19_Troubleshoot_Success_Meta.png)
 
 - Pihole (Fixed)
-![Pihole](20_Troubleshoot_Success_Pihole.png)
+![Pihole](./screenshots/20_Troubleshoot_Success_Pihole.png)
 
 - Kali Linux (Fixed)
-![Kali](21_Troubleshoot_Success_Kali.png)
+![Kali](./screenshots/21_Troubleshoot_Success_Kali.png)
 
 - Security Onion (Fixed)
 
-![SecOnion](22_Troubleshoot_Success_Seconion.png)
-![SecOnion](23_Troubleshoot_Success_Seconion.png)
+![SecOnion](./screenshots/22_Troubleshoot_Success_Seconion.png)
+![SecOnion](./screenshots/23_Troubleshoot_Success_Seconion.png)
 
 
 ## 📌 Notes
