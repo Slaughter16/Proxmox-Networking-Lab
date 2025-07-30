@@ -4,7 +4,7 @@
 
 - **VLAN**: 20  
 - **Interface**: `ens18`  
-- **IP Address**: 192.168.20.101 (via static config or DHCP)  
+- **IP Address**: 192.168.20.101 (via DHCP)  
 - **Gateway**: 192.168.20.1  
 - **DNS**: 192.168.20.2 (Pi-hole)
 
@@ -25,6 +25,11 @@
 
 ## 📸 Suggested Screenshot Checklist
 
-- `ip a` and `ip r` output  
-- `ping` to gateway, DNS, and Kali  
+- `ip a` and `ip r` output
+![Meta](2_Meta_IP.png)
+
+- `ping` to gateway, DNS, and Kali
+![Ping](2_Meta_Ping.png)
+
 - `dig` or `nslookup` showing DNS resolution  
+![Dig](3_Meta_Dig.png)
