@@ -29,7 +29,7 @@ A virtual home lab designed to simulate an enterprise network environment using:
 
 *Visual overview of VLANs, pfSense trunking, and host placement.*
 
-![Network Topology Diagram](./images/network_topology.png)
+![Network Topology Diagram](./images/Network-Topology.png)
 
 > 🔧 Created with [draw.io]
 
