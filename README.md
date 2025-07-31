@@ -1,5 +1,5 @@
 # 🧪 Proxmox Networking & Security Lab
-**Enterprise Simulation: VLAN Segmentation | DNS Configuration | Firewall Rules**
+**Enterprise Simulation: VLAN Segmentation | DNS Configuration | Firewall Rules | Windows & Linux Configuration**
 
 ![Proxmox Logo](./images/proxmox-logo.png)  
 
