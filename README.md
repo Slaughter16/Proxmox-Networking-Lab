@@ -21,7 +21,7 @@ A virtual home lab designed to simulate an enterprise network environment using:
 
 *Primary hypervisor interface hosting all virtual machines.*
 
-![Proxmox Dashboard](./images/proxmox_dashboard.png)
+![Proxmox Dashboard](./images/Proxmox-Dashboard.png)
 
 ---
 
