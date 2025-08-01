@@ -95,3 +95,18 @@ The following screenshots show DNS query logs captured by Pi-hole from various d
 
 ### Queries from 192.168.30.100 and 192.168.20.102
 ![Query Log 2](./screenshots/9_Query.png)
+
+---
+
+## Pi-hole Dashboard Display
+
+The screenshot below highlights key Pi-hole metrics, including:
+
+- **Total DNS Queries**
+- **Queries Blocked**
+- **Percentage Blocked**
+- **Domains on Blocklists**
+
+These metrics are circled in red for clarity and help demonstrate that DNS filtering is active and functioning as expected.
+
+![Pi-hole Dashboard](./screenshots/10_Pihole_Dash.png)
