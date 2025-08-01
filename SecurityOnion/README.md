@@ -38,3 +38,39 @@
 
 ![SecO](./screenshots/4_SecO_DNS.png)
 ![SecO](./screenshots/5_SecO_DNS.png)
+
+---
+
+## Security Onion: Integrated Tools
+
+Security Onion offers several powerful tools pre-configured for log collection, analysis, and forensic triage. Below are screenshots from various modules included in the Elastic stack and supporting toolset.
+
+### Kibana
+Kibana is the main UI for visualizing and querying logs.
+![Kibana Dashboard](./screenshots/kibana.png)
+
+### Elastic Fleet & Agents
+Fleet tracks connected agents and their health.
+![Fleet Agents](./screenshots/fleet_agents.png)
+![Fleet Policies](./screenshots/fleet_policies.png)
+
+### Osquery Manager
+Used for live queries and endpoint inspection.
+*Note: No queries have been executed in this lab instance.*
+![Osquery](./screenshots/osquery.png)
+
+### Wazuh
+Wazuh integration for host intrusion detection. Currently shows zero logs — confirming no endpoint agent is reporting.
+![Wazuh](./screenshots/wazuh.png)
+
+### CyberChef
+The "Cyber Swiss Army Knife" for data decoding and manipulation.
+![CyberChef](./screenshots/cyberchef.png)
+
+### ATT&CK Navigator
+Visual map of adversary techniques using MITRE ATT&CK framework.
+![MITRE ATT&CK Navigator](./screenshots/navigator.png)
+
+### InfluxDB
+Database for time-series data, used for telemetry and metrics.
+![InfluxDB](./screenshots/influxdb.png)
