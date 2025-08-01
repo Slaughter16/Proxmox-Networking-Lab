@@ -41,7 +41,7 @@
 
 ---
 
-## Security Onion: Integrated Tools
+## 🧅 Security Onion: Integrated Tools
 
 Security Onion offers several powerful tools pre-configured for log collection, analysis, and forensic triage. Below are screenshots from various modules included in the Elastic stack and supporting toolset.
 
