@@ -78,3 +78,20 @@ To allow Pi-hole to properly resolve redirected DNS queries (those not originall
 ![Redirect_Traffic](./screenshots/7_Pihole_Config.png)
 
 This setup allows Pi-hole to accept DNS queries redirected from other servers (e.g., `8.8.8.8`, `1.1.1.1`) and forward queries securely to Google DNS with ECS and DNSSEC enabled.
+
+---
+
+## Pi-hole Query Log Demonstration
+
+The following screenshots show DNS query logs captured by Pi-hole from various devices across VLANs, confirming proper DNS resolution and traffic monitoring.
+
+- 🪟 192.168.10.100 – Windows 10 Client (VLAN 10)
+- 🐧 192.168.10.101 – Debian Admin Machine (VLAN 10)
+- 🧪 192.168.30.100 – Kali Linux (VLAN 30)
+- 🖥️ 192.168.20.102 – Windows Server 2019 (VLAN 20)
+
+### Queries from 192.168.10.100 and 192.168.10.101
+![Query Log 1](./screenshots/8_Query.png)
+
+### Queries from 192.168.30.100 and 192.168.20.102
+![Query Log 2](./screenshots/9_Query.png)
