@@ -124,3 +124,38 @@ Each subfolder includes:
 - Security monitoring via Security Onion  
 - Network management across Windows & Linux  
 - Documentation and Troubleshooting systems
+
+---
+
+## 🔐 VPN Access
+
+- Configured **OpenVPN server** on pfSense to allow remote access to VLAN10 (192.168.10.0/24).
+- Created and exported **user certificate** using pfSense’s Cert Manager.
+- Connected from external VM using **OpenVPN client**.
+- Verified access:
+  - ✅ Access to Debian Admin (192.168.10.101)
+  - ❌ Blocked access to VLAN20 and VLAN30
+
+**Screenshots:**
+- [ ] ![OpenVPN Server Config](screenshots/openvpn_server_config.png)
+- [ ] ![OpenVPN Connected Client](screenshots/openvpn_client_connected.png)
+- [ ] ![VPN Ping Success VLAN10](screenshots/vpn_ping_success_vlan10.png)
+- [ ] ![VPN Ping Fail VLAN20](screenshots/vpn_ping_fail_vlan20.png)
+
+---
+
+## 🔒 Inter-VLAN Firewall Rules
+
+- 🔒 **Blocked VLAN30 (Kali, Security Onion)** from accessing VLAN20 (WinServer, Meta, PiHole)
+- 🔐 **Allowed SSH (port 22)** from VLAN10 to VLAN20 (admin to servers)
+- 🚫 Blocked all other access between VLANs
+
+**Tested Connections:**
+- ✅ SSH from Debian Admin to WinServer (192.168.20.102)
+- ❌ Ping from Kali (192.168.30.100) to Meta (192.168.20.101)
+
+**Screenshots:**
+- [ ] ![Firewall Rule VLAN30 Block](screenshots/firewall_vlan30_block.png)
+- [ ] ![Firewall Rule SSH Allow](screenshots/firewall_vlan10_ssh_allow.png)
+- [ ] ![Ping Fail VLAN30 → VLAN20](screenshots/kali_ping_fail_meta.png)
+- [ ] ![SSH Success VLAN10 → VLAN20](screenshots/admin_ssh_winserver.png)
