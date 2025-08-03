@@ -36,7 +36,7 @@ Navigate to:
 
 1. Click ➕ **Add/Sign**
 
-![Cert](./screenshots/7_OpenVPN.png)
+![Cert](./screenshots/6_OpenVPN.png)
 ![Cert](./screenshots/7_OpenVPN.png)
 
 2. Set:
@@ -48,8 +48,8 @@ Navigate to:
 
 3. Click **Save**
 
-![Cert](./screenshots/6_OpenVPN.png)
 ![Cert](./screenshots/7_OpenVPN.png)
+![Cert](./screenshots/8_OpenVPN.png)
 
 ---
 
@@ -66,9 +66,9 @@ Still under **Certificates > Certificates**:
    - **Common Name:** `user1`
 3. Click **Save**
 
-![Cert](./screenshots/7_OpenVPN.png)
-![Cert](./screenshots/7_OpenVPN.png)
-![Cert](./screenshots/7_OpenVPN.png)
+![Cert](./screenshots/9_OpenVPN.png)
+![Cert](./screenshots/10_OpenVPN.png)
+![Cert](./screenshots/11_OpenVPN.png)
 
 ---
 
