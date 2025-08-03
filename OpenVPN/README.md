@@ -35,13 +35,16 @@ Navigate to:
 **`System > Certificates > Certificates`**
 
 1. Click ➕ **Add/Sign**
+
+![Cert](./screenshots/7_OpenVPN.png)
+![Cert](./screenshots/7_OpenVPN.png)
+
 2. Set:
    - **Method:** `Create an internal certificate`
    - **Descriptive Name:** `OpenVPN-Server`
    - **Certificate Authority:** `OpenVPN-CA`
    - **Type:** `Server Certificate`
    - **Common Name:** `OpenVPN-Server`
-  
 
 3. Click **Save**
 
@@ -62,6 +65,10 @@ Still under **Certificates > Certificates**:
    - **Type:** `User Certificate`
    - **Common Name:** `user1`
 3. Click **Save**
+
+![Cert](./screenshots/7_OpenVPN.png)
+![Cert](./screenshots/7_OpenVPN.png)
+![Cert](./screenshots/7_OpenVPN.png)
 
 ---
 
