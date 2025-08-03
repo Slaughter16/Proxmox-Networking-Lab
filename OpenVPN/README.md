@@ -10,6 +10,10 @@ Navigate to:
 **`System > Certificates > Authorities`**
 
 1. Click ➕ **Add**
+
+![Cert](./screenshots/1_Cert_Sys.png)
+![Cert](./screenshots/2_Cert_Auth.png)
+
 2. Set:
    - **Descriptive Name:** `OpenVPN-CA`
    - **Method:** `Create an internal Certificate Authority`
@@ -17,6 +21,11 @@ Navigate to:
    - **Digest Algorithm:** `SHA256`
    - Fill out country, state, etc.
 3. Click **Save**
+
+![Cert](./screenshots/3_OpenVPN.png)
+![Cert](./screenshots/4_OpenVPN.png)
+![Cert](./screenshots/5_OpenVPN.png)
+
 
 ---
 
@@ -32,7 +41,12 @@ Navigate to:
    - **Certificate Authority:** `OpenVPN-CA`
    - **Type:** `Server Certificate`
    - **Common Name:** `OpenVPN-Server`
+  
+
 3. Click **Save**
+
+![Cert](./screenshots/6_OpenVPN.png)
+![Cert](./screenshots/7_OpenVPN.png)
 
 ---
 
