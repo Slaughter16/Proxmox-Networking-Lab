@@ -37,7 +37,6 @@ Navigate to:
 1. Click ➕ **Add/Sign**
 
 ![Cert](./screenshots/6_OpenVPN.png)
-![Cert](./screenshots/7_OpenVPN.png)
 
 2. Set:
    - **Method:** `Create an internal certificate`
