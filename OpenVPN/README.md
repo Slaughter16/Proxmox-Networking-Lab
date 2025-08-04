@@ -173,6 +173,9 @@ Once connected:
    - **Password:** (strong)
    - Under **Certificate**, select `OpenVPN-User1`
 6. Click **Save**
+![Cert](./screenshots/32_OpenVPN.png)
+![Cert](./screenshots/33_OpenVPN.png)
+![Cert](./screenshots/34_OpenVPN.png)
 
 ### Step 2: Return to Client Export
 
