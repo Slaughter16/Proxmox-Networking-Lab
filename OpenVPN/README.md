@@ -85,7 +85,7 @@ Follow these steps:
    
 ![Cert](./screenshots/14_OpenVPN.png)
 
-3. **CA:** Select `OpenVPN-CA`
+2. **CA:** Select `OpenVPN-CA`
 ![Cert](./screenshots/15_OpenVPN.png)
 
 5. **Server Certificate:** `OpenVPN-Server`
@@ -96,12 +96,14 @@ Follow these steps:
 
 ![Cert](./screenshots/16_OpenVPN.png)
 ![Cert](./screenshots/17_OpenVPN.png)
-
-11. **Client Settings:** (Optional DNS options)
-12. **Firewall Rules:** ✔️ `Auto-create`
-
 ![Cert](./screenshots/18_OpenVPN.png)
 ![Cert](./screenshots/19_OpenVPN.png)
+
+3. **Client Settings:** (Optional DNS options)
+4. **Firewall Rules:** ✔️ `Auto-create`
+
+![Cert](./screenshots/20_OpenVPN.png)
+![Cert](./screenshots/21_OpenVPN.png)
 
 Click **Finish**
 
