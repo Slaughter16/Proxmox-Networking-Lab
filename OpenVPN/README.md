@@ -147,6 +147,8 @@ Go to:
 
 ### Before connecting , ping from WinServer (192.168.20.102) to DebianAdmin (192.168.10.101) failed
 
+![Before_OpenVPN](./screenshots/52_openVPNN.png)
+
 ## 📥 Step 1: Download OpenVPN Installer from pfSense
 
 - Navigate to `VPN → OpenVPN → Client Export` in pfSense.
