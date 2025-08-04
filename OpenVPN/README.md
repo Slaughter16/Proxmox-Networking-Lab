@@ -182,11 +182,11 @@ Go to:
 
 - Click **Install** to confirm TAP driver setup.
 
-![Download](./screenshots/45_openVPN.png)
+![Download](./screenshots/45_openVPNN.png)
 
 - Final confirmation shows installation complete:
 
-![Post Install](./screenshots/46_openVPN.png)
+![Post Install](./screenshots/46_openVPNN.png)
 
 ---
 
