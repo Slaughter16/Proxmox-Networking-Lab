@@ -194,7 +194,7 @@ Go to:
 
 - Locate the **OpenVPN icon** in the system tray (bottom right).
 - Right-click → Select **Connect**.
-![Post Install](./screenshots/47_openVPN.png)
+![Post Install](./screenshots/47_openVPNN.png)
 
 - Choose the config: `vpnuser-config (UDP4:1194)`
 - When prompted:
