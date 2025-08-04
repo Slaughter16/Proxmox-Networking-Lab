@@ -166,6 +166,7 @@ Go to:
 - Windows SmartScreen warning may appear:
   - Click **More info** → **Run anyway**  
 ![SmartScreen](./screenshots/40_openVPN.png)
+
 - Click **Install Now** to begin setup.
 
 ![Install Now](./screenshots/41_openVPN.png)
