@@ -4,7 +4,7 @@ This guide documents how to fix and configure the Pi-hole container/VM to serve 
 
 ## 📌 Problem
 
-Pi-hole VM was originally assigned the wrong IP address: `192.168.1.2` (outside target VLAN).  
+Pi-hole VM was originally assigned an incorrect IP address: `192.168.1.2` (outside target VLAN).  
 We wanted Pi-hole to use `192.168.20.2` to serve as the DNS server for All the VLANs but targeted for VLAN 20 — the same subnet as the Windows client and Debian admin VM.
 
 ## 🔍 Initial Troubleshooting
@@ -32,7 +32,7 @@ Manually changed IP address (not via /etc/network or Netplan, but directly):
 
 ### 💾 Make IP Assignment Permanent
 
-To make the Pi-hole IP assignment persistent after reboot, manually edit the network interface configuration file:
+To make the Pi-hole IP assignment persistent across reboots, manually edit the network interface configuration file:
 
 ### 📝 Edit the interfaces file:
 
