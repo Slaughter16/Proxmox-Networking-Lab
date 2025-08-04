@@ -50,7 +50,14 @@ iface eth0 inet static
   netmask 255.255.255.0
   gateway 192.168.20.1
 ```
-
+> 🔁 Restart networking or reboot:
+> ```
+> sudo systemctl restart networking
+> ```
+> or just:
+> ```
+> sudo reboot
+> ```
 ![Config_Perm_IP](./screenshots/4_Perm_IP.png) 
 
 - **Confirm change with 'ip a'**
