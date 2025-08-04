@@ -213,8 +213,8 @@ Go to:
 After connecting, open `Command Prompt` and run ping tests:
 
 ```bash
-ping 192.168.10.1     # pfSense VLAN10 gateway → Success ✅
-ping 192.168.20.102   # Windows Server on VLAN20 → Timeout ❌
+ping 192.168.10.101     # Debian Admin Machine → Success ✅
+ipconfig /all   # Check the IP OpenVPN issued → Success ✅
 ```
 
 ## 🔁 Fix: Missing Users in Export List
