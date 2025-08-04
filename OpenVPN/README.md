@@ -151,7 +151,7 @@ Go to:
 
 ## 📥 Step 1: Download OpenVPN Installer from pfSense
 
-- Navigate to `VPN → OpenVPN → Client Export` in pfSense.
+- On WinServer navigate to `VPN → OpenVPN → Client Export` in pfSense.
 - Select:
   - **Remote Access Server:** `openvpn-remoteaccess UDP4:1194`
   - **User Export:** `vpnuser-installI001-amd64.exe`
@@ -252,17 +252,6 @@ ipconfig /all   # Check the IP OpenVPN issued (10.8.0.2) → Success ✅
 4. Export Windows Installer or .ovpn file
 ![Cert](./screenshots/36_OpenVPN.png)
 ![Cert](./screenshots/37_OpenVPN.png)
-
----
-
-## ✅ Post-Connection Testing
-
-After connecting from a client device:
-
-```bash
-ping 192.168.10.101  # Debian Admin VM ✅
-ping 192.168.20.102  # Windows Server ❌ (until firewall allows it)
-```
 
 ---
 
