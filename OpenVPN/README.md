@@ -213,8 +213,8 @@ Go to:
 After connecting, open `Command Prompt` and run ping tests:
 
 ```bash
-ping 192.168.10.101     # Debian Admin Machine → Success ✅
-ipconfig /all   # Check the IP OpenVPN issued → Success ✅
+ping 192.168.10.101     # Debian Admin Machine (VLAN10) → Success ✅
+ipconfig /all   # Check the IP OpenVPN issued (10.8.0.2) → Success ✅
 ```
 
 ![Post_Install](./screenshots/50_openVPNN.png)
