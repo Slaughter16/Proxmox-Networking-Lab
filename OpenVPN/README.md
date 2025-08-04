@@ -178,7 +178,7 @@ Go to:
 
 - When prompted, allow `openvpn-postinstall.exe` to make changes.
 
-![Download](./screenshots/44_openVPN.png)
+![Download](./screenshots/44_openVPNN.png)
 
 - Click **Install** to confirm TAP driver setup.
 
