@@ -116,10 +116,19 @@ Click **Finish**
 
 Go to:  
 **`VPN > OpenVPN > Client Export`**
+![Cert](./screenshots/24_OpenVPN.png)
 
 > 🔸 If you don't see this menu, install the package:
-> `System > Package Manager > Available Packages`  
+> `System > Package Manager > Available Packages`
+![Cert](./screenshots/25_OpenVPN.png)
+![Cert](./screenshots/26_OpenVPN.png)
+
+
 > Search for `openvpn-client-export`, then click **Install**
+
+![Cert](./screenshots/27_OpenVPN.png)
+![Cert](./screenshots/28_OpenVPN.png)
+![Cert](./screenshots/29_OpenVPN.png)
 
 ### Once Installed:
 1. Scroll to the **OpenVPN Clients** section
@@ -152,12 +161,16 @@ Once connected:
 ### Step 1: Create a User with Linked Certificate
 
 1. Go to: `System > User Manager > Users`
-2. Click **Add**
-3. Fill in:
+![Cert](./screenshots/30_OpenVPN.png)
+
+3. Click **Add**
+![Cert](./screenshots/31_OpenVPN.png)
+
+5. Fill in:
    - **Username:** `vpnuser`
    - **Password:** (strong)
    - Under **Certificate**, select `OpenVPN-User1`
-4. Click **Save**
+6. Click **Save**
 
 ### Step 2: Return to Client Export
 
