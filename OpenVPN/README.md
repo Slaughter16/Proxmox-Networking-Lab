@@ -116,7 +116,6 @@ Click **Finish**
 
 Go to:  
 **`VPN > OpenVPN > Client Export`**
-![Cert](./screenshots/24_OpenVPN.png)
 
 > 🔸 If you don't see this menu, install the package:
 > `System > Package Manager > Available Packages`
