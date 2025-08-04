@@ -2,8 +2,20 @@
 
 This document outlines how to configure VLANs in pfSense to segment your Proxmox virtual lab network into isolated zones. VLANs allow segmentation between client workstations (VLAN10), production services (VLAN20), and security/monitoring tools (VLAN30). This improves both security and network organization in the virtual lab.
 
- - [🎯 Objective](#-objective)
- 
+---
+
+## 🗂️ Table of Contents
+
+- [🎯 Objective](#-objective)
+- [🔐 Log into pfSense](#-log-into-pfsense)
+- [🔧 Create VLAN Interfaces](#-create-vlan-interfaces)
+- [🧬 Assign VLAN Interfaces](#-assign-vlan-interfaces)
+- [🛠️ Enable DHCP on VLANs](#️-step-4-enable-dhcp-on-each-vlan)
+- [🔒 Firewall Rules](#-add-allow-all-firewall-rules-testing-phase)
+- [🛠️ DNS Configuration with Pi-hole](#️-step-7-configure-pfsense-to-use-pi-hole-for-dns-across-vlans)
+- [✅ DHCP Lease Table](#step-10-verify-dhcp-leases)
+
+
 ## 🎯 Objective
 Segment the virtual lab network into three VLANs and route traffic securely using pfSense.
 
