@@ -2,6 +2,8 @@
 
 This document outlines how to configure VLANs in pfSense to segment your Proxmox virtual lab network into isolated zones. VLANs allow segmentation between client workstations (VLAN10), production services (VLAN20), and security/monitoring tools (VLAN30). This improves both security and network organization in the virtual lab.
 
+ - [🎯 Objective](#-objective)
+ 
 ## 🎯 Objective
 Segment the virtual lab network into three VLANs and route traffic securely using pfSense.
 
