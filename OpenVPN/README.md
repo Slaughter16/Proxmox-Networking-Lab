@@ -192,6 +192,8 @@ After connecting, open `Command Prompt` and run ping tests:
 ```bash
 ping 192.168.10.1     # pfSense VLAN10 gateway → Success ✅
 ping 192.168.20.102   # Windows Server on VLAN20 → Timeout ❌
+
+
 ## 🔁 Fix: Missing Users in Export List
 
 ### Step 1: Create a User with Linked Certificate
