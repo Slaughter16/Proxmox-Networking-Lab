@@ -217,6 +217,11 @@ ping 192.168.10.101     # Debian Admin Machine → Success ✅
 ipconfig /all   # Check the IP OpenVPN issued → Success ✅
 ```
 
+![Post_Install](./screenshots/50_openVPNN.png)
+![Post_Install](./screenshots/51_openVPNN.png)
+
+
+
 ## 🔁 Fix: Missing Users in Export List
 
 ### Step 1: Create a User with Linked Certificate
