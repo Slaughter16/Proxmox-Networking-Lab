@@ -184,8 +184,8 @@ Once connected:
 
 3. Scroll down — user `vpnuser` should now appear
 4. Export Windows Installer or .ovpn file
-![Cert](./screenshots/35_OpenVPN.png)
 ![Cert](./screenshots/36_OpenVPN.png)
+![Cert](./screenshots/37_OpenVPN.png)
 
 ---
 
