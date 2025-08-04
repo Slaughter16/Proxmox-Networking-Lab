@@ -136,7 +136,4 @@ Each subfolder includes:
   - ✅ Access to Debian Admin (192.168.10.101)
 
 **Screenshots:**
-- [ ] ![OpenVPN Server Config](screenshots/openvpn_server_config.png)
-- [ ] ![OpenVPN Connected Client](screenshots/openvpn_client_connected.png)
-- [ ] ![VPN Ping Success VLAN10](screenshots/vpn_ping_success_vlan10.png)
-- [ ] ![VPN Ping Fail VLAN20](screenshots/vpn_ping_fail_vlan20.png)
+-[OpenVPN](./OpenVPN/README.md)
