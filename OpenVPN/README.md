@@ -107,6 +107,9 @@ Follow these steps:
 
 Click **Finish**
 
+![Cert](./screenshots/22_OpenVPN.png)
+![Cert](./screenshots/23_OpenVPN.png)
+
 ---
 
 ## 📍 5. Export the OpenVPN Client Configuration
