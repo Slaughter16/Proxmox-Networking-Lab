@@ -99,6 +99,7 @@ Each VM and configuration is documented in its own folder:
 - [`Security Onion`](./SecurityOnion/README.md)
 - [`Troubleshooting`](./Troubleshoot/README.md)
 - [`OpenVPN`](./OpenVPN/README.md)
+
 Each subfolder includes:
 > 📸 **Screenshots** of VM settings, firewall rules, alerts, Pi-hole logs, and more.
 
