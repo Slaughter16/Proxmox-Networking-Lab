@@ -37,6 +37,7 @@ To make the Pi-hole IP assignment persistent after reboot, manually edit the net
 ### 📝 Edit the interfaces file:
 
 - **sudo nano /etc/network/interfaces**
+> 📝 Note: This guide assumes you're using a Debian-based system where `/etc/network/interfaces` is used instead of Netplan.
 
 ![Edit_Int](./screenshots/3_Edit_Int.png)
 
