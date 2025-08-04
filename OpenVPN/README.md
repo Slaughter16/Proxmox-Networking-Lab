@@ -152,7 +152,9 @@ Go to:
   - **Remote Access Server:** `openvpn-remoteaccess UDP4:1194`
   - **User Export:** `vpnuser-installI001-amd64.exe`
 - Click **Keep** when prompted by browser.
-- ![Download](images/openvpn_download_keep.png)
+  
+![Download](./screenshots/38_openVPN.png)
+![Download](./screenshots/39_openVPN.png)
 
 ---
 
@@ -161,14 +163,21 @@ Go to:
 - Double-click the `.exe` file to launch the installer.
 - Windows SmartScreen warning may appear:
   - Click **More info** → **Run anyway**  
-  - ![SmartScreen](images/openvpn_smartscreen_run.png)
+![SmartScreen](./screenshots/40_openVPN.png)
 - Click **Install Now** to begin setup.
-  - ![Install Now](images/openvpn_setup_install_now.png)
+![Install Now](./screenshots/41_openVPN.png)
 - Click **Yes** to allow installer permissions.
+![Download](./screenshots/42_openVPN.png)
+![Download](./screenshots/43_openVPN.png)
+
 - When prompted, allow `openvpn-postinstall.exe` to make changes.
+![Download](./screenshots/44_openVPN.png)
+
 - Click **Install** to confirm TAP driver setup.
+![Download](./screenshots/45_openVPN.png)
+
 - Final confirmation shows installation complete:
-  - ![Post Install](images/openvpn_config_installed.png)
+![Post Install](./screenshots/46_openVPN.png)
 
 ---
 
