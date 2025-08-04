@@ -133,11 +133,13 @@ Go to:
 1. Scroll to the **OpenVPN Clients** section
 ![Cert](./screenshots/30_OpenVPN.png)
 
-3. Look for your user (e.g., `vpnuser`)
-4. Choose export type:
+2. Look for your user (e.g., `vpnuser`)
+3. Choose export type:
    - Windows Installer (64-bit)
    - Archive (.zip)
    - Inline Config (.ovpn)
+
+![Cert](./screenshots/37_OpenVPN.png)
 
 ---
 
