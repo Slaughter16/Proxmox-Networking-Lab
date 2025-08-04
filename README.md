@@ -37,11 +37,13 @@ A virtual home lab designed to simulate an enterprise network environment using:
 
 ## 🧱 Lab Topology Overview
 
-- **Proxmox VE** with `vmbr0` (WAN) and `vmbr1` (LAN)
-- **pfSense** as router/firewall using VLAN trunking
+- **Proxmox VE Host** with VLAN-aware bridges `vmbr0` (WAN) and `vmbr1` (LAN)
+- **pfSense** as router/firewall using VLAN routing and DHCP
 - **Pi-hole** for DNS filtering and ad blocking
-- VLANs used to segment Clients, Servers, and Security Zones
-- Multiple VMs simulating real-world enterprise roles
+- VLANs:
+  - **VLAN 10 (Client)** – Workstations & Admin  
+  - **VLAN 20 (Server)** – Infrastructure/Server VMs  
+  - **VLAN 30 (Security)** – Security tools & IDS  
 
 ---
 
