@@ -143,22 +143,55 @@ Go to:
 
 ---
 
-## 📍 6. Install OpenVPN on the Client (Windows)
+# 🔐 6. Windows OpenVPN Client Setup with pfSense Export
 
-1. Download and install [OpenVPN GUI for Windows](https://openvpn.net/community-downloads/)
-2. Double-click the downloaded **Windows Installer** (from the export)
-3. Right-click the **OpenVPN GUI** tray icon
-4. Click **Connect**
-5. When prompted:
-   - **Username:** `vpnuser`
-   - **Password:** (set in pfSense)
+## 📥 Step 1: Download OpenVPN Installer from pfSense
 
-Once connected:
-- ✅ You should be assigned an IP (e.g., `10.8.0.2`)
-- ✅ You should be able to ping internal devices in allowed subnets
+- Navigate to `VPN → OpenVPN → Client Export` in pfSense.
+- Select:
+  - **Remote Access Server:** `openvpn-remoteaccess UDP4:1194`
+  - **User Export:** `vpnuser-installI001-amd64.exe`
+- Click **Keep** when prompted by browser.
+- ![Download](images/openvpn_download_keep.png)
 
 ---
 
+## 💻 Step 2: Install OpenVPN on Windows
+
+- Double-click the `.exe` file to launch the installer.
+- Windows SmartScreen warning may appear:
+  - Click **More info** → **Run anyway**  
+  - ![SmartScreen](images/openvpn_smartscreen_run.png)
+- Click **Install Now** to begin setup.
+  - ![Install Now](images/openvpn_setup_install_now.png)
+- Click **Yes** to allow installer permissions.
+- When prompted, allow `openvpn-postinstall.exe` to make changes.
+- Click **Install** to confirm TAP driver setup.
+- Final confirmation shows installation complete:
+  - ![Post Install](images/openvpn_config_installed.png)
+
+---
+
+## 🔌 Step 3: Connect to pfSense VPN
+
+- Locate the **OpenVPN icon** in the system tray (bottom right).
+- Right-click → Select **Connect**.
+- Choose the config: `vpnuser-config (UDP4:1194)`
+- When prompted:
+  - Enter your **Username** and **Password** from pfSense.
+  - ![VPN Login](images/openvpn_enter_credentials.png)
+- After successful login:
+  - ![VPN Connected](images/openvpn_connected.png)
+
+---
+
+## 📡 Step 4: Test Internal Network Access (Ping Test)
+
+After connecting, open `Command Prompt` and run ping tests:
+
+```bash
+ping 192.168.10.1     # pfSense VLAN10 gateway → Success ✅
+ping 192.168.20.102   # Windows Server on VLAN20 → Timeout ❌
 ## 🔁 Fix: Missing Users in Export List
 
 ### Step 1: Create a User with Linked Certificate
