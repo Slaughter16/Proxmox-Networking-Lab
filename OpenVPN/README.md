@@ -180,8 +180,12 @@ Once connected:
 ### Step 2: Return to Client Export
 
 1. Go to `VPN > OpenVPN > Client Export`
-2. Scroll down — user `vpnuser` should now appear
-3. Export Windows Installer or .ovpn file
+![Cert](./screenshots/35_OpenVPN.png)
+
+3. Scroll down — user `vpnuser` should now appear
+4. Export Windows Installer or .ovpn file
+![Cert](./screenshots/35_OpenVPN.png)
+![Cert](./screenshots/36_OpenVPN.png)
 
 ---
 
