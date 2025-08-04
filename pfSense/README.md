@@ -19,7 +19,7 @@ Access the pfSense web interface from your **Debian Admin VM** (tagged to VLAN 1
 - **Default Credentials:**
   - **Username:** `admin`
   - **Password:** `pfsense`
-  -(As you can see there are more characters in the password box as i made up my own)
+  -(A custom password was used in this setup)
 ![Login to pfSense](./screenshots/1_login_pfsense.png)
 
 ## pfSense Dashboard
@@ -62,7 +62,7 @@ Once logged in, you will see the dashboard.
 
 ### ➕ VLAN 30 – Security
 - **VLAN Tag:** `30`
-- **Description:** `VLAN30_Security` (mistyped but added 30 after)
+- **Description:** `VLAN30_Security` (Originally mistyped, but VLAN 30 was correctly added later)
 
 ![VLAN 30](./screenshots/6_vlan30_add.png)
 
