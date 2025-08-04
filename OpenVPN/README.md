@@ -199,9 +199,12 @@ Go to:
 - Choose the config: `vpnuser-config (UDP4:1194)`
 - When prompted:
   - Enter your **Username** and **Password** from pfSense.
+
 ![Post Install](./screenshots/48_openVPNN.png)
+
 - After successful login:
-  - ![VPN Connected](images/openvpn_connected.png)
+
+![Post_Install](./screenshots/49_openVPNN.png)
 
 ---
 
