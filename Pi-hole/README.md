@@ -59,6 +59,7 @@ iface eth0 inet static
 > sudo reboot
 > ```
 ![Config_Perm_IP](./screenshots/4_Perm_IP.png) 
+![Config_Perm_IP](./screenshots/11_Perm_IP.png) 
 
 - **Confirm change with 'ip a'**
 
