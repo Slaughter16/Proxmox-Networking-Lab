@@ -75,7 +75,8 @@ To allow Pi-hole to properly resolve redirected DNS queries (those not originall
    > **Listen on all interfaces, permit all origins**
    > This setting ensures Pi-hole accepts DNS queries coming from clients in **other VLANs**, not just from its own subnet.
 4. Under **Upstream DNS Servers**, ensure the following is selected:  
-   - **Google (IPv4) (ECS, DNSSEC)**
+   - ✅ Google DNS (8.8.8.8 and 8.8.4.4)
+   -  ✅ ECS and DNSSEC: Enable for enhanced privacy and security
 
 ![Redirect_Traffic](./screenshots/7_Pihole_Config.png)
 
