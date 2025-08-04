@@ -167,8 +167,10 @@ Go to:
   - Click **More info** → **Run anyway**  
 ![SmartScreen](./screenshots/40_openVPN.png)
 - Click **Install Now** to begin setup.
+
 ![Install Now](./screenshots/41_openVPN.png)
 - Click **Yes** to allow installer permissions.
+
 ![Download](./screenshots/42_openVPN.png)
 ![Download](./screenshots/43_openVPN.png)
 
