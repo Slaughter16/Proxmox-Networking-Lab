@@ -76,17 +76,32 @@ Still under **Certificates > Certificates**:
 Navigate to:  
 **`VPN > OpenVPN > Wizards`**
 
+![Cert](./screenshots/12_OpenVPN.png)
+![Cert](./screenshots/13_OpenVPN.png)
+
 Follow these steps:
 
 1. **Type:** `Local User Access`
-2. **CA:** Select `OpenVPN-CA`
-3. **Server Certificate:** `OpenVPN-Server`
-4. **Interface:** `WAN`
-5. **Protocol:** `UDP`, Port `1194`
-6. **Tunnel Network:** `10.8.0.0/24`
-7. **Local Network:** `192.168.10.0/24` (or your VLAN10 subnet)
-8. **Client Settings:** (Optional DNS options)
-9. **Firewall Rules:** ✔️ `Auto-create`
+   
+![Cert](./screenshots/14_OpenVPN.png)
+
+3. **CA:** Select `OpenVPN-CA`
+![Cert](./screenshots/15_OpenVPN.png)
+
+5. **Server Certificate:** `OpenVPN-Server`
+6. **Interface:** `WAN`
+7. **Protocol:** `UDP`, Port `1194`
+8. **Tunnel Network:** `10.8.0.0/24`
+9. **Local Network:** `192.168.10.0/24` (or your VLAN10 subnet)
+
+![Cert](./screenshots/16_OpenVPN.png)
+![Cert](./screenshots/17_OpenVPN.png)
+
+11. **Client Settings:** (Optional DNS options)
+12. **Firewall Rules:** ✔️ `Auto-create`
+
+![Cert](./screenshots/18_OpenVPN.png)
+![Cert](./screenshots/19_OpenVPN.png)
 
 Click **Finish**
 
