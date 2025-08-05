@@ -60,7 +60,7 @@ Because the rule **did not exclude** the Pi-hole's IP (`192.168.20.2`), it cause
 
 ---
 
-### ⚙️ 2. Update Pi-hole DNS Settings
+### 2. Update Pi-hole DNS Settings
 
 - Enter Pihole's DNS setting and Set upstream DNS (e.g., Google `8.8.8.8`, Cloudflare `1.1.1.1`)
 ![Pihole_Settings](./screenshots/15_Pihole_Settings.png)
@@ -71,7 +71,7 @@ Because the rule **did not exclude** the Pi-hole's IP (`192.168.20.2`), it cause
 
 ---
 
-### 🖥️ 3. Update `/etc/resolv.conf` on Pi-hole
+### 3. Update `/etc/resolv.conf` on Pi-hole
   ```bash
 sudo nano /etc/resolv.conf
 # Replace contents with:
