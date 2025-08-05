@@ -1,4 +1,4 @@
-### Step 1: Proxmox – Editing vmbr1 for VLAN Awareness
+## Step 1: Proxmox – Editing vmbr1 for VLAN Awareness
 Navigated to **Datacenter > Node > System > Network**
 
 ### Before Editing
