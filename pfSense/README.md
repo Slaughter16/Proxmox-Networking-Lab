@@ -1,6 +1,10 @@
 # 🧩 Step 3: Configure VLANs in pfSense
 
-This document outlines how to configure VLANs in pfSense to segment your Proxmox virtual lab network into isolated zones. VLANs allow segmentation between client workstations (VLAN10), production services (VLAN20), and security/monitoring tools (VLAN30). This improves both security and network organization in the virtual lab.
+This guide outlines how to configure VLANs in **pfSense** to segment your **Proxmox virtual lab network** into isolated zones. This setup improves security and organization by dividing traffic into:
+
+- **VLAN 10 – Clients**
+- **VLAN 20 – Servers**
+- **VLAN 30 – Security Tools**
 
 ---
 
@@ -17,7 +21,7 @@ This document outlines how to configure VLANs in pfSense to segment your Proxmox
 
 
 ## 🎯 Objective
-Segment the virtual lab network into three VLANs and route traffic securely using pfSense.
+Segment the virtual lab into separate VLANs and configure pfSense to route and manage traffic securely.
 
 ### VLAN Structure:
 | VLAN ID | Name     | Subnet             |
@@ -25,6 +29,8 @@ Segment the virtual lab network into three VLANs and route traffic securely usin
 | 10      | Clients  | 192.168.10.0/24    |
 | 20      | Servers  | 192.168.20.0/24    |
 | 30      | Security | 192.168.30.0/24    |
+
+---
 
 ## 🔐 Log into pfSense
 Access the pfSense web interface from your **Debian Admin VM** (tagged to VLAN 10):
@@ -34,9 +40,10 @@ Access the pfSense web interface from your **Debian Admin VM** (tagged to VLAN 1
   - **Username:** `admin`
   - **Password:** `pfsense`
   -(A custom password was used in this setup)
+
 ![Login to pfSense](./screenshots/1_login_pfsense.png)
 
-## pfSense Dashboard
+### pfSense Dashboard
 
 Once logged in, you will see the dashboard.
 
@@ -59,7 +66,7 @@ Once logged in, you will see the dashboard.
 - **VLAN Tag:** `10`
 - **Description:** `VLAN10_Client`
   
-✅ Click **Save**, then **Apply Changes**.
+✅ Click **Save** → **Apply Changes**
 
 ![VLAN 10](./screenshots/4_vlan10_add.png)
 
@@ -84,7 +91,7 @@ Once logged in, you will see the dashboard.
 
 ## 📋 Review All VLANs
 
-After all are added, the VLAN list should appear like this:
+All VLANs should now appear in the list:
 
 ![All VLANs](./screenshots/7_all_VLANS_listed.png)
 
@@ -100,33 +107,34 @@ After all are added, the VLAN list should appear like this:
 
 ---
 
-### ⚙️ Configure LAN10 Interface (VLAN 10)
-1. Click the new interface name (e.g., OPT1 → rename to **LAN10**).
-2. Enable the interface.
-3. Set **IPv4 Configuration Type** to `Static IPv4`.
-4. Enter:
-   - **IP Address:** `192.168.10.1`
-   - **Subnet Mask:** `/24`
+### ⚙️ Configure Interfaces
 
-💾 Save and **Apply Changes**.
+Repeat for each VLAN:
+
+#### LAN10 (VLAN 10)
+
+- **Enable**
+- **Static IPv4**
+- **IP:** `192.168.10.1/24`
+- 💾 Save and **Apply Changes**.
 
 ![Config VLAN10 Int](./screenshots/10_VLAN10_Int.png)
 ![Config VLAN10 Int](./screenshots/11_VLAN10_Inte.png)
 
 ---
 
-## 🔁 Repeat for VLAN20 and VLAN30
+#### LAN20 (VLAN 20)
 
-Follow the same steps above for:
+- **IP:** `192.168.20.1/24`
 
-- **LAN20 (VLAN 20)**
-  - IP: `192.168.20.1/24`
-    
 ![Config VLAN20 Int](./screenshots/12_VLAN20_Int.png)
 ![Config VLAN20 Int](./screenshots/13_VLAN20_Int.png)
 
-- **LAN30 (VLAN 30)**
-  - IP: `192.168.30.1/24`
+---
+
+#### LAN30 (VLAN 30)
+
+- **IP:** `192.168.30.1/24`
 
 ![Config VLAN30 Int](./screenshots/14_VLAN30_Int.png)
 ![Config VLAN30 Int](./screenshots/15_VLAN30_Int.png)
@@ -135,7 +143,7 @@ Follow the same steps above for:
 
 ## Step 4: Enable DHCP on VLANs
 
-## 🔹 Navigate to `Services > DHCP Server`
+Go to `Services ➝ DHCP Server`
 
 ![Services_DHCP Server](./screenshots/16_DHCP_Page.png)
 
@@ -294,7 +302,7 @@ Once everything is confirmed working, these rules should be tightened for proper
 
 ---
 
-### 🔧 Update DHCP Settings in pfSense for Each VLAN
+### Update DNS in DHCP Settings
 
 Log into the **pfSense Web UI** from your Debian Admin Machine.
 
@@ -327,8 +335,7 @@ Log into the **pfSense Web UI** from your Debian Admin Machine.
 
 2. Under **DNS Server Settings**:
    - Set **DNS Server 1**: `192.168.20.2`
-   - ✅ **Uncheck**:  
-     `Allow DNS server list to be overridden by DHCP/PPP on WAN
+- **Uncheck:** "Allow DNS server list to be overridden by DHCP/PPP on WAN"
      
 ![DNS_Setting](./screenshots/37_DNS.png)
 
@@ -350,11 +357,12 @@ Only do this **if you want ALL DNS to go through Pi-hole**, and not be handled b
 
 > ⚠️ **Important:**  
 > If pfSense still needs to resolve DNS for itself, leave **one** enabled.  
-> (In this setup, **DNS Resolver** was left enabled).
+> ✅ In this setup, **DNS Resolver was left enabled** for pfSense’s own lookups.
+
 
 ---
 
-# ✅ Step 9: Set Up DNS Redirection to Pi-hole (`192.168.20.2`)
+## ✅ Step 9: Redirect All DNS to Pi-hole via NAT
 
 We'll do this per VLAN using **Firewall ➝ NAT ➝ Port Forward**.
 
@@ -366,18 +374,16 @@ Click **+ Add**
 
 Fill in the following:
 
-| Field | Value |
-|-------|-------|
-| **Interface** | Select the VLAN (e.g., LAN 10) |
-| **Protocol** | TCP/UDP |
-| **Source Type** | Network |
-| **Source Address** | e.g., `192.168.10.0/24` |
-| **Source Port Range** | any |
-| **Destination** | any |
-| **Destination Port Range** | DNS (53) |
-| **Redirect Target IP** | `192.168.20.2` (your Pi-hole) |
-| **Redirect Target Port** | DNS (53) |
-| **Description** | `Redirect DNS to Pi-hole VLAN10` |
+
+| Field                | Value                 |
+|----------------------|-----------------------|
+| Interface            | VLAN (e.g., LAN10)    |
+| Protocol             | TCP/UDP               |
+| Source Network       | 192.168.x.0/24        |
+| Destination Port     | DNS (53)              |
+| Redirect Target IP   | 192.168.20.2 (Pi-hole)|
+| Redirect Target Port | 53                    |
+| Description          | Redirect DNS to Pi-hole|
 
 Options:
    - ✅ NAT Reflection: **Disable** (default)
@@ -386,9 +392,9 @@ Options:
 
 ![VLAN10_NAT_PortFwd](./screenshots/41_VLAN10.png)
 ![VLAN10_NAT_PortFwd](./screenshots/42_VLAN10.png)
-Click **Save** → **Apply Changes**
-
+✅ Click **Save** → **Apply Changes**
 🔁 **Repeat** for **VLAN 20** and **VLAN 30**  
+
 Just change the **Interface** and **Source Address** accordingly:
 
 - VLAN 20: `192.168.20.0/24`
@@ -398,13 +404,14 @@ Just change the **Interface** and **Source Address** accordingly:
 ![VLAN30_NAT_PortFwd](./screenshots/45_VLAN30.png)
 ![VLAN30_NAT_PortFwd](./screenshots/46_VLAN30.png)
 ![VLAN_NAT_PortFwd](./screenshots/47_VLAN.png)
+
 ---
 
 ✅ **Result:** All DNS traffic in each VLAN 'will' be intercepted and redirected to Pi-hole (`192.168.20.2`), even if clients try to use external DNS servers (e.g., `8.8.8.8` or `1.1.1.1`).
 
 ---
 
-# Step 10: Verify DHCP Leases
+## ✅ Step 10: Verify DHCP Lease Assignments
 
 The table below shows the DHCP lease assignments for each virtual machine, along with their associated VLANs and IP addresses as configured in pfSense:
 
@@ -418,3 +425,8 @@ The table below shows the DHCP lease assignments for each virtual machine, along
 | Security Onion      | VLAN 30| 192.168.30.101   |
 
 ![DHCP_Leases](./screenshots/48_DHCP_Leases.png)
+
+---
+
+✅ You have now fully segmented your lab network using pfSense, configured VLANs, DHCP, DNS redirection, and firewall rules.
+> 🛡️ Proceed to tighten firewall policies as needed based on lab roles and access control.
