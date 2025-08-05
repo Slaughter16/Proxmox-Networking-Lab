@@ -130,6 +130,7 @@ curl https://www.google.com
 - Security Onion (timeout)
 ![SecO](./screenshots/7_Troubleshoot_Seconion.png)
 
+---
 
 ### 🟢 After Fix (Invert Match applied):
 
@@ -148,6 +149,7 @@ curl https://www.google.com
 - Windows Server 2019 (Fixed)
 ![WinServer](./screenshots/18_Troubleshoot_Success_WinServer.png)
 
+---
 
 ### curl https://google.com – Output 
 
