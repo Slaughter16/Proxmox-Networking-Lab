@@ -10,7 +10,7 @@
 
 ---
 
-## ✅ Steps to Enable DHCP
+## ✅ Enabling DHCP on Windows 10
 
 1. Open **Control Panel**
 
