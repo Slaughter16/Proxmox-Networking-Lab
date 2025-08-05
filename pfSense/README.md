@@ -297,7 +297,10 @@ Once everything is confirmed working, these rules should be tightened for proper
 - VLAN30 → allow inbound logging from all VLANs, but block internet
 
 ---
-# Step 6: DNS Documentation (Pi-hole/README.md)
+## 🧪 Step 6: DNS Configuration (Pi-hole)
+To complete the network segmentation lab with DNS-based filtering and resolution, follow the Pi-hole DNS documentation:
+
+➡️ [View DNS Configuration Guide](Proxmox-Networking-Lab/Pi-hole/README.md)
 
 ---
 
