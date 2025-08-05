@@ -1,17 +1,21 @@
 # Step 6: 🧩 Pi-hole DNS Server Configuration (VLAN 20)
 
-This guide documents how to fix and configure the Pi-hole container/VM to serve as the DNS server for **VLAN 20** and other VLANs in the Proxmox lab.
+This documentation outlines how to configure the Pi-hole container/VM as the DNS server for **VLAN 20** in your Proxmox lab environment. The steps also cover troubleshooting and fixing an incorrect IP address assignment.
 
 ## 📌 Problem
 
-Pi-hole VM was originally assigned an incorrect IP address: `192.168.1.2` (outside target VLAN).  
-We wanted Pi-hole to use `192.168.20.2` to serve as the DNS server for All the VLANs but targeted for VLAN 20 — the same subnet as the Windows client and Debian admin VM.
+The Pi-hole VM was initially assigned an incorrect IP address: `192.168.1.2`, which is not part of VLAN 20.
+
+✅ **Goal:** Assign the correct static IP `192.168.20.2` to the Pi-hole VM to ensure it can function properly as the DNS server for VLAN 20 (alongside the Windows client and Debian Admin VM).
+
+---
 
 ## 🔍 Initial Troubleshooting
 
-- Ran `ip a` on the Pi-hole console.
-- Verified the interface in use was `eth0`.
-- Saw the current IP was incorrect (`192.168.1.2`).
+1. Logged into the Pi-hole VM console.
+2. Ran `ip a` and confirmed:
+   - Active interface: `eth0`
+   - Incorrect IP: `192.168.1.2`
   
 ![Pihole IP address before change](./screenshots/1_IP.png)
 
@@ -21,11 +25,11 @@ We wanted Pi-hole to use `192.168.20.2` to serve as the DNS server for All the V
 ## 🧪 Temporary IP Fix (Manual Command-Line Change)
 
 Manually changed IP address (not via /etc/network or Netplan, but directly):
-
-- **sudo dhcpcd eth0**
-- **sudo ip addr add 192.168.20.2/24 dev eth0**
-- **sudo ip route add default via 192.168.20.1**
-  
+```bash
+sudo dhcpcd eth0**
+sudo ip addr add 192.168.20.2/24 dev eth0**
+sudo ip route add default via 192.168.20.1**
+```
 ![Config_Temp_IP](./screenshots/2_Config_IP.png)
 
 ---
