@@ -10,7 +10,7 @@ This document outlines how to configure VLANs in pfSense to segment your Proxmox
 - [🔐 Log into pfSense](#-log-into-pfsense)
 - [🔧 Create VLAN Interfaces](#-create-vlan-interfaces)
 - [🧬 Assign VLAN Interfaces](#-assign-vlan-interfaces)
-- [🛠️ Enable DHCP on VLANs](#️-step-4-enable-dhcp-on-each-vlan)
+- [🛠️ Enable DHCP on VLANs](#️enable-dhcp-on-each-vlans)
 - [🔒 Firewall Rules](#-add-allow-all-firewall-rules-testing-phase)
 - [🛠️ DNS Configuration with Pi-hole](#️-step-7-configure-pfsense-to-use-pi-hole-for-dns-across-vlans)
 - [✅ DHCP Lease Table](#step-10-verify-dhcp-leases)
