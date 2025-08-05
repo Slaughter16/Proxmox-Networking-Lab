@@ -48,30 +48,34 @@ To ensure the server can be pinged by other machines:
 
 ![ICMP](./screenshots/7_Firewall.png)
 ![ICMP](./screenshots/8_Firewall.png)
-3. Go to **Inbound Rules**  
+
+2. Go to **Inbound Rules**  
 ![ICMP](./screenshots/9_Rules.png)
-4. Enable the following rule:
+
+3. Enable the following rule:
    - `File and Printer Sharing (Echo Request - ICMPv4-In)`
 ![ICMP](./screenshots/10_Rules.png)
 ![ICMP](./screenshots/11_Rules.png)
 ![ICMP](./screenshots/12_Rules.png)
-5. Apply the rule to:
+
+4. Under the **Advanced** tab, apply the rule to:  
    - `Domain`, `Private`, and `Public` profiles
-   - Under the **Advanced** tab
+
 ![ICMP](./screenshots/13_Profile.png)
 ![ICMP](./screenshots/14_Profile.png)
+
 ---
 
-## 🔍 Network Verification
+## 🔍 Network Verification Tests
 
-| Test                        | Command                          | Expected Output                        |
-|-----------------------------|----------------------------------|----------------------------------------|
-| IP Configuration            | `ipconfig`                       | Shows IP: `192.168.20.102`             |
-| Ping Gateway                | `ping 192.168.20.1`              | Successful replies                     |
-| Ping DNS (Pi-hole)         | `ping 192.168.20.2`              | Successful replies                     |
-| Ping Another VM (Kali)      | `ping 192.168.30.100`            | Successful replies if firewall allows  |
-| DNS Resolution Test        | `nslookup google.com`            | Should resolve via Pi-hole             |
-| Routing Table              | `route print`                    | Shows routes for VLAN 20 subnet        |
+| Test                      | Command                       | Expected Result                          |
+|---------------------------|-------------------------------|-------------------------------------------|
+| IP Configuration          | `ipconfig`                    | Shows: `192.168.20.102`                   |
+| Ping Gateway              | `ping 192.168.20.1`           | Successful replies                        |
+| Ping DNS (Pi-hole)        | `ping 192.168.20.2`           | Successful replies                        |
+| Ping Another VM (Kali)    | `ping 192.168.30.100`         | Replies if firewall allows                |
+| DNS Resolution            | `nslookup google.com`         | Resolves via Pi-hole                      |
+| View Routing Table        | `route print`                 | Displays route to VLAN 20 and 0.0.0.0     |
 
 ---
 
@@ -86,5 +90,5 @@ To ensure the server can be pinged by other machines:
 - 'route print' output verify sends traffic to other networks 0.0.0.0 (eg: Internet) and specific router for local VLAN 192.168.20.0 On-link: means it knows to use ARP on that subnet.
  ![WinServer](./screenshots/17_Ping.png)
 
- 
+---
 
