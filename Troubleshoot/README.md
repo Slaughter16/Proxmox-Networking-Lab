@@ -162,9 +162,11 @@ curl https://www.google.com
 ![Meta](./screenshots/19_Troubleshoot_Success_Meta.png)
 
 - Pihole (Fixed)
+
 ![Pihole](./screenshots/20_Troubleshoot_Success_Pihole.png)
 
 - Kali Linux (Fixed)
+
 ![Kali](./screenshots/21_Troubleshoot_Success_Kali.png)
 
 - Security Onion (Fixed)
