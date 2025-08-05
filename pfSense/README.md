@@ -10,8 +10,8 @@ This document outlines how to configure VLANs in pfSense to segment your Proxmox
 - [🔐 Log into pfSense](#-log-into-pfsense)
 - [🔧 Create VLAN Interfaces](#-create-vlan-interfaces)
 - [🧬 Assign VLAN Interfaces](#-assign-vlan-interfaces)
-- [🛠️ Enable DHCP on VLANs](#-enable-dhcp-on-vlans)
-- [🔒 Firewall Rules](#-add-allow-all-firewall-rules-testing-phase)
+- [🛠️ Enable DHCP on VLANs](#step-4-enable-dhcp-on-vlans)
+- [🔒 Firewall Rules](#step-5-add-allow-all-firewall-rules-testing-phase)
 - [🛠️ DNS Configuration with Pi-hole](#️-step-7-configure-pfsense-to-use-pi-hole-for-dns-across-vlans)
 - [✅ DHCP Lease Table](#step-10-verify-dhcp-leases)
 
@@ -133,7 +133,7 @@ Follow the same steps above for:
 
 ---
 
-## 🛠️ Step 4: Enable DHCP on VLANs
+## Step 4: Enable DHCP on VLANs
 
 ## 🔹 Navigate to `Services > DHCP Server`
 
@@ -180,7 +180,7 @@ Follow the same steps above for:
 
 ---
 
-# 🔒 Step 5: Add Allow-All Firewall Rules (Testing Phase)
+## Step 5: Add Allow-All Firewall Rules (Testing Phase)
 
 During the initial testing phase, we’ll allow all traffic between VLANs by adding permissive rules to each VLAN interface. 
 Once everything is confirmed working, these rules should be tightened for proper segmentation and security.
@@ -350,7 +350,7 @@ Only do this **if you want ALL DNS to go through Pi-hole**, and not be handled b
 
 > ⚠️ **Important:**  
 > If pfSense still needs to resolve DNS for itself, leave **one** enabled.  
-> (In this setup, **DNS Resolver** was left enabled.)
+> (In this setup, **DNS Resolver** was left enabled).
 
 ---
 
