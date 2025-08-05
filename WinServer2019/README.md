@@ -44,7 +44,7 @@
 
 To ensure the server can be pinged by other machines:
 
-1. Open **Windows Defender Firewall with Advanced Security**
+1. Open **Windows Defender Firewall then into Advanced Settings**
 
 ![ICMP](./screenshots/7_Firewall.png)
 ![ICMP](./screenshots/8_Firewall.png)
