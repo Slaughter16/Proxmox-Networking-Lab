@@ -61,7 +61,7 @@ To make the Pi-hole IP assignment persistent across reboots, manually edit the n
 
 ![Edit_Int](./screenshots/3_Edit_Int.png)
 
-### Add the following configuration:
+### Add the following configuration
 
 ```ini
 auto eth0
