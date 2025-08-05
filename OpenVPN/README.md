@@ -4,20 +4,20 @@ This guide walks through setting up an OpenVPN server on **pfSense** and connect
 
 ## Table of Contents
 
-1. [Create a Certificate Authority (CA)](#-1-create-a-certificate-authority-ca)  
-2. [Create the Server Certificate](#-2-create-the-server-certificate)  
-3. [Create a User Certificate](#-3-create-a-user-certificate)  
-4. [Run the OpenVPN Wizard](#-4-run-the-openvpn-wizard)  
-5. [Export the OpenVPN Client Configuration](#-5-export-the-openvpn-client-configuration)  
-6. [Windows OpenVPN Client Setup with pfSense Export](#-6-windows-openvpn-client-setup-with-pfsense-export)  
-   - [Step 1: Download OpenVPN Installer from pfSense](#step-1-download-openvpn-installer-from-pfsense)  
-   - [Step 2: Install OpenVPN on Windows](#step-2-install-openvpn-on-windows)  
-   - [Step 3: Connect to pfSense VPN](#step-3-connect-to-pfsense-vpn)  
-   - [Step 4: Test Internal Network Access (Ping Test)](#step-4-test-internal-network-access-ping-test)  
-7. [Fix: Missing Users in Export List](#fix-missing-users-in-export-list)  
-   - [Step 1: Create a User with Linked Certificate](#step-1-create-a-user-with-linked-certificate)  
-   - [Step 2: Return to Client Export](#step-2-return-to-client-export)  
-8. [Uninstall or Clean Up](#uninstall-or-clean-up)
+1. 🏛️ [Create a Certificate Authority (CA)](#-1-create-a-certificate-authority-ca)  
+2. 🏷️ [Create the Server Certificate](#-2-create-the-server-certificate)  
+3. 👤 [Create a User Certificate](#-3-create-a-user-certificate)  
+4. 🧙 [Run the OpenVPN Wizard](#-4-run-the-openvpn-wizard)  
+5. 💾 [Export the OpenVPN Client Configuration](#-5-export-the-openvpn-client-configuration)  
+6. 🖥️ [Windows OpenVPN Client Setup with pfSense Export](#-6-windows-openvpn-client-setup-with-pfsense-export)  
+   - ⬇️ [Step 1: Download OpenVPN Installer from pfSense](#step-1-download-openvpn-installer-from-pfsense)  
+   - 🛠️ [Step 2: Install OpenVPN on Windows](#step-2-install-openvpn-on-windows)  
+   - 🔌 [Step 3: Connect to pfSense VPN](#step-3-connect-to-pfsense-vpn)  
+   - 📡 [Step 4: Test Internal Network Access (Ping Test)](#step-4-test-internal-network-access-ping-test)  
+7. 🛠️ [Fix: Missing Users in Export List](#fix-missing-users-in-export-list)  
+   - 👤 [Step 1: Create a User with Linked Certificate](#step-1-create-a-user-with-linked-certificate)  
+   - 🔄 [Step 2: Return to Client Export](#step-2-return-to-client-export)  
+8. 🧹 [Uninstall or Clean Up](#uninstall-or-clean-up)  
 
 ---
 
