@@ -17,7 +17,7 @@ This guide outlines how to configure VLANs in **pfSense** to segment your **Prox
 - [🛠️ Enable DHCP on VLANs](#step-4-enable-dhcp-on-vlans)
 - [🔒 Firewall Rules](#step-5-add-allow-all-firewall-rules-testing-phase)
 - [🛠️ DNS Configuration with Pi-hole](#️-step-7-configure-pfsense-to-use-pi-hole-for-dns-across-vlans)
-- [✅ DHCP Lease Table](#step-10-verify-dhcp-lease-assignments)
+- [✅ DHCP Lease Table](#-step-10-verify-dhcp-lease-assignments)
 
 
 ## 🎯 Objective
