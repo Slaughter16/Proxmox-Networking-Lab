@@ -400,7 +400,7 @@ Just change the **Interface** and **Source Address** accordingly:
 ![VLAN_NAT_PortFwd](./screenshots/47_VLAN.png)
 ---
 
-✅ **Result:** All DNS traffic in each VLAN 'should' be intercepted and redirected to Pi-hole (`192.168.20.2`), even if clients try to use external DNS servers (e.g., `8.8.8.8` or `1.1.1.1`).
+✅ **Result:** All DNS traffic in each VLAN 'will' be intercepted and redirected to Pi-hole (`192.168.20.2`), even if clients try to use external DNS servers (e.g., `8.8.8.8` or `1.1.1.1`).
 
 ---
 
