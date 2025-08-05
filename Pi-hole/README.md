@@ -2,7 +2,9 @@
 
 This documentation outlines how to configure the Pi-hole container/VM as the DNS server for **VLAN 20** in your Proxmox lab environment. The steps also cover troubleshooting and fixing an incorrect IP address assignment.
 
-## 📌 Problem
+---
+
+## 📌 Problem Overview
 
 The Pi-hole VM was initially assigned an incorrect IP address: `192.168.1.2`, which is not part of VLAN 20.
 
