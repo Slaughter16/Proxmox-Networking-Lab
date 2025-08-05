@@ -1,9 +1,10 @@
 # 🧪 Proxmox Networking & Security Lab
-**Enterprise Simulation: VLAN Segmentation | DNS Configuration | Firewall Rules | OpenVPN Configuration | Windows & Linux Configuration**
+**Enterprise Simulation: VLAN Segmentation | DNS Configuration | Firewall Rules | OpenVPN | Windows & Linux Systems**
 
 ![Proxmox Logo](./images/proxmox-logo.png)  
 
 A virtual home lab designed to simulate an enterprise network environment using:
+
 > **Proxmox VE**, **pfSense**, **Windows Server 2019**, **Windows 10**, **Security Onion**, **Kali Linux**, **Debian Admin**, **Pi-hole**, and **Metasploitable2**
 
 ---
@@ -37,13 +38,15 @@ A virtual home lab designed to simulate an enterprise network environment using:
 
 ## 🧱 Lab Topology Overview
 
-- **Proxmox VE Host** with VLAN-aware bridges `vmbr0` (WAN) and `vmbr1` (LAN)
-- **pfSense** as router/firewall using VLAN routing and DHCP
-- **Pi-hole** for DNS filtering and ad blocking
-- VLANs:
-  - **VLAN 10 (Client)** – Workstations & Admin  
-  - **VLAN 20 (Server)** – Infrastructure/Server VMs  
-  - **VLAN 30 (Security)** – Security tools & IDS  
+- **Proxmox VE Host** with VLAN-aware bridges:
+  - `vmbr0` – WAN
+  - `vmbr1` – LAN
+- **pfSense** – VLAN router/firewall and DHCP
+- **Pi-hole** – DNS filtering and ad blocking
+- **VLANs:**
+  - **VLAN 10 (Client)** – Workstations & Admin
+  - **VLAN 20 (Server)** – Core services & infrastructure
+  - **VLAN 30 (Security)** – Security tools & monitoring  
 
 ---
 
@@ -80,7 +83,7 @@ A virtual home lab designed to simulate an enterprise network environment using:
 - Central DNS filtering using Pi-hole with NAT redirection
 - Configured to support simulated attacker and victim VMs for security testing
 - IDS monitoring with Security Onion
-- Network troubleshooting across Windows and Linux hosts
+- Full Linux & Windows interoperability for testing
 
 ---
 
@@ -100,8 +103,7 @@ Each VM and configuration is documented in its own folder:
 - [`Troubleshooting`](./Troubleshoot/README.md)
 - [`OpenVPN`](./OpenVPN/README.md)
 
-Each subfolder includes:
-> 📸 **Screenshots** of VM settings, firewall rules, alerts, Pi-hole logs, and more.
+> 📸 **Each folder contains:** Screenshots, configs, logs, firewall rules, DNS settings, and test results.
 
 ---
 
@@ -111,32 +113,38 @@ Each subfolder includes:
 - Inter-VLAN communication is controlled via **stateful firewall rules**, ensuring least privilege
 - VLANs are assigned based on VM role, with unique IP ranges and DHCP scopes
 
+---
+
 ## 🌐 DNS Filtering with Pi-hole
-- Pi-hole deployed in the Server VLAN (192.168.20.2) as the default DNS resolver
-- DNS traffic from all VLANs is redirected to Pi-hole using pfSense NAT port redirection
-- Logs and dashboards show DNS query sources and blocked domains
-- Custom blocklists and whitelists configured for fine-grained DNS control
+
+- Pi-hole is deployed in VLAN 20 (`192.168.20.2`) as the authoritative DNS server
+- pfSense uses **NAT Port Forwarding** to redirect all VLAN DNS traffic to Pi-hole
+- Dashboards provide visibility into queries and blocked domains
+- DNSSEC disabled to avoid validation issues during testing
+- Pi-hole configured with custom blocklists and upstream DNS (e.g., `1.1.1.1`, `8.8.8.8`)
 
 ---
 
 ## 🎯 Skills Demonstrated
 
-- Virtualization using Proxmox  
-- VLAN design and inter-VLAN routing  
-- DNS/NAT configuration using pfSense & Pi-hole  
-- Security monitoring via Security Onion  
-- Network management across Windows & Linux  
-- Documentation and Troubleshooting systems
+- Virtualization and host networking using **Proxmox VE**
+- Advanced VLAN design and trunking
+- Firewall and NAT configuration in **pfSense**
+- DNS security filtering via **Pi-hole**
+- Security monitoring with **Security Onion**
+- Windows and Linux network integration
+- System documentation and troubleshooting methodology
 
 ---
 
-## 🔐 VPN Access
+## 🔐 VPN Access (OpenVPN)
 
-- Configured **OpenVPN server** on pfSense to allow remote access to VLAN10 (192.168.10.0/24).
-- Created and exported **user certificate** using pfSense’s Cert Manager.
-- Connected from external WinServer VM using **OpenVPN client**.
-- Verified access:
-  - ✅ Access to Debian Admin (192.168.10.101)
+- **OpenVPN server** configured in pfSense
+- Remote VPN access restricted to **VLAN 10** (192.168.10.0/24)
+- User certificate created and exported via pfSense Certificate Manager
+- Successfully connected from an external VM (Windows Server) using **OpenVPN client**
+- Verified access to internal resources:
+  - ✅ Debian Admin Workstation – `192.168.10.101`
 
-**Screenshots:**
--[OpenVPN](./OpenVPN/README.md)
+> 📸 **[See OpenVPN setup screenshots](./OpenVPN/README.md)**
+
