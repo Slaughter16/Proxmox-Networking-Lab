@@ -300,7 +300,7 @@ Once everything is confirmed working, these rules should be tightened for proper
 ## 🧪 Step 6: DNS Configuration (Pi-hole)
 To complete the network segmentation lab with DNS-based filtering and resolution, follow the Pi-hole DNS documentation:
 
-➡️ [View DNS Configuration Guide](Proxmox-Networking-Lab/Pi-hole/README.md)
+➡️ [View DNS Configuration Guide](../Pi-hole/README.md)
 
 ---
 
