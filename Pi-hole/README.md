@@ -26,9 +26,9 @@ The Pi-hole VM was initially assigned an incorrect IP address: `192.168.1.2`, wh
 
 Manually changed IP address (not via /etc/network or Netplan, but directly):
 ```bash
-sudo dhcpcd eth0**
-sudo ip addr add 192.168.20.2/24 dev eth0**
-sudo ip route add default via 192.168.20.1**
+sudo dhcpcd eth0
+sudo ip addr add 192.168.20.2/24 dev eth0
+sudo ip route add default via 192.168.20.1
 ```
 ![Config_Temp_IP](./screenshots/2_Config_IP.png)
 
