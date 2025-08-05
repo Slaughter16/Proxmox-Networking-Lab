@@ -14,7 +14,7 @@ This guide walks through setting up an OpenVPN server on **pfSense** and connect
    - 🛠️ [Step 2: Install OpenVPN on Windows](#step-2-install-openvpn-on-windows)  
    - 🔌 [Step 3: Connect to pfSense VPN](#step-3-connect-to-pfsense-vpn)  
    - 📡 [Step 4: Test Internal Network Access (Ping Test)](#step-4-test-internal-network-access-ping-test)  
-7. 🛠️ [Fix: Missing Users in Export List](#fix-missing-users-in-export-list)  
+7. 🛠️ [Fix: Missing Users in Export List](#fix-missing-users)  
    - 👤 [Step 1: Create a User with Linked Certificate](#step-1-create-a-user-with-linked-certificate)  
    - 🔄 [Step 2: Return to Client Export](#step-2-return-to-client-export)  
 8. 🧹 [Uninstall or Clean Up](#uninstall-or-clean-up)  
@@ -246,7 +246,7 @@ ipconfig /all   # Check the IP OpenVPN issued (10.8.0.2) → Success ✅
 ![Post_Install](./screenshots/51_openVPNN.png)
 
 
-
+<a name="fix-missing-users"></a>
 ## 🔁 Fix: Missing Users in Export List
 
 ### Step 1: Create a User with Linked Certificate
@@ -278,6 +278,7 @@ ipconfig /all   # Check the IP OpenVPN issued (10.8.0.2) → Success ✅
 
 ---
 
+<a name="uninstall-or-clean-up"></a>
 ## 🧹 Uninstall or Clean Up
 
 ### To Remove VPN Setup from Client VM:
