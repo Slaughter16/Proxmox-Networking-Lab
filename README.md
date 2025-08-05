@@ -148,3 +148,7 @@ Each VM and configuration is documented in its own folder:
 
 > 📸 **[See OpenVPN setup screenshots](./OpenVPN/README.md)**
 
+---
+## 📇 Contact
+
+🔗 [LinkedIn: John Slaughter](https://www.linkedin.com/in/john-slaughter-08a872262/)
