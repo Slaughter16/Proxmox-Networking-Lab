@@ -12,18 +12,18 @@
 
 ## 🔍 Network Verification Commands
 
-| Test                        | Command                                 | Expected Output                          |
-|-----------------------------|------------------------------------------|------------------------------------------|
-| Check IP address            | `ip a`                                   | Shows IP: `192.168.20.101`               |
-| Check default route         | `ip r`                                   | Shows route via `192.168.20.1`           |
-| Check DNS resolution        | `dig google.com` or `nslookup google.com`| Successful DNS reply from Pi-hole        |
-| Ping Gateway                | `ping -c 4 192.168.20.1`                 | Replies received                         |
-| Ping DNS                   | `ping -c 4 192.168.20.2`                 | Replies received                         |
-| Ping Kali                  | `ping -c 4 192.168.30.100`               | Replies received from Kali               |
+| Test                   | Command                                   | Expected Output                     |
+|------------------------|-------------------------------------------|-----------------------------------|
+| Check IP address       | `ip a`                                    | Shows IP: `192.168.20.101`        |
+| Check default route    | `ip r`                                    | Shows route via `192.168.20.1`    |
+| Check DNS resolution   | `dig google.com` or `nslookup google.com`| Successful DNS reply from Pi-hole |
+| Ping Gateway           | `ping -c 4 192.168.20.1`                  | Replies received                  |
+| Ping DNS               | `ping -c 4 192.168.20.2`                  | Replies received                  |
+| Ping Kali              | `ping -c 4 192.168.30.100`                | Replies received from Kali        |
 
 ---
 
-## 📸 Suggested Screenshot Checklist
+## 📸 Screenshot Checklist
 
 - `ip a` and `ip r` output
 
