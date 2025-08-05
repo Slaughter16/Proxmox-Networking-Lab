@@ -20,12 +20,12 @@ Navigate to:
    - **Key Length:** `2048` or `4096`
    - **Digest Algorithm:** `SHA256`
    - Fill out country, state, etc.
+
 3. Click **Save**
 
 ![Cert](./screenshots/3_OpenVPN.png)
 ![Cert](./screenshots/4_OpenVPN.png)
 ![Cert](./screenshots/5_OpenVPN.png)
-
 
 ---
 
@@ -38,7 +38,7 @@ Navigate to:
 
 ![Cert](./screenshots/6_OpenVPN.png)
 
-2. Set:
+2. Configure:
    - **Method:** `Create an internal certificate`
    - **Descriptive Name:** `OpenVPN-Server`
    - **Certificate Authority:** `OpenVPN-CA`
@@ -57,12 +57,14 @@ Navigate to:
 Still under **Certificates > Certificates**:
 
 1. Click ➕ **Add/Sign**
+
 2. Set:
    - **Method:** `Create an internal certificate`
    - **Descriptive Name:** `OpenVPN-User1`
    - **Certificate Authority:** `OpenVPN-CA`
    - **Type:** `User Certificate`
    - **Common Name:** `user1`
+
 3. Click **Save**
 
 ![Cert](./screenshots/9_OpenVPN.png)
@@ -81,26 +83,26 @@ Navigate to:
 
 Follow these steps:
 
-1. **Type:** `Local User Access`
+**Type:** `Local User Access`
    
 ![Cert](./screenshots/14_OpenVPN.png)
 
-2. **CA:** Select `OpenVPN-CA`
+**CA:** Select `OpenVPN-CA`
 ![Cert](./screenshots/15_OpenVPN.png)
 
-5. **Server Certificate:** `OpenVPN-Server`
-6. **Interface:** `WAN`
-7. **Protocol:** `UDP`, Port `1194`
-8. **Tunnel Network:** `10.8.0.0/24`
-9. **Local Network:** `192.168.10.0/24` (or your VLAN10 subnet)
+**Server Certificate:** `OpenVPN-Server`
+**Interface:** `WAN`
+**Protocol:** `UDP`, Port `1194`
+**Tunnel Network:** `10.8.0.0/24`
+**Local Network:** `192.168.10.0/24` (or your VLAN10 subnet)
 
 ![Cert](./screenshots/16_OpenVPN.png)
 ![Cert](./screenshots/17_OpenVPN.png)
 ![Cert](./screenshots/18_OpenVPN.png)
 ![Cert](./screenshots/19_OpenVPN.png)
 
-3. **Client Settings:** (Optional DNS options)
-4. **Firewall Rules:** ✔️ `Auto-create`
+**Client Settings:** (Optional DNS options)
+**Firewall Rules:** ✔️ `Auto-create`
 
 ![Cert](./screenshots/20_OpenVPN.png)
 ![Cert](./screenshots/21_OpenVPN.png)
@@ -119,17 +121,19 @@ Go to:
 
 > 🔸 If you don't see this menu, install the package:
 > `System > Package Manager > Available Packages`
+
 ![Cert](./screenshots/25_OpenVPN.png)
 ![Cert](./screenshots/26_OpenVPN.png)
 
 
-> Search for `openvpn-client-export`, then click **Install**
+Search for `openvpn-client-export`, then click **Install**
 
 ![Cert](./screenshots/27_OpenVPN.png)
 ![Cert](./screenshots/28_OpenVPN.png)
 ![Cert](./screenshots/29_OpenVPN.png)
 
 ### Once Installed:
+
 1. Scroll to the **OpenVPN Clients** section
 ![Cert](./screenshots/30_OpenVPN.png)
 
@@ -149,7 +153,9 @@ Go to:
 
 ![Before_OpenVPN](./screenshots/52_openVPNN.png)
 
-## 📥 Step 1: Download OpenVPN Installer from pfSense
+---
+
+### Step 1: Download OpenVPN Installer from pfSense
 
 - On WinServer navigate to `VPN → OpenVPN → Client Export` in pfSense.
 - Select:
@@ -162,7 +168,7 @@ Go to:
 
 ---
 
-## 💻 Step 2: Install OpenVPN on Windows
+### Step 2: Install OpenVPN on Windows
 
 - Double-click the `.exe` file to launch the installer.
 - Windows SmartScreen warning may appear:
@@ -172,13 +178,14 @@ Go to:
 - Click **Install Now** to begin setup.
 
 ![Install Now](./screenshots/41_openVPN.png)
-- Click **Yes** to allow installer permissions.
+
+- Allow installer permissions: Click **Yes**.
 
 ![Download](./screenshots/42_openVPN.png)
 
 ![Download](./screenshots/43_openVPN.png)
 
-- When prompted, allow `openvpn-postinstall.exe` to make changes.
+- When prompted, Allow `openvpn-postinstall.exe` changes.
 
 ![Download](./screenshots/44_openVPNN.png)
 
@@ -186,21 +193,20 @@ Go to:
 
 ![Download](./screenshots/45_openVPNN.png)
 
-- Final confirmation shows installation complete:
+- Final confirmation: Installation complete.
 
 ![Post Install](./screenshots/46_openVPNN.png)
 
 ---
 
-## 🔌 Step 3: Connect to pfSense VPN
+### Step 3: Connect to pfSense VPN
 
 - Locate the **OpenVPN icon** in the system tray (bottom right).
 - Right-click → Select **Connect**.
 ![Post Install](./screenshots/47_openVPNN.png)
 
 - Choose the config: `vpnuser-config (UDP4:1194)`
-- When prompted:
-  - Enter your **Username** and **Password** from pfSense.
+- When prompted, enter your **Username** and **Password** from pfSense.
 
 ![Post Install](./screenshots/48_openVPNN.png)
 
@@ -210,9 +216,9 @@ Go to:
 
 ---
 
-## 📡 Step 4: Test Internal Network Access (Ping Test)
+### Step 4: Test Internal Network Access (Ping Test)
 
-After connecting, open `Command Prompt` and run ping tests:
+After connecting, open Command Prompt and run:
 
 ```bash
 ping 192.168.10.101     # Debian Admin Machine (VLAN10) → Success ✅
@@ -231,14 +237,14 @@ ipconfig /all   # Check the IP OpenVPN issued (10.8.0.2) → Success ✅
 1. Go to: `System > User Manager > Users`
 ![Cert](./screenshots/30_OpenVPN.png)
 
-3. Click **Add**
+2. Click **Add**
 ![Cert](./screenshots/31_OpenVPN.png)
 
-5. Fill in:
+3. Fill in:
    - **Username:** `vpnuser`
    - **Password:** (strong)
    - Under **Certificate**, select `OpenVPN-User1`
-6. Click **Save**
+4. Click **Save**
 ![Cert](./screenshots/32_OpenVPN.png)
 ![Cert](./screenshots/33_OpenVPN.png)
 ![Cert](./screenshots/34_OpenVPN.png)
@@ -248,8 +254,8 @@ ipconfig /all   # Check the IP OpenVPN issued (10.8.0.2) → Success ✅
 1. Go to `VPN > OpenVPN > Client Export`
 ![Cert](./screenshots/35_OpenVPN.png)
 
-3. Scroll down — user `vpnuser` should now appear
-4. Export Windows Installer or .ovpn file
+2. Scroll down — user `vpnuser` should now appear
+3. Export Windows Installer or .ovpn file
 ![Cert](./screenshots/36_OpenVPN.png)
 ![Cert](./screenshots/37_OpenVPN.png)
 
