@@ -1,5 +1,23 @@
 # 🛠️ Troubleshooting DNS and Pi-hole Issues
 
+## 📚 Table of Contents
+
+- [❌ Problem Overview](#-problem-overview)
+  - [🔎 Symptoms](#-symptoms)
+- [🧠 Root Cause](#-root-cause)
+- [✅ Resolution Steps](#-resolution-steps)
+  - [🔧 1. Fix pfSense NAT Port Forward Rules](#-1-fix-pfsense-nat-port-forward-rules)
+  - [⚙️ 2. Update Pi-hole DNS Settings](#-2-update-pi-hole-dns-settings)
+  - [🖥️ 3. Update etcresolvconf on Pi-hole](#-3-update-etcresolvconf-on-pi-hole)
+- [🧪 DNS Resolution Test (Before and After NAT Invert Match Fix)](#dns-resolution-test-before-and-after-nat-invert-match-fix)
+  - [🔧 Problem Summary](#-problem-summary)
+  - [🧪 DNS Testing Tools (Before vs After Fix)](#-dns-testing-tools-before-vs-after-fix)
+    - [🔴 Before Fix](#-before-fix)
+    - [🟢 After Fix (Invert Match applied)](#-after-fix-invert-match-applied)
+- [📌 Notes](#-notes)
+
+---
+
 ## ❌ Problem Overview
 
 Client devices and the Pi-hole server were unable to resolve domain names.
