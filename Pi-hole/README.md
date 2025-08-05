@@ -11,7 +11,7 @@ This documentation outlines how to configure the Pi-hole container/VM as the DNS
 - [🧪 Temporary IP Fix (Manual Command-Line Change)](#-temporary-ip-fix-manual-command-line-change)
 - [💾 Make IP Assignment Permanent](#-make-ip-assignment-permanent)
   - [📝 Edit the interfaces file](#-edit-the-interfaces-file)
-  - [✏️ Add the following configuration](#-add-the-following-configuration)
+  - [Add the following configuration](#add-the-following-configuration)
 - [✅ Confirm Connectivity to Pi-hole Dashboard](#-confirm-connectivity-to-pi-hole-dashboard)
 - [🔄 Ensure Pi-hole Can Answer Redirected Traffic and Set Upstream DNS Servers](#-ensure-pi-hole-can-answer-redirected-traffic-and-set-upstream-dns-servers)
 - [📊 Pi-hole Query Log Demonstration](#pi-hole-query-log-demonstration)
