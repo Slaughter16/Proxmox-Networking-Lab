@@ -4,6 +4,20 @@ This documentation outlines how to configure the Pi-hole container/VM as the DNS
 
 ---
 
+## 📚 Table of Contents
+
+- [📌 Problem Overview](#-problem-overview)
+- [🔍 Initial Troubleshooting](#-initial-troubleshooting)
+- [🧪 Temporary IP Fix (Manual Command-Line Change)](#-temporary-ip-fix-manual-command-line-change)
+- [💾 Make IP Assignment Permanent](#-make-ip-assignment-permanent)
+  - [📝 Edit the interfaces file](#-edit-the-interfaces-file)
+  - [✏️ Add the following configuration](#-add-the-following-configuration)
+- [✅ Confirm Connectivity to Pi-hole Dashboard](#-confirm-connectivity-to-pi-hole-dashboard)
+- [🔄 Ensure Pi-hole Can Answer Redirected Traffic and Set Upstream DNS Servers](#-ensure-pi-hole-can-answer-redirected-traffic-and-set-upstream-dns-servers)
+- [📊 Pi-hole Query Log Demonstration](#pi-hole-query-log-demonstration)
+- [📈 Pi-hole Dashboard Display](#pi-hole-dashboard-display)
+
+---
 ## 📌 Problem Overview
 
 The Pi-hole VM was initially assigned an incorrect IP address: `192.168.1.2`, which is not part of VLAN 20.
