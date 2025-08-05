@@ -282,6 +282,11 @@ Once everything is confirmed working, these rules should be tightened for proper
 ---
 
 > ⚠️ **Note:** These rules are for **testing purposes only**. After confirming VLAN connectivity, apply more **restrictive policies** to isolate traffic between Clients, Servers, and Security VLANs.
+> 🔐 Next Step: Replace permissive firewall rules with restrictive ones:
+
+- VLAN10 → only access to VLAN20 on required ports (e.g., HTTP/HTTPS)
+
+- VLAN30 → allow inbound logging from all VLANs, but block internet
 
 ---
 
