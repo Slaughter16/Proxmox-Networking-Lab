@@ -297,6 +297,9 @@ Once everything is confirmed working, these rules should be tightened for proper
 - VLAN30 → allow inbound logging from all VLANs, but block internet
 
 ---
+# Step 6: DNS Documentation (Pi-hole/README.md)
+
+---
 
 # 🛠️ Step 7: Configure pfSense to Use Pi-hole for DNS Across VLANs
 
