@@ -307,7 +307,6 @@ Dest Port From: 80
 Dest Port To:   80  
 Description:  Allow VLAN10 to VLAN20 Port 80 (HTTP)
 
-
 Rule 2:
 Action:         Pass  
 Protocol:       TCP  
@@ -326,8 +325,17 @@ Description: Block all other traffic
 ✅ This ensures VLAN10 can only reach VLAN20 on 80/443, and DNS works via Pi-hole.
 ```
 
+### VLAN20 Firewall Rules (for Pi-hole)
 
-
+```bash
+# Example rule in pfSense:
+Action: Pass  
+Interface: VLAN 20  
+Protocol: UDP  
+Source: VLAN 20 net  
+Destination: any  
+Destination Port: 53 (DNS)
+```
 
 ### 🔄 VLAN30 Firewall Rules
 
