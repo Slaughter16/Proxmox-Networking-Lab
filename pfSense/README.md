@@ -293,7 +293,7 @@ Once everything is confirmed working, these rules should be tightened for proper
 
 > 🔐 Next Step: Replace permissive firewall rules with restrictive ones:
 
-### 🔄 Replace with Restrictive Rules
+### 🔄 VLAN10 Firewall Rules
 
 #### VLAN10 ➝ VLAN20 (Restrict to HTTP/HTTPS Only)
 
@@ -318,19 +318,34 @@ Dest Port To:   443
 
 
 
+### 🔄 VLAN30 Firewall Rules
+
+#### 1. Allow Inbound Logging from Other VLANs
+
+```plaintext
+Rule 1:
+Action:         Pass  
+Protocol:       TCP/UDP  
+Source:         VLAN10, VLAN20  
+Destination:    VLAN30  
+Dest Port:      514 (Syslog)
+```
+
+
+#### 2. Block All Internet Access (VLAN30 ➝ WAN)
+
+```plaintext
+Rule 2:
+Action:         Block  
+Protocol:       Any  
+Source:         VLAN30  
+Destination:    WAN net
+```
 
 
 
 
 
-
-
-
-
-
-
-- VLAN30 → allow inbound logging from all VLANs, but block internet
-screenshot
 ---
 ## 🧪 Step 6: DNS Configuration (Pi-hole)
 To complete the network segmentation lab with DNS-based filtering and resolution, follow the Pi-hole DNS documentation:
