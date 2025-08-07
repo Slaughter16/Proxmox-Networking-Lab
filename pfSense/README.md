@@ -390,9 +390,11 @@ Destination:    WAN net
 ping 192.168.20.102       # ❌ Should fail - ICMP blocked
 ssh user@192.168.20.101   # ❌ Should fail - SSH blocked
 telnet 192.168.20.101 22  # ❌ Should fail - Port 22 blocked
+curl http://192.168.20.101  # ✅ Succeeds - Port 80 (HTTP) allowed
 ```
 
 ![VLAN10_Verify](./screenshots/67_VLAN10_Rule.png)
+![VLAN10_Verify](./screenshots/72_VLAN10_Rule.png)
 
 ### VLAN30 Firewall Rules Verification (from Kali 192.168.30.100)
 
