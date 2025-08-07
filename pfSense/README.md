@@ -290,12 +290,47 @@ Once everything is confirmed working, these rules should be tightened for proper
 ---
 
 > ⚠️ **Note:** These rules are for **testing purposes only**. After confirming VLAN connectivity, apply more **restrictive policies** to isolate traffic between Clients, Servers, and Security VLANs.
+
 > 🔐 Next Step: Replace permissive firewall rules with restrictive ones:
 
-- VLAN10 → only access to VLAN20 on required ports (e.g., HTTP/HTTPS)
+### 🔄 Replace with Restrictive Rules
+
+#### VLAN10 ➝ VLAN20 (Restrict to HTTP/HTTPS Only)
+
+```plaintext
+Rule 1:
+Action:         Pass  
+Protocol:       TCP  
+Source:         VLAN10  
+Destination:    VLAN20  
+Dest Port From: 80  
+Dest Port To:   80  
+
+Rule 2:
+Action:         Pass  
+Protocol:       TCP  
+Source:         VLAN10  
+Destination:    VLAN20  
+Dest Port From: 443  
+Dest Port To:   443
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 - VLAN30 → allow inbound logging from all VLANs, but block internet
-
+screenshot
 ---
 ## 🧪 Step 6: DNS Configuration (Pi-hole)
 To complete the network segmentation lab with DNS-based filtering and resolution, follow the Pi-hole DNS documentation:
