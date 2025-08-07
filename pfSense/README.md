@@ -324,6 +324,14 @@ Destination:    Any
 Description: Block all other traffic
 ✅ This ensures VLAN10 can only reach VLAN20 on 80/443, and DNS works via Pi-hole.
 ```
+![Add_Rule_Port80](./screenshots/49_VLAN10.png)
+![VLAN10_Port80](./screenshots/50_VLAN10.png)
+![VLAN10_Port80](./screenshots/51_VLAN10.png)
+![VLAN10_Port443](./screenshots/52_VLAN10.png)
+![VLAN10_Port443](./screenshots/53_VLAN10.png)
+![VLAN10_Block](./screenshots/54_VLAN10.png)
+![VLAN10_Block](./screenshots/55_VLAN10.png)
+![VLAN10_Output](./screenshots/56_VLAN10_Output.png)
 
 ### VLAN20 Firewall Rules (for Pi-hole)
 
