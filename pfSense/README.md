@@ -387,19 +387,21 @@ Destination:    WAN net
 ### From Debian Machine (VLAN10) to VLAN 20 (Winserver & Meta)
 
 ```
-ping 192.168.20.102
-ssh user@192.168.20.101
-telnet 192.168.20.101 22
+ping 192.168.20.102       # ❌ Should fail - ICMP blocked
+ssh user@192.168.20.101   # ❌ Should fail - SSH blocked
+telnet 192.168.20.101 22  # ❌ Should fail - Port 22 blocked
 ```
 
 ![VLAN10_Verify](./screenshots/67_VLAN10_Rule.png)
 
 ### VLAN30 Firewall Rules Verification (from Kali 192.168.30.100)
 
-- **Ping external (google.com)**: Failed (Internet blocked as expected)  
-- **Curl HTTP/HTTPS**: Failed (Outbound HTTP/HTTPS blocked)  
-- **DNS Query (`dig google.com`)**: Successful (DNS redirection working)  
-
+```bash
+  ping google.com           # ❌ Should fail - Internet access blocked
+  curl http://example.com   # ❌ Should fail - HTTP blocked
+  curl https://example.com  # ❌ Should fail - HTTPS blocked
+  dig google.com            # ✅ Should work - DNS redirection to Pi-hole
+```
 ![VLAN30_Verify](./screenshots/68_VLAN30_Rule.png)
 
 #### Syslog UDP 514 Test
