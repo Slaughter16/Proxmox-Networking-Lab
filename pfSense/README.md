@@ -301,18 +301,28 @@ Once everything is confirmed working, these rules should be tightened for proper
 Rule 1:
 Action:         Pass  
 Protocol:       TCP  
-Source:         VLAN10  
-Destination:    VLAN20  
+Source:         VLAN10 subnet  
+Destination:    VLAN20 subnet
 Dest Port From: 80  
 Dest Port To:   80  
+Description:  Allow VLAN10 to VLAN20 Port 80 (HTTP)
+
 
 Rule 2:
 Action:         Pass  
 Protocol:       TCP  
-Source:         VLAN10  
-Destination:    VLAN20  
+Source:         VLAN10 subnet  
+Destination:    VLAN20 subnet 
 Dest Port From: 443  
 Dest Port To:   443
+Description:  Allow VLAN10 to VLAN20 Port 443 (HTTPS)
+
+Rule 3:
+Action:         Block  
+Protocol:       Any  
+Source:         VLAN10 subnet  
+Destination:    VLAN20 subnet  
+Description: Block all other traffic
 ```
 
 
