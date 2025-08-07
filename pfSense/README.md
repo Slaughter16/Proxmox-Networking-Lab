@@ -336,7 +336,6 @@ Description: Block all other traffic
 ### VLAN20 Firewall Rules (for Pi-hole)
 
 ```bash
-# Example rule in pfSense:
 Action: Pass  
 Interface: VLAN 20  
 Protocol: TCP/UDP  
