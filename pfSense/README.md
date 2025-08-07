@@ -384,7 +384,7 @@ Destination:    WAN net
 
 ### Verify Rules are working
 
-### From Debian Machine (VLAN10)
+### From Debian Machine (VLAN10) to VLAN 20 (Winserver & Meta)
 
 ```
 ping 192.168.20.102
