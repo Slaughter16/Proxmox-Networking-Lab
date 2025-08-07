@@ -339,11 +339,18 @@ Description: Block all other traffic
 # Example rule in pfSense:
 Action: Pass  
 Interface: VLAN 20  
-Protocol: UDP  
+Protocol: UDP/TCP  
 Source: VLAN 20 net  
 Destination: any  
 Destination Port: 53 (DNS)
 ```
+![VLAN20_Rule](./screenshots/57_VLAN20_Rule.png)
+![VLAN20_Rule](./screenshots/58_VLAN20_Rule.png)
+![VLAN20_Output](./screenshots/59_VLAN20_Output.png)
+
+
+
+
 
 ### 🔄 VLAN30 Firewall Rules
 
