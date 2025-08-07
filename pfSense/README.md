@@ -321,8 +321,9 @@ Rule 3:
 Action:         Block  
 Protocol:       Any  
 Source:         VLAN10 subnet  
-Destination:    VLAN20 subnet  
+Destination:    Any  
 Description: Block all other traffic
+✅ This ensures VLAN10 can only reach VLAN20 on 80/443, and DNS works via Pi-hole.
 ```
 
 
