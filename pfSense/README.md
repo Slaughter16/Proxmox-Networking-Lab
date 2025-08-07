@@ -364,6 +364,8 @@ Source:         VLAN10, VLAN20
 Destination:    VLAN30  
 Dest Port:      514 (Syslog)
 ```
+![VLAN30_Rule](./screenshots/60_VLAN30_Rule.png)
+![VLAN30_Rule](./screenshots/61_VLAN30_Rule.png)
 
 
 #### 2. Block All Internet Access (VLAN30 ➝ WAN)
