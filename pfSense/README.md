@@ -383,6 +383,17 @@ Destination:    WAN net
 ![VLAN30_Rule](./screenshots/65_VLAN30_Rule.png)
 ![VLAN30_Rule](./screenshots/66_VLAN30_Rule.png)
 
+### Verify Rules are working
+
+### From Debian Machine (VLAN10)
+```
+ping 192.168.20.102
+ssh user@192.168.20.101
+telnet 192.168.20.101
+```
+
+![VLAN10_Verify](./screenshots/67_VLAN10_Rule.png)
+
 
 
 
