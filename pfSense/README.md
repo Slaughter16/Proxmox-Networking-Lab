@@ -339,7 +339,7 @@ Description: Block all other traffic
 # Example rule in pfSense:
 Action: Pass  
 Interface: VLAN 20  
-Protocol: UDP/TCP  
+Protocol: TCP/UDP  
 Source: VLAN 20 net  
 Destination: any  
 Destination Port: 53 (DNS)
