@@ -394,9 +394,37 @@ telnet 192.168.20.101 22
 
 ![VLAN10_Verify](./screenshots/67_VLAN10_Rule.png)
 
+### VLAN30 Firewall Rules Verification (from Kali 192.168.30.100)
+
+- **Ping external (google.com)**: Failed (Internet blocked as expected)  
+- **Curl HTTP/HTTPS**: Failed (Outbound HTTP/HTTPS blocked)  
+- **DNS Query (`dig google.com`)**: Successful (DNS redirection working)  
+
+![VLAN30_Verify](./screenshots/68_VLAN30_Rule.png)
+
+#### Syslog UDP 514 Test
+
+- On Kali, listening on UDP port 514:  
+```bash
+  sudo nc -u -l -p 514
+```
+![VLAN30_Verify](./screenshots/69_VLAN30_Rule.png)
+
+
+- From Debian (VLAN10), sent test message:
+  ```bash
+  echo "test syslog from vlan10" | nc -u 192.168.30.100 514
+  ```
+![VLAN10_Verify](./screenshots/70_VLAN30_Rule.png)
+
+- Kali received the message, confirming inbound syslog logging allowed from other VLANs.
+![VLAN30_Verify](./screenshots/71_VLAN30_Rule.png)
 
 
 
+
+
+  
 ---
 ## 🧪 Step 6: DNS Configuration (Pi-hole)
 To complete the network segmentation lab with DNS-based filtering and resolution, follow the Pi-hole DNS documentation:
