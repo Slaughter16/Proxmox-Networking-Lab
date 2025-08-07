@@ -390,7 +390,7 @@ Destination:    WAN net
 ```
 ping 192.168.20.102
 ssh user@192.168.20.101
-telnet 192.168.20.101
+telnet 192.168.20.101 22
 ```
 
 ![VLAN10_Verify](./screenshots/67_VLAN10_Rule.png)
