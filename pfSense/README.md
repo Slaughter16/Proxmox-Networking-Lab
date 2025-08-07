@@ -386,6 +386,7 @@ Destination:    WAN net
 ### Verify Rules are working
 
 ### From Debian Machine (VLAN10)
+
 ```
 ping 192.168.20.102
 ssh user@192.168.20.101
