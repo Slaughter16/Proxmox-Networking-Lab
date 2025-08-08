@@ -1,10 +1,19 @@
-# 🧩 Step 3: Configure VLANs in pfSense
+## 🎯 Objective
 
 This guide outlines how to configure VLANs in **pfSense** to segment your **Proxmox virtual lab network** into isolated zones. This setup improves security and organization by dividing traffic into:
 
 - **VLAN 10 – Clients**
 - **VLAN 20 – Servers**
 - **VLAN 30 – Security Tools**
+
+Segment the virtual lab into separate VLANs and configure pfSense to route and manage traffic securely.
+
+### VLAN Structure:
+| VLAN ID | Name     | Subnet             |
+|---------|----------|--------------------|
+| 10      | Clients  | 192.168.10.0/24    |
+| 20      | Servers  | 192.168.20.0/24    |
+| 30      | Security | 192.168.30.0/24    |
 
 ---
 
@@ -19,18 +28,8 @@ This guide outlines how to configure VLANs in **pfSense** to segment your **Prox
 - [✅ Step 9: Redirect All DNS to Pi-hole via NAT](#step-9-redirect-all-dns-to-pi-hole-via-nat)  
 - [✅ Step 10: Verify DHCP Lease Assignments](#step-10-verify-dhcp-lease-assignments)  
 
-
-## 🎯 Objective
-Segment the virtual lab into separate VLANs and configure pfSense to route and manage traffic securely.
-
-### VLAN Structure:
-| VLAN ID | Name     | Subnet             |
-|---------|----------|--------------------|
-| 10      | Clients  | 192.168.10.0/24    |
-| 20      | Servers  | 192.168.20.0/24    |
-| 30      | Security | 192.168.30.0/24    |
-
 ---
+# 🧩 Step 3: Configure VLANs in pfSense
 
 ## 🔐 Log into pfSense
 Access the pfSense web interface from your **Debian Admin VM** (tagged to VLAN 10):
