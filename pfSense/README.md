@@ -506,7 +506,7 @@ Only do this **if you want ALL DNS to go through Pi-hole**, and not be handled b
 
 ---
 
-## ✅ Step 9: Redirect All DNS to Pi-hole via NAT
+## Step 9: Redirect All DNS to Pi-hole via NAT
 
 We'll do this per VLAN using **Firewall ➝ NAT ➝ Port Forward**.
 
