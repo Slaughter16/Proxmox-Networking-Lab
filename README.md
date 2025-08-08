@@ -11,18 +11,18 @@ A virtual home lab designed to simulate an enterprise network environment using:
 
 ## 📚 Table of Contents
 
-- [🖥️ Proxmox Dashboard](#️-proxmox-dashboard)
-- [🌐 Network Topology Diagram](#️-network-topology-diagram)
-- [🧱 Lab Topology Overview](#️-lab-topology-overview)
-- [🖥️ Virtual Machines](#️-virtual-machines)
-- [🌐 VLAN Configuration](#️-vlan-configuration)
-- [🔧 Key Features](#️-key-features)
-- [📝 Documentation](#️-documentation)
-- [🔐 VLAN Segmentation & Firewall Rules](#️-vlan-segmentation--firewall-rules)
-- [🌐 DNS Filtering with Pi-hole](#️-dns-filtering-with-pi-hole)
-- [🔐 VPN Access (OpenVPN)](#️-vpn-access-openvpn)
-- [🎯 Skills Demonstrated](#️-skills-demonstrated)
-- [📇 Contact](#️-contact)
+- [🖥️ Proxmox Dashboard](#-proxmox-dashboard)
+- [🌐 Network Topology Diagram](#-network-topology-diagram)
+- [🧱 Lab Topology Overview](#-lab-topology-overview)
+- [🖥️ Virtual Machines](#-virtual-machines)
+- [🌐 VLAN Configuration](#-vlan-configuration)
+- [🔧 Key Features](#-key-features)
+- [📝 Documentation](#-documentation)
+- [🔐 VLAN Segmentation & Firewall Rules](#-vlan-segmentation--firewall-rules)
+- [🌐 DNS Filtering with Pi-hole](#-dns-filtering-with-pi-hole)
+- [🔐 VPN Access (OpenVPN)](#-vpn-access-openvpn)
+- [🎯 Skills Demonstrated](#-skills-demonstrated)
+- [📇 Contact](#-contact)
 
 ---
 
