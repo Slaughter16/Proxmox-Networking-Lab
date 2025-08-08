@@ -37,6 +37,7 @@ A virtual home lab designed to simulate an enterprise network environment using:
 
 ---
 
+<a name="proxmox-dashboard"></a>
 ## 🖥️ Proxmox Dashboard
 
 *Primary hypervisor interface hosting all virtual machines.*
