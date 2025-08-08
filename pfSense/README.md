@@ -389,7 +389,7 @@ Destination:    WAN net
 
 ```
 ping 192.168.20.102       # ❌ Should fail - ICMP blocked
-ssh user@192.168.20.101   # ❌ Should fail - SSH blocked
+ssh user@192.168.20.101   # ❌ Should fail/hang - SSH blocked
 telnet 192.168.20.101 22  # ❌ Should fail - Port 22 blocked
 curl http://192.168.20.101  # ✅ Succeeds - Port 80 (HTTP) allowed
 ```
