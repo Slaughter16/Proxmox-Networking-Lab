@@ -10,7 +10,7 @@ This guide outlines how to configure VLANs in **pfSense** to segment your **Prox
 
 ## 🗂️ Table of Contents
 
-- [📶 Step 3: Configure VLANs in pfSense](#-step-3-configure-vlans-in-pfsense)
+- [🧩 Step 3: Configure VLANs in pfSense](#-step-3-configure-vlans-in-pfsense)
 - [🛠️ Step 4: Enable DHCP on VLANs](#step-4-enable-dhcp-on-vlans)
 - [🔒 Step 5: Firewall Rules](#step-5-add-allow-all-firewall-rules-testing-phase)
 - [🔄 Step 6: Apply Restrictive Firewall Rules for VLAN Segmentation](#step-6-apply-restrictive-firewall-rules-for-vlan-segmentation)
@@ -141,7 +141,7 @@ Repeat for each VLAN:
 
 ---
 
-## Step 4: Enable DHCP on VLANs
+## 🛠️ Step 4: Enable DHCP on VLANs
 
 Go to `Services ➝ DHCP Server`
 
