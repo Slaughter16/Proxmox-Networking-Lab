@@ -18,7 +18,7 @@ This guide outlines how to configure VLANs in **pfSense** to segment your **Prox
 - [🔒 Firewall Rules](#step-5-add-allow-all-firewall-rules-testing-phase)
 - [🔄 Step 6: Apply Restrictive Firewall Rules for VLAN Segmentation](#step-6-apply-restrictive-firewall-rules-for-vlan-segmentation)
 - [🧪 Step 7: DNS Configuration (Pi-hole)](#step-7-dns-configuration-pi-hole)  
-- [🛠️ DNS Configuration with Pi-hole](#️-step-7-configure-pfsense-to-use-pi-hole-for-dns-across-vlans)
+- [🛠️ Step 8: Configure pfSense to Use Pi-hole for DNS Across VLANs](#step-8-configure-pfsense-to-use-pi-hole-for-dns-across-vlans)  
 - [✅ DHCP Lease Table](#-step-10-verify-dhcp-lease-assignments)
 
 
@@ -441,7 +441,7 @@ To complete the network segmentation lab with DNS-based filtering and resolution
 
 ---
 
-# 🛠️ Step 8: Configure pfSense to Use Pi-hole for DNS Across VLANs
+## Step 8: Configure pfSense to Use Pi-hole for DNS Across VLANs
 
 ---
 
