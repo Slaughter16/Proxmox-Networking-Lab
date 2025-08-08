@@ -70,6 +70,7 @@ A virtual home lab designed to simulate an enterprise network environment using:
 
 ---
 
+<a name="virtual-machines"></a>
 ## 🖥️ Virtual Machines
 
 | VM Name             | Role                            | OS / Description                     |
