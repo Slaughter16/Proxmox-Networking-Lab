@@ -21,6 +21,7 @@ A virtual home lab designed to simulate an enterprise network environment using:
 - [🌐 DNS Filtering with Pi-hole](#-dns-filtering-with-pi-hole)
 - [🔐 VPN Access (OpenVPN)](#-vpn-access-openvpn)
 - [🎯 Skills Demonstrated](#-skills-demonstrated)
+- [🧩 Custom Security Enhancements](#custom-security-enhancements)
 - [📇 Contact](#-contact)
 
 
