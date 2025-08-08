@@ -470,7 +470,7 @@ Log into the **pfSense Web UI** from your Debian Admin Machine.
 
 ---
 
-# ✅ Step 8: Things to Check Before Enabling DNS Redirection
+#### ✅ Things to Check Before Enabling DNS Redirection
 
 1. Go to:  
    `System ➝ General Setup`
