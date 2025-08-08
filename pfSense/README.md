@@ -74,7 +74,7 @@ Once logged in, you will see the dashboard.
 ### ➕ VLAN 20 – Servers- 
 
 - **VLAN Tag:** `20`
-- **Description:** `VLAN20_Servers`
+- **Description:** `VLAN20_Server`
 
 ![VLAN 20](./screenshots/5_vlan20_add.png)
 
