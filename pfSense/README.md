@@ -141,7 +141,7 @@ Repeat for each VLAN:
 
 ---
 
-## 🛠️ Step 4: Enable DHCP on VLANs
+## Step 4: Enable DHCP on VLANs
 
 Go to `Services ➝ DHCP Server`
 
