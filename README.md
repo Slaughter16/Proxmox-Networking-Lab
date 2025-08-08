@@ -10,7 +10,7 @@ A virtual home lab designed to simulate an enterprise network environment using:
 ---
 ## 📚 Table of Contents
 
-- [🖥️ Proxmox Dashboard](#-proxmox-dashboard)
+- [🖥️ Proxmox Dashboard](#proxmox-dashboard)
 - [🌐 Network Topology Diagram](#-network-topology-diagram)
 - [🧱 Lab Topology Overview](#-lab-topology-overview)
 - [🖥️ Virtual Machines](#-virtual-machines)
