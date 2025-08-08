@@ -385,7 +385,7 @@ Destination:    WAN net
 
 ### Verify Rules are working
 
-### From Debian Machine (VLAN10) to VLAN 20 (Winserver & Meta)
+### From Debian Machine (VLAN10) to VLAN 20 (Winserver .102 & Meta .101)
 
 ```
 ping 192.168.20.102       # ❌ Should fail - ICMP blocked
