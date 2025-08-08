@@ -166,6 +166,16 @@ Each VM and configuration is documented in its own folder:
 > 📸 **[See OpenVPN setup screenshots](./OpenVPN/README.md)**
 
 ---
+
+## 🧩 Custom Security Enhancements
+
+- Applied restrictive inter-VLAN firewall rules
+- Configured DNS NAT redirection to Pi-hole for all VLANs
+- Enabled remote VPN access using OpenVPN with user certs
+- Segmented attacker (Kali) from server VLAN (Meta)
+
+---
+
 ## 📇 Contact
 
 🔗 [LinkedIn: John Slaughter](https://www.linkedin.com/in/john-slaughter-08a872262/)
